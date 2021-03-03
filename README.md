@@ -18,3 +18,9 @@ Ethereum addresses have to be labeled by the audiences and differentiated into t
 The research results have to be in the form of reproducible scripts that will be pull requested in the [launch-kit](https://github.com/cybercongress/launch-kit), and an article with the rationale of the gift structure.
 
 Research is done on the [proposal](https://cyber.page/governance/20) basis.
+
+## Extraordinary Hackers. Gas Analysis
+
+To search for **Extraordinary Hackers** who have created the Ethereum ecosystem, I will be aggregate the used gas by creators of contracts and factories.  
+To do this, I want to calculate an amount of gas used for contracts calls.  
+[Jupyter Notebook](gas_analysis.ipynb)
