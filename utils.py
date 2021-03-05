@@ -10,12 +10,12 @@ def drop_table(table_name, dataset_name=DATASET_NAME):
     """
     table_ref_1 = bq_client.dataset(dataset_name).table(table_name)
     res = bq_client.delete_table(table_ref_1)  # API request
+    if res is None:
+        print('Table {}:{} deleted.'.format(dataset_name, table_name))
+        return True
     for item in res:
         print(item)
-        if item == '':
-            print('Table {}:{} deleted.'.format(dataset_name, table_name))
-            return True
-        return False
+    return False
 
 
 def create_table(query, table_name, dataset_name=DATASET_NAME):
@@ -27,12 +27,12 @@ def create_table(query, table_name, dataset_name=DATASET_NAME):
     :return: True if successful or False otherwise.
     """
     res = bq_client.query(query)
+    if res is None:
+        print('Table {}:{} created and filled.'.format(dataset_name, table_name))
+        return True
     for item in res:
         print(item)
-        if item == '':
-            print('Table {}:{} created and filled.'.format(dataset_name, table_name))
-            return True
-        return False
+    return False
 
 
 def get_df(query, columns):
