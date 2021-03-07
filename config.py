@@ -7,6 +7,7 @@ SNAPSHOT_TS = '2021-03-02 00:00:00'
 
 PROJECT_ID = 'cosmic-keep-223223'
 
+GAS_ANALYSIS_TYPE = 'Extraordinary Hackers. Gas Analysis'
 GAS_ANALYSIS_DATASET_NAME = 'gas_analysis'
 GAS_SPEND_BY_CONTRACT_TABLE_NAME = 'gas_spend_by_contract'
 GAS_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'gas_analysis_distribution'
