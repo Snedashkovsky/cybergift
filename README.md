@@ -24,11 +24,15 @@ by [Blockchain ETL](https://github.com/blockchain-etl).
 
 Research is done on the [proposal](https://cyber.page/governance/20) basis.
 
+## Average Citizens. ETH Analysis
+
+[Jupyter Notebook](average_citizens__eth_analysis.ipynb)
+
 ## Extraordinary Hackers. Gas Analysis
 
 To search for **Extraordinary Hackers** who have created the Ethereum ecosystem, I will be aggregate the used gas by creators of contracts and factories.  
 To do this, I want to calculate an amount of gas used for contracts calls.  
-[Jupyter Notebook](gas_analysis.ipynb)
+[Jupyter Notebook](extraordinary_hackers__gas_analysis.ipynb)
 
 ## Final Distribution
 
