@@ -11,6 +11,12 @@ ETH_ANALYSIS_TYPE = 'Average Citizens. ETH Analysis'
 ETH_ANALYSIS_DATASET_NAME = 'eth_analysis'
 ETH_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'eth_analysis_distribution'
 
+ERC20_ANALYSIS_TYPE = 'Passionate Investors. ERC20 Analysis'
+ERC20_ANALYSIS_DATASET_NAME = 'erc20_analysis'
+ERC20_BALANCES_TABLE_NAME = 'erc20_balances'
+ERC20_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'erc20_analysis_distribution'
+TOKEN_METADATA_TABLE_NAME = 'token_metadata'
+
 GAS_ANALYSIS_TYPE = 'Extraordinary Hackers. Gas Analysis'
 GAS_ANALYSIS_DATASET_NAME = 'gas_analysis'
 GAS_SPEND_BY_CONTRACT_TABLE_NAME = 'gas_spend_by_contract'

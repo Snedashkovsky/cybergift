@@ -1,9 +1,9 @@
 from google.cloud import bigquery
 
-from config import GAS_ANALYSIS_DATASET_NAME, FINAL_DATASET_NAME, PROJECT_ID, bq_client, bqstorage_client
+from config import FINAL_DATASET_NAME, PROJECT_ID, bq_client, bqstorage_client
 
 
-def drop_table(table_name, dataset_name=GAS_ANALYSIS_DATASET_NAME):
+def drop_table(table_name, dataset_name):
     """
     Drop a table in a dataset from your project
     :param table_name: The name of the table to be dropped
@@ -11,16 +11,17 @@ def drop_table(table_name, dataset_name=GAS_ANALYSIS_DATASET_NAME):
     :return: True if successful or False otherwise.
     """
     table_ref_1 = bq_client.dataset(dataset_name).table(table_name)
-    res = bq_client.delete_table(table_ref_1)  # API request
-    if res is None:
-        print('Table {}:{} deleted.'.format(dataset_name, table_name))
+    try:
+        bq_client.delete_table(table_ref_1)
+        print('Table {}:{} has been deleted.'.format(dataset_name, table_name))
         return True
-    for item in res:
-        print(item)
-    return False
+    except Exception as e:
+        print('Table {}:{} has not been deleted.'.format(dataset_name, table_name))
+        print(e)
+        return False
 
 
-def create_table(query, table_name, dataset_name=GAS_ANALYSIS_DATASET_NAME):
+def create_table(query, table_name, dataset_name):
     """
     Create a table in a dataset from your project
     :param query: SQL query to create a table
@@ -28,19 +29,24 @@ def create_table(query, table_name, dataset_name=GAS_ANALYSIS_DATASET_NAME):
     :param dataset_name: The dataset name in which the created table is located
     :return: True if successful or False otherwise.
     """
-    res = bq_client.query(query)
-    if res is None:
-        print('Table {}:{} created and filled.'.format(dataset_name, table_name))
-        return True
-    for item in res:
-        print(item)
+    table_id = f"{PROJECT_ID}.{dataset_name}.{table_name}"
+
+    job_config = bigquery.QueryJobConfig(destination=table_id)
+    try:
+        res = bq_client.query(query, job_config=job_config).result()
+        if res.total_rows:
+            print(f"Table {dataset_name}:{table_name} has been created and filled {res.total_rows} rows.")
+            return True
+    except Exception as e:
+        print(e)
+    print(f"Table {dataset_name}:{table_name} has not been created")
     return False
 
 
 def create_view(query, view_name, dataset_name=FINAL_DATASET_NAME):
     """
     Create a view in a dataset from your project
-    :param query: SQL query to create a view
+    :param query: SQL query to create a vieThe dataset name in which the created view is located
     :param view_name: The name of the table to be created
     :param dataset_name: The dataset name in which the created view is located
     :return: True if successful or False otherwise.
@@ -48,13 +54,34 @@ def create_view(query, view_name, dataset_name=FINAL_DATASET_NAME):
     view_id = f"{PROJECT_ID}.{dataset_name}.{view_name}"
     view = bigquery.Table(view_id)
     view.view_query = query
-    view = bq_client.create_table(view)
-    print(f"Created {view.table_type}: {str(view.reference)}")
+    try:
+        view = bq_client.create_table(view)
+        print(f"View {view.table_type}:{str(view.reference)} has been created.")
+        return True
+    except Exception as e:
+        print(e)
+    print(f"View {dataset_name}:{view_name} has not been created")
+    return False
+
+
+def create_table_from_df(source_df, table_name, dataset_name, drop_existing_table=True):
+    """
+    Create a table from a Pandas DataFrame
+    :param source_df: source Pandas DataFrame
+    :param table_name: The name of the table to be created
+    :param dataset_name: The dataset name in which the created view is located
+    :param drop_existing_table:
+    :return: True if successful or False otherwise.
+    """
+    table_id = f"{PROJECT_ID}.{dataset_name}.{table_name}"
+    if drop_existing_table:
+        drop_table(table_name, dataset_name)
+    return bq_client.load_table_from_dataframe(source_df, table_id).result().done()
 
 
 def get_df(query):
     """
-    Get pandas DataFrame by SQL query
+    Get Pandas DataFrame by SQL query
     :param query: SQL query to get data for a DataFrame
     :return: DataFrame
     """
