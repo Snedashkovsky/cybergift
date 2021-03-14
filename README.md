@@ -28,6 +28,10 @@ Research is done on the [proposal](https://cyber.page/governance/20) basis.
 
 [Jupyter Notebook](average_citizens__eth_analysis.ipynb)
 
+## Passionate Investors. ERC20 Analysis
+
+[Jupyter Notebook](passionate_investors__erc20_analysis.ipynb)
+
 ## Extraordinary Hackers. Gas Analysis
 
 To search for **Extraordinary Hackers** who have created the Ethereum ecosystem, I will be aggregate the used gas by creators of contracts and factories.  
