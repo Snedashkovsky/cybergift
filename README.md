@@ -24,6 +24,10 @@ by [Blockchain ETL](https://github.com/blockchain-etl).
 
 Research is done on the [proposal](https://cyber.page/governance/20) basis.
 
+## Masters of the Great Web. ERC721 Analysis
+
+[Jupyter Notebook](masters__erc721_analysis.ipynb)
+
 ## Average Citizens. ETH Analysis
 
 [Jupyter Notebook](average_citizens__eth_analysis.ipynb)

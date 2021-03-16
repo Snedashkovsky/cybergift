@@ -11,6 +11,11 @@ ETH_ANALYSIS_TYPE = 'Average Citizens. ETH Analysis'
 ETH_ANALYSIS_DATASET_NAME = 'eth_analysis'
 ETH_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'eth_analysis_distribution'
 
+ERC721_ANALYSIS_TYPE = 'Masters of the Great Web. ERC721 Analysis'
+ERC721_ANALYSIS_DATASET_NAME = 'erc721_analysis'
+ERC721_AMOUNT_TABLE_NAME = 'erc721_amounts'
+ERC721_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'erc721_analysis_distribution'
+
 ERC20_ANALYSIS_TYPE = 'Passionate Investors. ERC20 Analysis'
 ERC20_ANALYSIS_DATASET_NAME = 'erc20_analysis'
 ERC20_BALANCES_TABLE_NAME = 'erc20_balances'
