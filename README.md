@@ -24,6 +24,10 @@ by [Blockchain ETL](https://github.com/blockchain-etl).
 
 Research is done on the [proposal](https://cyber.page/governance/20) basis.
 
+## True Heroes of the Great Web. Genesis and ETH2 Stakers
+
+[Jupyter Notebook](heroes__genesis_and_eth2_stakers.ipynb)
+
 ## Masters of the Great Web. ERC721 Analysis
 
 [Jupyter Notebook](masters__erc721_analysis.ipynb)
