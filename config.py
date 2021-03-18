@@ -7,6 +7,10 @@ SNAPSHOT_TS = '2021-03-02 00:00:00'
 
 PROJECT_ID = 'cosmic-keep-223223'
 
+GENESIS_AND_ETH2_TYPE = 'True Heroes of the Great Web. Genesis and ETH2 Stakers'
+GENESIS_AND_ETH2_DATASET_NAME = 'genesis_and_eth2_stakers'
+GENESIS_AND_ETH2_DISTRIBUTION_TABLE_NAME = 'genesis_and_eth2_stakers_distribution'
+
 ETH_ANALYSIS_TYPE = 'Average Citizens. ETH Analysis'
 ETH_ANALYSIS_DATASET_NAME = 'eth_analysis'
 ETH_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'eth_analysis_distribution'
