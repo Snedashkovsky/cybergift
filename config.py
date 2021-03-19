@@ -29,8 +29,6 @@ ERC20_TOKEN_METADATA_TABLE_NAME = 'erc20_token_metadata'
 ERC20_TOP_TYPE = 'Key Opinion Leaders. Top Token Holders'
 ERC20_TOP_DISTRIBUTION_TABLE_NAME = 'erc20_top_distribution'
 
-
-
 GAS_ANALYSIS_TYPE = 'Extraordinary Hackers. Gas Analysis'
 GAS_ANALYSIS_DATASET_NAME = 'gas_analysis'
 GAS_SPEND_BY_CONTRACT_TABLE_NAME = 'gas_spend_by_contract'
