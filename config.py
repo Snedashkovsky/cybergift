@@ -11,6 +11,11 @@ GENESIS_AND_ETH2_TYPE = 'True Heroes of the Great Web. Genesis and ETH2 Stakers'
 GENESIS_AND_ETH2_DATASET_NAME = 'genesis_and_eth2_stakers'
 GENESIS_AND_ETH2_DISTRIBUTION_TABLE_NAME = 'genesis_and_eth2_stakers_distribution'
 
+GAS_ANALYSIS_TYPE = 'Extraordinary Hackers. Gas Analysis'
+GAS_ANALYSIS_DATASET_NAME = 'gas_analysis'
+GAS_SPEND_BY_CONTRACT_TABLE_NAME = 'gas_spend_by_contract'
+GAS_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'gas_analysis_distribution'
+
 ETH_ANALYSIS_TYPE = 'Average Citizens. ETH Analysis'
 ETH_ANALYSIS_DATASET_NAME = 'eth_analysis'
 ETH_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'eth_analysis_distribution'
@@ -28,11 +33,6 @@ ERC20_TOKEN_METADATA_TABLE_NAME = 'erc20_token_metadata'
 
 ERC20_TOP_TYPE = 'Key Opinion Leaders. Top Token Holders'
 ERC20_TOP_DISTRIBUTION_TABLE_NAME = 'erc20_top_distribution'
-
-GAS_ANALYSIS_TYPE = 'Extraordinary Hackers. Gas Analysis'
-GAS_ANALYSIS_DATASET_NAME = 'gas_analysis'
-GAS_SPEND_BY_CONTRACT_TABLE_NAME = 'gas_spend_by_contract'
-GAS_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'gas_analysis_distribution'
 
 FINAL_DATASET_NAME = 'final'
 FINAL_DISTRIBUTION_VIEW_NAME = 'final_distribution'
