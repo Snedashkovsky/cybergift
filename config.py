@@ -35,6 +35,7 @@ ERC20_TOP_TYPE = 'Key Opinion Leaders. Top Token Holders'
 ERC20_TOP_DISTRIBUTION_TABLE_NAME = 'erc20_top_distribution'
 
 FINAL_DATASET_NAME = 'final'
+CONTRACT_ADDRESSES_TABLE = 'contract_addresses'
 FINAL_DISTRIBUTION_VIEW_NAME = 'final_distribution'
 
 
