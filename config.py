@@ -22,6 +22,8 @@ ETH_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'eth_analysis_distribution'
 
 ERC721_ANALYSIS_TYPE = 'Masters of the Great Web. ERC721 Analysis'
 ERC721_ANALYSIS_DATASET_NAME = 'erc721_analysis'
+ERC721_NFT_TOKEN_TABLE_NAME = 'nft_tokens'
+ERC721_TOKEN_TABLE_NAME = 'erc721_tokens'
 ERC721_AMOUNT_TABLE_NAME = 'erc721_amounts'
 ERC721_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'erc721_analysis_distribution'
 
@@ -38,6 +40,13 @@ FINAL_DATASET_NAME = 'final'
 CONTRACT_ADDRESSES_TABLE = 'contract_addresses'
 FINAL_DISTRIBUTION_VIEW_NAME = 'final_distribution'
 
+# Etherscan extractor
+BEAUTIFULSOUP_HEADERS = {
+  'User-Agent': 'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36'
+  }
+ETHERSCAN_NFT_URL = 'https://etherscan.io/tokens-nft'
+ETHERSCAN_NFT_LAST_PAGE_NUMBER = 206
+ETHERSCAN_NFT_CSV_NAME = 'data/etherscan_erc721.csv'
 
 # Construct a BigQuery client object.
 KEY_PATH = "bigquery_project.json"
