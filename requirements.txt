@@ -1,3 +1,5 @@
 google-cloud-bigquery
 pandas
 matplotlib
+beautifulsoup4
+lxml
