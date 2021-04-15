@@ -39,6 +39,7 @@ ERC20_TOP_DISTRIBUTION_TABLE_NAME = 'erc20_top_distribution'
 FINAL_DATASET_NAME = 'final'
 CONTRACT_ADDRESSES_TABLE = 'contract_addresses'
 FINAL_DISTRIBUTION_VIEW_NAME = 'final_distribution'
+GIFT_PER_ADDRESS_PIVOT_VIEW_NAME = 'gift_per_address_pivot'
 
 # Etherscan extractor
 BEAUTIFULSOUP_HEADERS = {
