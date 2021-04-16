@@ -32,7 +32,7 @@ Research is done on the [proposal](https://cyber.page/governance/20) basis.
 
 To search for **Extraordinary Hackers** who have created the Ethereum ecosystem, I will be aggregate the used gas by creators of contracts and factories.  
 To do this, I want to calculate an amount of gas used for contracts calls.  
-[Jupyter Notebook](extraordinary_hackers__gas_analysis.ipynb)
+[Jupyter Notebook](extraordinary_hackers_and_masters__gas_analysis.ipynb)
 
 ## Average Citizens. ETH Analysis
 
