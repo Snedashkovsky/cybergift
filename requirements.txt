@@ -3,3 +3,6 @@ pandas
 matplotlib
 beautifulsoup4
 lxml
+requests
+tqdm
+web3
