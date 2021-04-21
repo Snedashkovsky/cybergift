@@ -26,29 +26,35 @@ Research is done on the [proposal](https://cyber.page/governance/20) basis.
 
 ## True Heroes of the Great Web. Genesis and ETH2 Stakers
 
-[Jupyter Notebook](heroes__genesis_and_eth2_stakers.ipynb)
+[Genesis and ETH2 Stakers](heroes__genesis_and_eth2_stakers.ipynb)
 
 ## Extraordinary Hackers. Gas Analysis
 
 To search for **Extraordinary Hackers** who have created the Ethereum ecosystem, I will be aggregate the used gas by creators of contracts and factories.  
 To do this, I want to calculate an amount of gas used for contracts calls.  
-[Jupyter Notebook](extraordinary_hackers_and_masters__gas_analysis.ipynb)
+[Gas Analysis](extraordinary_hackers_and_masters__gas_analysis.ipynb)
 
 ## Average Citizens. ETH Analysis
 
-[Jupyter Notebook](average_citizens__eth_analysis.ipynb)
+[ETH Analysis](average_citizens__eth_analysis.ipynb)
 
-## Masters of the Great Web. ERC721 Analysis
+## Masters of the Great Web. Gas Analysis and ERC721 Analysis
 
-[Jupyter Notebook](masters__erc721_analysis.ipynb)
+[Gas Analysis](extraordinary_hackers_and_masters__gas_analysis.ipynb)  
+[ERC721 Analysis](masters_and_cryptopunks__erc721_analysis.ipynb)
 
 ## Passionate Investors. ERC20 Analysis
 
-[Jupyter Notebook](passionate_investors__erc20_analysis.ipynb)
+[ERC20 Analysis](passionate_investors_and_cryptopunks__erc20_analysis.ipynb)
 
 ## Key Opinion Leaders. Top 100 ERC20 Holders by Tokens
 
-[Jupyter Notebook](leaders__top_erc20_holders.ipynb)
+[Top 100 ERC20 Holders](leaders__top_erc20_holders.ipynb)
+
+## Cyberpunks. ERC20 and ERC721 Analysis
+
+[ERC20 Analysis](passionate_investors_and_cryptopunks__erc20_analysis.ipynb)  
+[ERC721 Analysis](masters_and_cryptopunks__erc721_analysis.ipynb)
 
 ## Final Distribution
 
