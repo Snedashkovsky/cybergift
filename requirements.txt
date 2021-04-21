@@ -6,3 +6,5 @@ lxml
 requests
 tqdm
 web3
+seaborn
+numpy

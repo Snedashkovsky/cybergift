@@ -40,7 +40,7 @@ To do this, I want to calculate an amount of gas used for contracts calls.
 
 ## Masters of the Great Web. ERC721 Analysis
 
-[Jupyter Notebook](masters__erc721_analysis.ipynb)
+[Jupyter Notebook](masters_and_cryptopunks__erc721_analysis.ipynb)
 
 ## Passionate Investors. ERC20 Analysis
 
@@ -49,6 +49,10 @@ To do this, I want to calculate an amount of gas used for contracts calls.
 ## Key Opinion Leaders. Top 100 ERC20 Holders by Tokens
 
 [Jupyter Notebook](leaders__top_erc20_holders.ipynb)
+
+## Cyberpunks
+
+[Jupyter Notebook](masters_and_cryptopunks__erc721_analysis.ipynb)
 
 ## Final Distribution
 

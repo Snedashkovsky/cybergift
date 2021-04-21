@@ -36,6 +36,8 @@ ERC20_TOKEN_METADATA_TABLE_NAME = 'erc20_token_metadata'
 ERC20_TOP_AUDIENCE = 'Key Opinion Leaders. Top Token Holders'
 ERC20_TOP_DISTRIBUTION_TABLE_NAME = 'erc20_top_distribution'
 
+CRYPTOPUNKS_AUDIENCE = 'Cryptopunks'
+
 FINAL_DATASET_NAME = 'final'
 CONTRACT_ADDRESSES_TABLE = 'contract_addresses'
 FINAL_DISTRIBUTION_VIEW_NAME = 'final_distribution'
