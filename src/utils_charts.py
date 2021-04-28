@@ -1,0 +1,154 @@
+import pandas as pd
+from IPython.core.display import display, HTML
+from math import log10
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+
+
+def calculate_and_display_rules(
+        distribution_df,
+        initial_boundary,
+        percentage_levels,
+        value_column,
+        value_name,
+        address_column):
+    """
+    Calculate rule boundaries in according with percentage levels
+    :param distribution_df: Source DataFrame
+    :param initial_boundary: Minimum value of analyzed parameter that should be included in analysis
+    :param percentage_levels: Cumulative sum boundaries by addresses share
+    :param value_column: Column name of analyzed parameter
+    :param value_name: Name of analyzed parameter for inserting in the rules
+    :param address_column: Column name of addresses number
+    :return: Rule Boundaries
+    """
+    address_cumsum_perc_column = address_column + '_cumsum_percentage'
+    total_addresses = distribution_df[address_column].sum()
+    distribution_df[address_cumsum_perc_column] = \
+        distribution_df[address_column].cumsum() / distribution_df[address_column].sum()
+    # Calculate of rule boundaries
+    boundaries = [initial_boundary]
+    for percentage_level in percentage_levels:
+        boundary = distribution_df.iloc[distribution_df[address_cumsum_perc_column].map(lambda x: abs(x - percentage_level)).argmin()][value_column]
+        boundaries.append(boundary)
+    # Calculate of address number by suggested grades
+    addresses_by_grade = [distribution_df[(distribution_df[value_column] > boundaries[0]) & (distribution_df[value_column] <= boundaries[1])][address_column].sum(),
+                          distribution_df[(distribution_df[value_column] > boundaries[1]) & (distribution_df[value_column] <= boundaries[2])][address_column].sum(),
+                          distribution_df[distribution_df[value_column] > boundaries[2]][address_column].sum()]
+    # Rules for displaying
+    rules = [f'{boundaries[0]} < {value_name} <= {boundaries[1]}',
+             f'{boundaries[1]} < {value_name} <= {boundaries[2]}',
+             f'{boundaries[2]} < {value_name}']
+    df_data = [[i+1,
+                rule,
+                addresses_by_grade[i],
+                round(addresses_by_grade[i] / total_addresses * 100, 1)]
+               for i, rule in enumerate(rules)]
+
+    print(f'Suggestion of Rules: \n')
+    display(
+        HTML(
+            pd.DataFrame(df_data,
+                         columns=['Grade', 'Rule', 'Addresses', 'Percentage of Addresses'])
+                .to_html(index=False, notebook=True, show_dimensions=False)))
+    return boundaries
+
+
+def show_distribution_chart(
+        distribution_df,
+        boundaries,
+        level_line_shift,
+        max_show_value,
+        value_column,
+        address_log_column,
+        address_chart_label,
+        value_chart_label,
+        chart_title):
+    """
+    Show chart with value distribution by addresses and boundaries
+    :param distribution_df: Source DataFrame
+    :param boundaries: Rule Boundaries
+    :param level_line_shift: Shift for correct display of grade boundaries
+    :param max_show_value: Maximum value of analyzed parameter that should be shown
+    :param value_column: Column name of analyzed parameter
+    :param address_log_column: Column name of log10 from number of addresses
+    :param address_chart_label: Addresses number label for the chart
+    :param value_chart_label: Value label for chart
+    :param chart_title: Chart Title
+    :return: None
+    """
+    mpl.rcParams['figure.figsize'] = (20.0, 7.0)
+    fig, ax = plt.subplots()
+    # Grade Boundaries vertical lines
+    for boundary in boundaries:
+        ax.axvline(boundary + level_line_shift, 0, 0.9,  label='Grade Boundaries', color='red')
+    # Distribution bar chart
+    ax.bar(distribution_df[distribution_df[value_column] < max_show_value][value_column],
+           distribution_df[distribution_df[value_column] < max_show_value][address_log_column])
+
+    ax.set_ylabel(address_chart_label, fontsize=16)
+    ax.set_xlabel(value_chart_label, fontsize=16)
+    ax.set_title(chart_title, fontsize=18)
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.spines["left"].set_visible(False)
+    ax.spines["bottom"].set_visible(False)
+    ax.spines["bottom"].set_position(("data", -0.25))
+    ax.spines["left"].set_position(("data", 0))
+
+    plt.show()
+
+
+def grade_boundaries_analysis(
+        distribution_df,
+        chart_title,
+        value_column,
+        value_name,
+        value_chart_label,
+        address_column = 'number_of_addresses',
+        address_chart_label = 'Number of addresses, Log 10',
+        percentage_levels = (0.89, 0.97),
+        max_show_value = 200,
+        level_line_shift = 0.5,
+        initial_boundary = 0):
+    """
+    Calculate rule boundaries in according with percentage levels and display distribution
+    :param distribution_df: Source DataFrame
+    :param chart_title: Chart title
+    :param value_column: Column name of analyzed parameter
+    :param value_name: Name of analyzed parameter for inserting in the rules
+    :param value_chart_label: Name of analyzed parameter for the chart
+    :param address_column: Column name of addresses number
+    :param address_chart_label: Addresses number label for the chart
+    :param percentage_levels: Cumulative sum boundaries by addresses share
+    :param max_show_value:  Maximum value of analyzed parameter that should be shown
+    :param level_line_shift: Shift for correct display of grade boundaries
+    :param initial_boundary: Minimum value of analyzed parameter that should be included in analysis
+    :return: Rule boundaries
+    """
+    address_log_column = address_column + '_log'
+
+    # Prepare DataFrame
+    distribution_df = distribution_df.sort_values([value_column]).reset_index()
+    distribution_df[address_log_column] = distribution_df[address_column].map(lambda x: log10(x) if x > 1 else 0.1)
+
+    boundaries = calculate_and_display_rules(
+        distribution_df=distribution_df,
+        initial_boundary=initial_boundary,
+        percentage_levels=percentage_levels,
+        value_column=value_column,
+        value_name=value_name,
+        address_column=address_column)
+
+    show_distribution_chart(
+        distribution_df=distribution_df,
+        boundaries=boundaries,
+        level_line_shift=level_line_shift,
+        max_show_value=max_show_value,
+        value_column=value_column,
+        address_log_column=address_log_column,
+        address_chart_label=address_chart_label,
+        value_chart_label=value_chart_label,
+        chart_title=chart_title)
+
+    return boundaries
