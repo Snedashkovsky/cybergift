@@ -36,7 +36,7 @@ def calculate_and_display_rules(
         boundary = distribution_slice_df.iloc[
             distribution_slice_df[address_cumsum_perc_column].map(
                 lambda x: abs(x - percentage_level)).argmin()][value_column]
-        boundaries.append(boundary)
+        boundaries.append(round(boundary))
     # Calculate of address number by suggested grades
     addresses_by_grade = [distribution_slice_df[
                               (distribution_slice_df[value_column] > boundaries[0]) & (
@@ -102,7 +102,8 @@ def show_distribution_chart(
     fig, ax = plt.subplots()
     # Grade Boundaries vertical lines
     for boundary in boundaries:
-        ax.axvline(address_transform_func(boundary + level_line_shift), 0, 0.9, label='Grade Boundaries', color='red')
+        ax.axvline(address_transform_func(boundary + level_line_shift), 0, 0.9,
+                   label='Grade Boundaries', color='red')
     # Distribution bar chart
     ax.plot(distribution_df[distribution_df[value_column] < max_show_value][value_transform_column],
             distribution_df[distribution_df[value_column] < max_show_value][address_transform_column],
@@ -116,7 +117,6 @@ def show_distribution_chart(
     ax.spines["left"].set_visible(False)
     ax.spines["bottom"].set_visible(False)
     ax.spines["bottom"].set_position(("data", -0.25))
-    ax.spines["left"].set_position(("data", 0))
 
     plt.show()
 
@@ -129,7 +129,7 @@ def grade_boundaries_analysis(
         value_chart_label: str,
         value_transform_func=lambda x: log10(x) if x > 1 else 0.1,
         address_column: str = 'number_of_addresses',
-        address_chart_label: str = 'Number of addresses, Log 10',
+        address_chart_label: str = 'Number of addresses, Log10',
         address_transform_func=lambda x: log10(x) if x > 1 else 0.1,
         percentage_levels: tuple = (0.89, 0.97),
         max_show_value: float = 200,
