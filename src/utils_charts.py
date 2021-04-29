@@ -6,12 +6,12 @@ import matplotlib as mpl
 
 
 def calculate_and_display_rules(
-        distribution_df,
-        initial_boundary,
-        percentage_levels,
-        value_column,
-        value_name,
-        address_column):
+        distribution_df: pd.DataFrame,
+        initial_boundary: float,
+        percentage_levels: tuple,
+        value_column: str,
+        value_name: str,
+        address_column: str):
     """
     Calculate rule boundaries in according with percentage levels
     :param distribution_df: Source DataFrame
@@ -58,21 +58,19 @@ def calculate_and_display_rules(
 
 
 def show_distribution_chart(
-        distribution_df,
-        boundaries,
-        level_line_shift,
-        max_show_value,
-        value_column,
-        value_chart_label,
+        distribution_df: pd.DataFrame,
+        boundaries: list,
+        level_line_shift: float,
+        max_show_value: float,
+        value_column: str,
+        value_chart_label: str,
         value_transform_func,
-        address_column,
-        address_chart_label,
+        address_column: str,
+        address_chart_label: str,
         address_transform_func,
-        chart_title):
+        chart_title: str):
     """
     Show chart with value distribution by addresses and boundaries
-    :param value_transform_func:
-    :param address_transform_func:
     :param distribution_df: Source DataFrame
     :param boundaries: Rule Boundaries
     :param level_line_shift: Shift for correct display of grade boundaries
@@ -131,8 +129,6 @@ def grade_boundaries_analysis(
         initial_boundary: float = 0.0):
     """
     Calculate rule boundaries in according with percentage levels and display distribution
-    :param value_transform_func:
-    :param address_transform_func:
     :param distribution_df: Source DataFrame
     :param chart_title: Chart title
     :param value_column: Column name of analyzed parameter
