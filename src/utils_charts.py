@@ -22,22 +22,30 @@ def calculate_and_display_rules(
     :param address_column: Column name of addresses number
     :return: Rule Boundaries
     """
+
+    distribution_slice_df = distribution_df[distribution_df[value_column] > initial_boundary].copy()
+
+    total_addresses = distribution_slice_df[address_column].sum()
+
     address_cumsum_perc_column = address_column + '_cumsum_percentage'
-    total_addresses = distribution_df[address_column].sum()
-    distribution_df[address_cumsum_perc_column] = \
-        distribution_df[address_column].cumsum() / distribution_df[address_column].sum()
+    distribution_slice_df.loc[:, address_cumsum_perc_column] = \
+        distribution_slice_df[address_column].cumsum() / total_addresses
     # Calculate of rule boundaries
     boundaries = [initial_boundary]
     for percentage_level in percentage_levels:
-        boundary = distribution_df.iloc[
-            distribution_df[address_cumsum_perc_column].map(lambda x: abs(x - percentage_level)).argmin()][value_column]
+        boundary = distribution_slice_df.iloc[
+            distribution_slice_df[address_cumsum_perc_column].map(
+                lambda x: abs(x - percentage_level)).argmin()][value_column]
         boundaries.append(boundary)
     # Calculate of address number by suggested grades
-    addresses_by_grade = [distribution_df[(distribution_df[value_column] > boundaries[0]) & (
-                distribution_df[value_column] <= boundaries[1])][address_column].sum(),
-                          distribution_df[(distribution_df[value_column] > boundaries[1]) & (
-                                      distribution_df[value_column] <= boundaries[2])][address_column].sum(),
-                          distribution_df[distribution_df[value_column] > boundaries[2]][address_column].sum()]
+    addresses_by_grade = [distribution_slice_df[
+                              (distribution_slice_df[value_column] > boundaries[0]) & (
+                               distribution_slice_df[value_column] <= boundaries[1])][address_column].sum(),
+                          distribution_slice_df[
+                              (distribution_slice_df[value_column] > boundaries[1]) & (
+                               distribution_slice_df[value_column] <= boundaries[2])][address_column].sum(),
+                          distribution_slice_df[
+                              distribution_slice_df[value_column] > boundaries[2]][address_column].sum()]
     # Rules for displaying
     rules = [f'{boundaries[0]} < {value_name} <= {boundaries[1]}',
              f'{boundaries[1]} < {value_name} <= {boundaries[2]}',
@@ -87,8 +95,8 @@ def show_distribution_chart(
 
     address_transform_column = address_column + '_transform'
     value_transform_column = value_column + '_transform'
-    distribution_df[address_transform_column] = distribution_df[address_column].map(address_transform_func)
-    distribution_df[value_transform_column] = distribution_df[value_column].map(value_transform_func)
+    distribution_df.loc[:, address_transform_column] = distribution_df[address_column].map(address_transform_func)
+    distribution_df.loc[:, value_transform_column] = distribution_df[value_column].map(value_transform_func)
 
     mpl.rcParams['figure.figsize'] = (20.0, 9.0)
     fig, ax = plt.subplots()
