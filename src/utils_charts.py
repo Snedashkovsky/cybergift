@@ -102,7 +102,7 @@ def show_distribution_chart(
     fig, ax = plt.subplots()
     # Grade Boundaries vertical lines
     for boundary in boundaries:
-        ax.axvline(address_transform_func(boundary + level_line_shift), 0, 0.9,
+        ax.axvline(value_transform_func(boundary + level_line_shift), 0, 0.9,
                    label='Grade Boundaries', color='red')
     # Distribution bar chart
     ax.plot(distribution_df[distribution_df[value_column] < max_show_value][value_transform_column],
