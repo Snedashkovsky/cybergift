@@ -11,7 +11,8 @@ def calculate_and_display_rules(
         percentage_levels: tuple,
         value_column: str,
         value_name: str,
-        address_column: str):
+        address_column: str,
+        boundary_round: int):
     """
     Calculate rule boundaries in according with percentage levels
     :param distribution_df: Source DataFrame
@@ -20,6 +21,7 @@ def calculate_and_display_rules(
     :param value_column: Column name of analyzed parameter
     :param value_name: Name of analyzed parameter for inserting in the rules
     :param address_column: Column name of addresses number
+    :param boundary_round: Number of decimals for boundary rounding
     :return: Rule Boundaries
     """
 
@@ -36,7 +38,7 @@ def calculate_and_display_rules(
         boundary = distribution_slice_df.iloc[
             distribution_slice_df[address_cumsum_perc_column].map(
                 lambda x: abs(x - percentage_level)).argmin()][value_column]
-        boundaries.append(round(boundary))
+        boundaries.append(float(round(boundary, boundary_round)))
     # Calculate of address number by suggested grades
     addresses_by_grade = [distribution_slice_df[
                               (distribution_slice_df[value_column] > boundaries[0]) & (
@@ -99,6 +101,7 @@ def show_distribution_chart(
     distribution_df.loc[:, value_transform_column] = distribution_df[value_column].map(value_transform_func)
 
     mpl.rcParams['figure.figsize'] = (20.0, 9.0)
+    plt.rcParams.update({'font.size': 14})
     fig, ax = plt.subplots()
     # Grade Boundaries vertical lines
     for boundary in boundaries:
@@ -134,7 +137,8 @@ def grade_boundaries_analysis(
         percentage_levels: tuple = (0.89, 0.97),
         max_show_value: float = 200,
         level_line_shift: float = 0.5,
-        initial_boundary: float = 0.0):
+        initial_boundary: float = 0.0,
+        boundary_round=0):
     """
     Calculate rule boundaries in according with percentage levels and display distribution
     :param distribution_df: Source DataFrame
@@ -150,6 +154,7 @@ def grade_boundaries_analysis(
     :param max_show_value:  Maximum value of analyzed parameter that should be shown
     :param level_line_shift: Shift for correct display of grade boundaries
     :param initial_boundary: Minimum value of analyzed parameter that should be included in analysis
+    :param boundary_round: Number of decimals for boundary rounding
     :return: Rule boundaries
     """
 
@@ -162,7 +167,8 @@ def grade_boundaries_analysis(
         percentage_levels=percentage_levels,
         value_column=value_column,
         value_name=value_name,
-        address_column=address_column)
+        address_column=address_column,
+        boundary_round=boundary_round)
 
     show_distribution_chart(
         distribution_df=distribution_df,
