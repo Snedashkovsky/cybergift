@@ -3,40 +3,42 @@ from google.oauth2 import service_account
 
 
 INITIAL_TS = '2015-07-30 00:00:00'
-SNAPSHOT_TS = '2021-03-02 00:00:00'
+SNAPSHOT_TS = '2021-05-01 00:00:00'
+TARGET_GRADE_SHARES = (0.89, 0.99)
 
 PROJECT_ID = 'cosmic-keep-223223'
 
-GENESIS_AND_ETH2_AUDIENCE = 'True Heroes of the Great Web. Genesis and ETH2 Stakers'
-GENESIS_AND_ETH2_DATASET_NAME = 'genesis_and_eth2_stakers'
-GENESIS_AND_ETH2_DISTRIBUTION_TABLE_NAME = 'genesis_and_eth2_stakers_distribution'
+CITIZENS_AUDIENCE = 'Average Citizens. ETH Analysis'
+ETH_ANALYSIS_DATASET_NAME = 'eth_analysis'
+ETH_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'eth_analysis_distribution'
 
-GAS_ANALYSIS_AUDIENCE = 'Extraordinary Hackers. Gas Analysis'
+CRYPTOPUNKS_AUDIENCE = 'Cryptopunks. ERC20 and ERC721 Analysis'
+
+HACKERS_AUDIENCE = 'Extraordinary Hackers. Gas Analysis'
 GAS_ANALYSIS_DATASET_NAME = 'gas_analysis'
 GAS_SPEND_BY_CONTRACT_TABLE_NAME = 'gas_spend_by_contract'
 GAS_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'gas_analysis_distribution'
 
-ETH_ANALYSIS_AUDIENCE = 'Average Citizens. ETH Analysis'
-ETH_ANALYSIS_DATASET_NAME = 'eth_analysis'
-ETH_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'eth_analysis_distribution'
+LEADERS_AUDIENCE = 'Key Opinion Leaders. Top Token Holders'
+ERC20_TOP_DISTRIBUTION_TABLE_NAME = 'erc20_top_distribution'
 
-ERC721_ANALYSIS_AUDIENCE = 'Masters of the Great Web. ERC721 Analysis'
+MASTERS_AUDIENCE = 'Masters of the Great Web. Gas and ERC721 Analysis'
 ERC721_ANALYSIS_DATASET_NAME = 'erc721_analysis'
 ERC721_NFT_TOKEN_TABLE_NAME = 'nft_tokens'
 ERC721_TOKEN_TABLE_NAME = 'erc721_tokens'
 ERC721_AMOUNT_TABLE_NAME = 'erc721_amounts'
 ERC721_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'erc721_analysis_distribution'
 
-ERC20_ANALYSIS_AUDIENCE = 'Passionate Investors. ERC20 Analysis'
+INVESTORS_AUDIENCE = 'Passionate Investors. ERC20 Analysis'
 ERC20_ANALYSIS_DATASET_NAME = 'erc20_analysis'
 ERC20_BALANCES_TABLE_NAME = 'erc20_balances'
 ERC20_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'erc20_analysis_distribution'
 ERC20_TOKEN_METADATA_TABLE_NAME = 'erc20_token_metadata'
 
-ERC20_TOP_AUDIENCE = 'Key Opinion Leaders. Top Token Holders'
-ERC20_TOP_DISTRIBUTION_TABLE_NAME = 'erc20_top_distribution'
+HEROES_AUDIENCE = 'True Heroes of the Great Web. Genesis and ETH2 Stakers'
+GENESIS_AND_ETH2_DATASET_NAME = 'genesis_and_eth2_stakers'
+GENESIS_AND_ETH2_DISTRIBUTION_TABLE_NAME = 'genesis_and_eth2_stakers_distribution'
 
-CRYPTOPUNKS_AUDIENCE = 'Cryptopunks'
 
 FINAL_DATASET_NAME = 'final'
 CONTRACT_ADDRESSES_TABLE = 'contract_addresses'

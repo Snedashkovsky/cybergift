@@ -24,9 +24,58 @@ by [Blockchain ETL](https://github.com/blockchain-etl).
 
 Research is done on the [proposal](https://cyber.page/governance/20) basis.
 
-## True Heroes of the Great Web. Genesis and ETH2 Stakers
+## Distribution between Audiences and Grades
 
-[Genesis and ETH2 Stakers](heroes__genesis_and_eth2_stakers.ipynb)
+Distribution between **audiences**:
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <th>Audience</th>
+            <th>Share of Total Supply</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: left"> Average Citizens </td>
+            <td style="text-align: center"> 35% </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Cyberpunks </td>
+            <td style="text-align: center"> 1% </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Extraordinary Hackers </td>
+            <td style="text-align: center"> 7% </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Key Opinion Leaders </td>
+            <td style="text-align: center"> 2% </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Masters of the Great Web </td>
+            <td style="text-align: center"> 13% </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Passionate Investors </td>
+            <td style="text-align: center"> 3% </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> True Heroes of the Great Web </td>
+            <td style="text-align: center"> 5% </td>
+        </tr>
+    </tbody>
+</table>
+
+An amount of distributed CYB tokens should be equal for each grade within an audience.
+
+## Average Citizens. ETH Analysis
+
+[ETH Analysis](average_citizens__eth_analysis.ipynb)
+
+## Cyberpunks. ERC20 and ERC721 Analysis
+
+[ERC20 Analysis](passionate_investors_and_cryptopunks__erc20_analysis.ipynb)  
+[ERC721 Analysis](masters_and_cryptopunks__erc721_analysis.ipynb)
 
 ## Extraordinary Hackers. Gas Analysis
 
@@ -34,11 +83,11 @@ To search for **Extraordinary Hackers** who have created the Ethereum ecosystem,
 To do this, I want to calculate an amount of gas used for contracts calls.  
 [Gas Analysis](extraordinary_hackers_and_masters__gas_analysis.ipynb)
 
-## Average Citizens. ETH Analysis
+## Key Opinion Leaders. Top 100 ERC20 Holders by Tokens
 
-[ETH Analysis](average_citizens__eth_analysis.ipynb)
+[Top 100 ERC20 Holders](leaders__top_erc20_holders.ipynb)
 
-## Masters of the Great Web. Gas Analysis and ERC721 Analysis
+## Masters of the Great Web. Gas and ERC721 Analysis
 
 [Gas Analysis](extraordinary_hackers_and_masters__gas_analysis.ipynb)  
 [ERC721 Analysis](masters_and_cryptopunks__erc721_analysis.ipynb)
@@ -47,14 +96,9 @@ To do this, I want to calculate an amount of gas used for contracts calls.
 
 [ERC20 Analysis](passionate_investors_and_cryptopunks__erc20_analysis.ipynb)
 
-## Key Opinion Leaders. Top 100 ERC20 Holders by Tokens
+## True Heroes of the Great Web. Genesis and ETH2 Stakers
 
-[Top 100 ERC20 Holders](leaders__top_erc20_holders.ipynb)
-
-## Cyberpunks. ERC20 and ERC721 Analysis
-
-[ERC20 Analysis](passionate_investors_and_cryptopunks__erc20_analysis.ipynb)  
-[ERC721 Analysis](masters_and_cryptopunks__erc721_analysis.ipynb)
+[Genesis and ETH2 Stakers](heroes__genesis_and_eth2_stakers.ipynb)
 
 ## Final Distribution
 
