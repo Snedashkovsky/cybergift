@@ -4,11 +4,13 @@ from math import log10
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 
+from config import TARGET_GRADE_SHARES
+
 
 def calculate_and_display_rules(
         distribution_df: pd.DataFrame,
         initial_boundary: float,
-        percentage_levels: tuple,
+        target_grade_shares: tuple,
         value_column: str,
         value_name: str,
         address_column: str,
@@ -17,7 +19,7 @@ def calculate_and_display_rules(
     Calculate rule boundaries in according with percentage levels
     :param distribution_df: Source DataFrame
     :param initial_boundary: Minimum value of analyzed parameter that should be included in analysis
-    :param percentage_levels: Cumulative sum boundaries by addresses share
+    :param target_grade_shares: Cumulative sum boundaries by addresses share
     :param value_column: Column name of analyzed parameter
     :param value_name: Name of analyzed parameter for inserting in the rules
     :param address_column: Column name of addresses number
@@ -34,7 +36,7 @@ def calculate_and_display_rules(
         distribution_slice_df[address_column].cumsum() / total_addresses
     # Calculate of rule boundaries
     boundaries = [initial_boundary]
-    for percentage_level in percentage_levels:
+    for percentage_level in target_grade_shares:
         boundary = distribution_slice_df.iloc[
             distribution_slice_df[address_cumsum_perc_column].map(
                 lambda x: abs(x - percentage_level)).argmin()][value_column]
@@ -42,10 +44,10 @@ def calculate_and_display_rules(
     # Calculate of address number by suggested grades
     addresses_by_grade = [distribution_slice_df[
                               (distribution_slice_df[value_column] > boundaries[0]) & (
-                               distribution_slice_df[value_column] <= boundaries[1])][address_column].sum(),
+                                      distribution_slice_df[value_column] <= boundaries[1])][address_column].sum(),
                           distribution_slice_df[
                               (distribution_slice_df[value_column] > boundaries[1]) & (
-                               distribution_slice_df[value_column] <= boundaries[2])][address_column].sum(),
+                                      distribution_slice_df[value_column] <= boundaries[2])][address_column].sum(),
                           distribution_slice_df[
                               distribution_slice_df[value_column] > boundaries[2]][address_column].sum()]
     # Rules for displaying
@@ -134,7 +136,7 @@ def grade_boundaries_analysis(
         address_column: str = 'number_of_addresses',
         address_chart_label: str = 'Number of addresses, Log10',
         address_transform_func=lambda x: log10(x) if x > 1 else 0.1,
-        percentage_levels: tuple = (0.89, 0.97),
+        target_grade_shares: tuple = TARGET_GRADE_SHARES,
         max_show_value: float = 200,
         level_line_shift: float = 0.5,
         initial_boundary: float = 0.0,
@@ -150,7 +152,7 @@ def grade_boundaries_analysis(
     :param address_column: Column name of addresses number
     :param address_chart_label: Addresses number label for the chart
     :param address_transform_func: Transformation function for number of addresses column
-    :param percentage_levels: Cumulative sum boundaries by addresses share
+    :param target_grade_shares: Cumulative sum boundaries by addresses share
     :param max_show_value:  Maximum value of analyzed parameter that should be shown
     :param level_line_shift: Shift for correct display of grade boundaries
     :param initial_boundary: Minimum value of analyzed parameter that should be included in analysis
@@ -164,7 +166,7 @@ def grade_boundaries_analysis(
     boundaries = calculate_and_display_rules(
         distribution_df=distribution_df,
         initial_boundary=initial_boundary,
-        percentage_levels=percentage_levels,
+        target_grade_shares=target_grade_shares,
         value_column=value_column,
         value_name=value_name,
         address_column=address_column,

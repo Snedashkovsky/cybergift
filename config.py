@@ -3,7 +3,8 @@ from google.oauth2 import service_account
 
 
 INITIAL_TS = '2015-07-30 00:00:00'
-SNAPSHOT_TS = '2021-03-02 00:00:00'
+SNAPSHOT_TS = '2021-05-01 00:00:00'
+TARGET_GRADE_SHARES = (0.89, 0.99)
 
 PROJECT_ID = 'cosmic-keep-223223'
 
