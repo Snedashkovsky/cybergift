@@ -3,6 +3,9 @@ from IPython.core.display import display, HTML
 from math import log10
 import matplotlib.pyplot as plt
 import matplotlib as mpl
+import seaborn as sns
+import itertools
+import numpy as np
 
 from config import TARGET_GRADE_SHARES
 
@@ -186,3 +189,46 @@ def grade_boundaries_analysis(
         chart_title=chart_title)
 
     return boundaries
+
+
+def heatmap_from_df(distribution_df: pd.DataFrame,
+                    title: str = None,
+                    xlabel: str = None,
+                    ylabel: str = None,
+                    fig_size: int = 12,
+                    addresses_transform_func=lambda x: log10(pd.Series.sum(x))):
+    """
+    Display a Heatmap chart from a Pandas DataFrame
+    :param distribution_df: Pandas DataFrame with two columns, the first column is array of groups and second is number of addresses for array of groups
+    :param title: Title of Heatmap
+    :param xlabel: x label of Heatmap
+    :param ylabel: y label of Heatmap
+    :param fig_size: Fig size of Heatmap
+    :param addresses_transform_func: function of transformation number of addresses
+    :return: None
+    """
+
+    distribution_processed_df_data = \
+        [[item_groups[0], item_groups[1], item_value[1]]
+         for item_value in distribution_df.values
+         for item_groups in itertools.combinations_with_replacement(np.sort(item_value[0]), 2)]
+
+    distribution_processed_df = \
+        pd.DataFrame(
+            distribution_processed_df_data,
+            columns=['group_x', 'group_y', 'number of addresses'])
+
+    distribution_processed_pv_df = \
+        distribution_processed_df.pivot_table(
+            'number of addresses',
+            'group_x',
+            'group_y',
+            aggfunc=addresses_transform_func)
+
+    sns.set_style("whitegrid")
+    plt.figure(figsize=(fig_size, fig_size))
+    sns.heatmap(distribution_processed_pv_df, cmap="Blues")
+    plt.title(title, fontsize = 18)
+    plt.xlabel(xlabel, fontsize = 16)
+    plt.ylabel(ylabel, fontsize = 16)
+    plt.show()
