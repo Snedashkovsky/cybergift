@@ -117,9 +117,9 @@ def show_distribution_chart(
             distribution_df[distribution_df[value_column] < max_show_value][address_transform_column],
             color='blue', marker='o', linestyle='dashed', linewidth=1, markersize=4)
 
+    ax.set_title(chart_title, fontsize=18)
     ax.set_ylabel(address_chart_label, fontsize=16)
     ax.set_xlabel(value_chart_label, fontsize=16)
-    ax.set_title(chart_title, fontsize=18)
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
     ax.spines["left"].set_visible(False)
@@ -228,7 +228,7 @@ def heatmap_from_df(distribution_df: pd.DataFrame,
     sns.set_style("whitegrid")
     plt.figure(figsize=(fig_size, fig_size))
     sns.heatmap(distribution_processed_pv_df, cmap="Blues")
-    plt.title(title, fontsize = 18)
-    plt.xlabel(xlabel, fontsize = 16)
-    plt.ylabel(ylabel, fontsize = 16)
+    plt.title(title, fontsize=18)
+    plt.xlabel(xlabel, fontsize=16)
+    plt.ylabel(ylabel, fontsize=16)
     plt.show()
