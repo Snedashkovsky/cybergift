@@ -94,6 +94,11 @@ Also amount of addresses should be divided into grades for each audience as
     </tbody>
 </table>
 
+## Prize to be the First 
+
+There will be incentive **20x** for those who claim first reducing to **5x** who came last.  
+So only **~1/10** accounts will be actually claim a gift.
+
 ## Average Citizens. ETH Analysis
 
 [ETH Analysis](average_citizens__eth_analysis.ipynb)
