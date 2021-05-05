@@ -24,7 +24,7 @@ by [Blockchain ETL](https://github.com/blockchain-etl).
 
 Research is done on the [proposal](https://cyber.page/governance/20) basis.
 
-## Distribution between Audiences and Grades
+## Distribution between Audiences
 
 Distribution between **audiences**:
 <table style="text-align: left">
@@ -66,7 +66,33 @@ Distribution between **audiences**:
     </tbody>
 </table>
 
-An amount of distributed CYB tokens should be equal for each grade within an audience.
+## Distribution between Grades
+
+An amount of distributed CYB tokens should be equal for each grade within an audience.  
+Also amount of addresses should be divided into grades for each audience as
+
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <th> Grade </th>
+            <th> Share of Address Amount </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: center"> 1 </td>
+            <td style="text-align: center"> 89% </td>
+        </tr>
+        <tr>
+            <td style="text-align: center"> 2 </td>
+            <td style="text-align: center"> 10% </td>
+        </tr>
+        <tr>
+            <td style="text-align: center"> 3 </td>
+            <td style="text-align: center"> 1% </td>
+        </tr>
+    </tbody>
+</table>
 
 ## Average Citizens. ETH Analysis
 
