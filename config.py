@@ -39,10 +39,13 @@ HEROES_AUDIENCE = 'True Heroes of the Great Web. Genesis and ETH2 Stakers'
 GENESIS_AND_ETH2_DATASET_NAME = 'genesis_and_eth2_stakers'
 GENESIS_AND_ETH2_DISTRIBUTION_TABLE_NAME = 'genesis_and_eth2_stakers_distribution'
 
-FIXED_ADDRESSES_AUDIENCE = 'Fixed Addresses'
-FIXED_ADDRESSES__ETH2_DATASET_NAME = 'fixed_addresses'
-FIXED_ADDRESSES_DISTRIBUTION_TABLE_NAME = 'fixed_addresses_distribution'
+MANUAL_ADDRESSES_AUDIENCE = 'Manual Set Addresses'
+MANUAL_ADDRESSES_DATASET_NAME = 'manual_addresses'
+MANUAL_ADDRESSES_DISTRIBUTION_TABLE_NAME = 'manual_addresses_distribution'
 
+COSMOS_AUDIENCE = 'Atom Owners'
+COSMOS_DATASET_NAME = 'cosmos'
+COSMOS_DISTRIBUTION_TABLE_NAME = 'cosmos_distribution'
 
 FINAL_DATASET_NAME = 'final'
 CONTRACT_ADDRESSES_TABLE = 'contract_addresses'

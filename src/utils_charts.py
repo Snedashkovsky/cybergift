@@ -1,11 +1,11 @@
-import pandas as pd
-from IPython.core.display import display, HTML
-from math import log10
-import matplotlib.pyplot as plt
-import matplotlib as mpl
-import seaborn as sns
 import itertools
+from math import log10
+import matplotlib as mpl
+import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
+import seaborn as sns
+from IPython.core.display import display, HTML
 
 from config import TARGET_GRADE_SHARES
 
