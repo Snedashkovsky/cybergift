@@ -65,6 +65,10 @@ Distribution between **audiences**:
             <td style="text-align: left"> True Heroes of the Great Web </td>
             <td style="text-align: center"> 5% </td>
         </tr>
+        <tr>
+            <td style="text-align: left"> Astronauts </td>
+            <td style="text-align: center"> 1% </td>
+        </tr>
     </tbody>
 </table>
 
@@ -139,7 +143,7 @@ To do this, I want to calculate an amount of gas used for contracts calls.
 
 [Setting Addresses](manual_set_addresses.ipynb)
 
-### Astronaut. ATOM Analysis
+### Astronauts. ATOM Analysis
 
 [ATOM Analysis](astronauts__atom_analysis.ipynb)
 
