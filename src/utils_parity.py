@@ -1,6 +1,6 @@
+import json
 from web3 import Web3, HTTPProvider
 from web3.exceptions import BadFunctionCallOutput, SolidityError
-import json
 
 
 def get_contract_decimals(token_address, parity_url):
