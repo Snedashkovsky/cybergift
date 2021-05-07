@@ -43,7 +43,7 @@ MANUAL_ADDRESSES_AUDIENCE = 'Manual Set Addresses'
 MANUAL_ADDRESSES_DATASET_NAME = 'manual_addresses'
 MANUAL_ADDRESSES_DISTRIBUTION_TABLE_NAME = 'manual_addresses_distribution'
 
-COSMOS_AUDIENCE = 'Atom Owners'
+COSMOS_AUDIENCE = 'Astronauts. ATOM Analysis'
 COSMOS_DATASET_NAME = 'cosmos'
 COSMOS_DISTRIBUTION_TABLE_NAME = 'cosmos_distribution'
 
