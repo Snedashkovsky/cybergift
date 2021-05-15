@@ -8,3 +8,4 @@ tqdm
 web3
 seaborn
 numpy
+python-dotenv
