@@ -38,6 +38,10 @@ Distribution between **audiences**:
     </thead>
     <tbody>
         <tr>
+            <td style="text-align: left"> Astronauts </td>
+            <td style="text-align: center"> 1% </td>
+        </tr>
+        <tr>
             <td style="text-align: left"> Average Citizens </td>
             <td style="text-align: center"> 35% </td>
         </tr>
@@ -64,10 +68,6 @@ Distribution between **audiences**:
         <tr>
             <td style="text-align: left"> True Heroes of the Great Web </td>
             <td style="text-align: center"> 5% </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Astronauts </td>
-            <td style="text-align: center"> 1% </td>
         </tr>
     </tbody>
 </table>
