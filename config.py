@@ -69,7 +69,7 @@ credentials = service_account.Credentials.from_service_account_file(
     KEY_PATH, scopes=["https://www.googleapis.com/auth/cloud-platform"],
 )
 
-PARITY_URL = dotenv_values(".env")['PARITY_URL']
+ETH_URL = dotenv_values(".env")['ETH_URL']
 
 bq_client = bigquery.Client(credentials=credentials, project=credentials.project_id,)
 

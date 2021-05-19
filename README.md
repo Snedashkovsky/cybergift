@@ -114,7 +114,8 @@ So only **~1/10** accounts will be actually claim a gift.
 ### Cyberpunks. ERC20 and ERC721 Analysis
 
 [ERC20 Analysis](passionate_investors_and_cryptopunks__erc20_analysis.ipynb)  
-[ERC721 Analysis](masters_and_cryptopunks__erc721_analysis.ipynb)
+[ERC721 Analysis](masters_and_cryptopunks__erc721_analysis.ipynb)  
+[Urbit Analysis](cryptopunks_urbit_analysis.ipynb)
 
 ### Extraordinary Hackers. Gas Analysis
 
