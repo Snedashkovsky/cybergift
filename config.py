@@ -1,9 +1,10 @@
 from google.cloud import bigquery, bigquery_storage
 from google.oauth2 import service_account
-
+from dotenv import dotenv_values
 
 INITIAL_TS = '2015-07-30 00:00:00'
 SNAPSHOT_TS = '2021-05-01 00:00:00'
+SNAPSHOT_BLOCKNUMBER = 12_344_945
 TARGET_GRADE_SHARES = (0.89, 0.99)
 
 PROJECT_ID = 'cosmic-keep-223223'
@@ -28,6 +29,7 @@ ERC721_NFT_TOKEN_TABLE_NAME = 'nft_tokens'
 ERC721_TOKEN_TABLE_NAME = 'erc721_tokens'
 ERC721_AMOUNT_TABLE_NAME = 'erc721_amounts'
 ERC721_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'erc721_analysis_distribution'
+AZIMUTH_POINTS_TABLE_NAME = 'azimuth_points'
 
 INVESTORS_AUDIENCE = 'Passionate Investors. ERC20 Analysis'
 ERC20_ANALYSIS_DATASET_NAME = 'erc20_analysis'
@@ -66,6 +68,8 @@ KEY_PATH = "bigquery_project.json"
 credentials = service_account.Credentials.from_service_account_file(
     KEY_PATH, scopes=["https://www.googleapis.com/auth/cloud-platform"],
 )
+
+ETH_URL = dotenv_values(".env")['ETH_URL']
 
 bq_client = bigquery.Client(credentials=credentials, project=credentials.project_id,)
 

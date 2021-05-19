@@ -1,4 +1,6 @@
 google-cloud-bigquery
+google-cloud-bigquery-storage
+pyarrow
 pandas
 matplotlib
 beautifulsoup4
@@ -8,3 +10,4 @@ tqdm
 web3
 seaborn
 numpy
+python-dotenv

@@ -38,6 +38,10 @@ Distribution between **audiences**:
     </thead>
     <tbody>
         <tr>
+            <td style="text-align: left"> Astronauts </td>
+            <td style="text-align: center"> 1% </td>
+        </tr>
+        <tr>
             <td style="text-align: left"> Average Citizens </td>
             <td style="text-align: center"> 35% </td>
         </tr>
@@ -64,10 +68,6 @@ Distribution between **audiences**:
         <tr>
             <td style="text-align: left"> True Heroes of the Great Web </td>
             <td style="text-align: center"> 5% </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Astronauts </td>
-            <td style="text-align: center"> 1% </td>
         </tr>
     </tbody>
 </table>
@@ -114,7 +114,8 @@ So only **~1/10** accounts will be actually claim a gift.
 ### Cyberpunks. ERC20 and ERC721 Analysis
 
 [ERC20 Analysis](passionate_investors_and_cryptopunks__erc20_analysis.ipynb)  
-[ERC721 Analysis](masters_and_cryptopunks__erc721_analysis.ipynb)
+[ERC721 Analysis](masters_and_cryptopunks__erc721_analysis.ipynb)  
+[Urbit Analysis](cryptopunks_urbit_analysis.ipynb)
 
 ### Extraordinary Hackers. Gas Analysis
 

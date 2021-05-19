@@ -13,12 +13,11 @@ def drop_table(table_name, dataset_name):
     table_ref_1 = bq_client.dataset(dataset_name).table(table_name)
     try:
         bq_client.delete_table(table_ref_1)
-        print('Table {}:{} has been deleted.'.format(dataset_name, table_name))
+        print(f'Table {dataset_name}:{table_name} has been deleted.')
         return True
     except Exception as e:
-        print('Table {}:{} has not been deleted.'.format(dataset_name, table_name))
-        print(e)
-        return False
+        print(f"{e}\nTable {dataset_name}:{table_name} has not been deleted.")
+    return False
 
 
 def create_table(query, table_name, dataset_name):
@@ -38,8 +37,7 @@ def create_table(query, table_name, dataset_name):
             print(f"Table {dataset_name}:{table_name} has been created and filled {res.total_rows} rows.")
             return True
     except Exception as e:
-        print(e)
-    print(f"Table {dataset_name}:{table_name} has not been created")
+        print(f"{e}\nTable {dataset_name}:{table_name} has not been created")
     return False
 
 
@@ -59,8 +57,7 @@ def create_view(query, view_name, dataset_name=FINAL_DATASET_NAME):
         print(f"View {view.table_type}:{str(view.reference)} has been created.")
         return True
     except Exception as e:
-        print(e)
-    print(f"View {dataset_name}:{view_name} has not been created")
+        print(f"{e}\nView {dataset_name}:{view_name} has not been created")
     return False
 
 
@@ -76,7 +73,13 @@ def create_table_from_df(source_df, table_name, dataset_name, drop_existing_tabl
     table_id = f"{PROJECT_ID}.{dataset_name}.{table_name}"
     if drop_existing_table:
         drop_table(table_name, dataset_name)
-    return bq_client.load_table_from_dataframe(source_df, table_id).result().done()
+    try:
+        bq_client.load_table_from_dataframe(source_df, table_id).result().done()
+        print(f"Table {dataset_name}:{table_name} has been created.")
+        return True
+    except Exception as e:
+        print(f"{e}\nTable {dataset_name}:{table_name} has not been created.")
+    return False
 
 
 def get_df(query):
