@@ -47,7 +47,7 @@ Distribution between **audiences**:
         </tr>
         <tr>
             <td style="text-align: left"> Cyberpunks </td>
-            <td style="text-align: center"> 1% </td>
+            <td style="text-align: center"> 2% </td>
         </tr>
         <tr>
             <td style="text-align: left"> Extraordinary Hackers </td>
