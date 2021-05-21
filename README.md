@@ -103,6 +103,7 @@ Also amount of addresses should be divided into grades for each audience as
 ### Prize to be the First 
 
 There will be incentive **20x** for those who claim first reducing to **5x** who came last.  
+This condition does not apply to the audience of the Manual Set Addresses.  
 So only **~1/10** accounts will be actually claim a gift.
 
 ## Audiences
