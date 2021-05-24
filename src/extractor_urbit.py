@@ -38,7 +38,7 @@ def _get_point_data(point: int,
     :param block_number: snapshot block number
     :return: list of point data
     """
-    owner = str(contract.functions.getOwner(int(point)).call({'defaultBlock': block_number}))
+    owner = str(contract.functions.getOwner(int(point)).call({'defaultBlock': block_number})).lower()
     point_size = contract.functions.getPointSize(int(point)).call()
     point_type = POINT_DICT[point_size][0]
     parent_point = int(point) % 2**POINT_DICT[point_size][1]
