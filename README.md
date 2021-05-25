@@ -106,6 +106,13 @@ There will be incentive **20x** for those who claim first reducing to **5x** who
 This condition does not apply to the audience of the Manual Set Addresses.  
 So only **~1/10** accounts will be actually claim a gift.
 
+### Excluding Fiat Brains 
+
+Addresses based on the fiat system will not be included, 
+namely those that satisfy these two conditions:
+- Stablecoin balance more than balance of the [selected ERC20 tokens](passionate_investors_and_cryptopunks__erc20_analysis.ipynb)
+- Stablecoin balance more than 0.1 ETH 
+
 ## Audiences
 
 ### Average Citizens. ETH Analysis
