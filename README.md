@@ -110,7 +110,7 @@ So only **~1/10** accounts will be actually claim a gift.
 
 Addresses based on the fiat system will not be included, 
 namely those that satisfy these two conditions:
-- Stablecoin balance more than balance of the [selected ERC20 tokens](passionate_investors_and_cryptopunks__erc20_analysis.ipynb)
+- Stablecoin balance more than sum of ETH and [selected ERC20 tokens](passionate_investors_and_cryptopunks__erc20_analysis.ipynb) balances
 - Stablecoin balance more than 0.1 ETH 
 
 ## Audiences
