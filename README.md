@@ -58,6 +58,10 @@ Distribution between **audiences**:
             <td style="text-align: center"> 2% </td>
         </tr>
         <tr>
+            <td style="text-align: left"> Manual Assigned Addresses </td>
+            <td style="text-align: center"> 2% </td>
+        </tr>
+        <tr>
             <td style="text-align: left"> Masters of the Great Web </td>
             <td style="text-align: center"> 13% </td>
         </tr>
@@ -113,50 +117,155 @@ namely those that satisfy these two conditions:
 - Stablecoin balance more than sum of ETH and [selected ERC20 tokens](passionate_investors_and_cryptopunks__erc20_analysis.ipynb) balances
 - Stablecoin balance more than 0.1 ETH 
 
-## Audiences
+## Audience Rules
 
-### Average Citizens. ETH Analysis
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <th rowspan=2>Audience</th>
+            <th rowspan=2>Rule</th>
+            <th colspan=3>Grade</th>
+            <th rowspan=2>Calculations</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: left"> Astronauts </td>
+            <td style="text-align: left"> ATOM Balance </td>
+            <td style="text-align: center"> > 0 ATOM </td>
+            <td style="text-align: center"> > 187 ATOM </td>
+            <td style="text-align: center"> > 10,137 ATOM </td>
+            <td style="text-align: center"> <a href="astronauts__atom_analysis.ipynb">ATOM Analysis</a> </td>
+        </tr>
+        <tr>
+            <td rowspan=2 style="text-align: left"> Average Citizens </td>
+            <td style="text-align: left"> ETH balance > 0.01 ETH and Amount of outgoing tx</td>
+            <td style="text-align: center"> > 3 tx </td>
+            <td style="text-align: center"> > 60 tx </td>
+            <td style="text-align: center"> > 657 tx </td>
+            <td rowspan=2 style="text-align: center"> <a href="average_citizens__eth_analysis.ipynb">ETH Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> ETH balance</td>
+            <td style="text-align: center"> > 1 ETH</td>
+            <td style="text-align: center"> > 32 ETH</td>
+            <td style="text-align: center"> > 551 ETH</td>
+        </tr>
+        <tr>
+            <td rowspan=3 style="text-align: left"> Cyberpunks </td>
+            <td style="text-align: left"> Owners of the Selected ERC20 tokens </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> FOAM or GOLD </td>
+            <td style="text-align: center"> <a href="passionate_investors_and_cryptopunks__erc20_analysis.ipynb">ERC20 Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Owners of the Selected ERC721 tokens </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> Unicorns, DRAGON or Cryptopunks </td>
+            <td style="text-align: center"> <a href="masters_and_cryptopunks__erc721_analysis.ipynb">ERC721 Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Urbit Owners </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> here </td>
+            <td style="text-align: center"> <a href="cryptopunks_urbit_analysis.ipynb">Urbit Analysis</a> </td>
+        </tr>
+        <tr>
+            <td rowspan=2 style="text-align: left"> Extraordinary Hackers </td>
+            <td> Fee spending to created contracts<sup>1</sup> by contract creators<sup>2</sup> </td>
+            <td style="text-align: center"> > 0 ETH </td>
+            <td style="text-align: center"> > 4 ETH </td>
+            <td style="text-align: center"> > 233 ETH </td>
+            <td rowspan=2 style="text-align: center"> <a href="extraordinary_hackers_and_masters__gas_analysis.ipynb">Gas Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Fee spending to created contracts<sup>1</sup> by factory creators<sup>3</sup> </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> > 0 ETH </td>
+            <td style="text-align: center"> > 10 ETH </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Key Opinion Leaders </td>
+            <td style="text-align: left"> Top 100 ERC20 Holders by Tokens </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> only here </td>
+            <td style="text-align: center"> <a href="leaders__top_erc20_holders.ipynb">Top 100 ERC20 Holders</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Manual Assigned Addresses </td>
+            <td style="text-align: left"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> only here </td>
+            <td style="text-align: center"> <a href="manual_assigned_addresses.ipynb">Assigning Addresses</a> </td>
+        </tr>
+        <tr>
+            <td rowspan=3 style="text-align: left"> Masters of the Great Web </td>
+            <td style="text-align: left"> Amount of ERC721 tokens </td>
+            <td style="text-align: center"> > 0 NFT </td>
+            <td style="text-align: center"> > 7 NFT </td>
+            <td style="text-align: center"> > 186 NFT </td>
+            <td rowspan=2 style="text-align: center"> <a href="masters_and_cryptopunks__erc721_analysis.ipynb">ERC721 Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Owners of the Selected ERC721 tokens </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> ENS </td>
+            <td style="text-align: center" style="text-align: center"> Gitcoin Kudos or LAND </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Fee spending to contracts<sup>4</sup>, by contract creators, ETH </td>
+            <td style="text-align: center"> > 0 ETH </td>
+            <td style="text-align: center"> > 0.005 ETH </td>
+            <td style="text-align: center"> > 0.7557 ETH </td>
+            <td style="text-align: center"> <a href="extraordinary_hackers_and_masters__gas_analysis.ipynb">Gas Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Passionate Investors </td>
+            <td style="text-align: left"> Number of tokens >= 2 and ERC20 balance </td>
+            <td style="text-align: center"> > 0.01 ETH </td>
+            <td style="text-align: center"> > 6 ETH </td>
+            <td style="text-align: center"> > 76 ETH </td>
+            <td style="text-align: center"> <a href="passionate_investors_and_cryptopunks__erc20_analysis.ipynb">ERC20 Analysis</a> </td>
+        </tr>
+        <tr>
+            <td rowspan=2 style="text-align: left"> True Heroes of the Great Web </td>
+            <td style="text-align: left"> Genesis </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> only here </td>
+            <td rowspan=2 style="text-align: center"> <a href="heroes__genesis_and_eth2_stakers.ipynb">Genesis and ETH2 Stakers</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> ETH 2.0 Stakers </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> only here </td>
+        </tr>
+        <tr>
+            <td colspan=5 style="text-align: left"> Final Distribution </td>
+            <td style="text-align: center"> <a href="final_distribution.ipynb">Final Distribution</a></td>
+        </tr>
+    </tbody>
+</table>
+<i>
+<sup>1</sup>  excluding fee from a contract creator address<br>
+<sup>2</sup>  excluding contracts created by factories<br>
+<sup>3</sup>  excluding factories that only created contracts when called from the creator of that factory<br>
+<sup>4</sup> including contracts created by factories only<br>
+</i>
 
-[ETH Analysis](average_citizens__eth_analysis.ipynb)
-
-### Cyberpunks. ERC20 and ERC721 Analysis
-
-[ERC20 Analysis](passionate_investors_and_cryptopunks__erc20_analysis.ipynb)  
-[ERC721 Analysis](masters_and_cryptopunks__erc721_analysis.ipynb)  
-[Urbit Analysis](cryptopunks_urbit_analysis.ipynb)
-
-### Extraordinary Hackers. Gas Analysis
-
-To search for **Extraordinary Hackers** who have created the Ethereum ecosystem, I will be aggregate the used gas by creators of contracts and factories.  
-To do this, I want to calculate an amount of gas used for contracts calls.  
-[Gas Analysis](extraordinary_hackers_and_masters__gas_analysis.ipynb)
-
-### Key Opinion Leaders. Top 100 ERC20 Holders by Tokens
-
-[Top 100 ERC20 Holders](leaders__top_erc20_holders.ipynb)
-
-### Masters of the Great Web. Gas and ERC721 Analysis
-
-[Gas Analysis](extraordinary_hackers_and_masters__gas_analysis.ipynb)  
-[ERC721 Analysis](masters_and_cryptopunks__erc721_analysis.ipynb)
-
-### Passionate Investors. ERC20 Analysis
-
-[ERC20 Analysis](passionate_investors_and_cryptopunks__erc20_analysis.ipynb)
-
-### True Heroes of the Great Web. Genesis and ETH2 Stakers
-
-[Genesis and ETH2 Stakers](heroes__genesis_and_eth2_stakers.ipynb)
-
-### Manual Assigned Addresses
-
-[Setting Addresses](manual_set_addresses.ipynb)
-
-### Astronauts. ATOM Analysis
-
-[ATOM Analysis](astronauts__atom_analysis.ipynb)
 
 ## Final Distribution
 
-[Jupyter Notebook](final_distribution.ipynb)  
-[Dashboard](https://datastudio.google.com/u/0/reporting/53e1c28b-9f10-497c-9b5b-9f2a4749450b)
+[Final Distribution Table](https://console.cloud.google.com/bigquery?project=cosmic-keep-223223&p=cosmic-keep-223223&d=final&t=final_distribution&page=table&ws=!1m5!1m4!4m3!1scosmic-keep-223223!2sfinal!3sfinal_distribution)  
+**Check your address in the [Dashboard](https://datastudio.google.com/u/0/reporting/53e1c28b-9f10-497c-9b5b-9f2a4749450b)**
