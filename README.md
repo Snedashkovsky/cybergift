@@ -114,7 +114,7 @@ So only **~1/10** accounts will be actually claim a gift.
 
 Addresses based on the fiat system will not be included, 
 namely those that satisfy these two conditions:
-- Stablecoin balance more than sum of ETH and [selected ERC20 tokens](passionate_investors_and_cryptopunks__erc20_analysis.ipynb) balances
+- Stablecoin balance more than sum of ETH and [selected ERC20 tokens](erc20__investors_and_cyberpunks.ipynb) balances
 - Stablecoin balance more than 0.1 ETH 
 
 ## Audience Rules
@@ -140,7 +140,7 @@ namely those that satisfy these two conditions:
             <td style="text-align: center"> > 0 ATOM </td>
             <td style="text-align: center"> > 187 ATOM </td>
             <td style="text-align: center"> > 10,137 ATOM </td>
-            <td style="text-align: center"> <a href="astronauts__atom_analysis.ipynb">ATOM Analysis</a> </td>
+            <td style="text-align: center"> <a href="atom__astronauts.ipynb">ATOM Analysis</a> </td>
         </tr>
         <tr>
             <td rowspan=2 style="text-align: left"> Average Citizens </td>
@@ -148,7 +148,7 @@ namely those that satisfy these two conditions:
             <td style="text-align: center"> > 3 tx </td>
             <td style="text-align: center"> > 60 tx </td>
             <td style="text-align: center"> > 657 tx </td>
-            <td rowspan=2 style="text-align: center"> <a href="average_citizens__eth_analysis.ipynb">ETH Analysis</a> </td>
+            <td rowspan=2 style="text-align: center"> <a href="eth_and_tx__citizens.ipynb">ETH Analysis</a> </td>
         </tr>
         <tr>
             <td style="text-align: left"> ETH balance</td>
@@ -162,21 +162,21 @@ namely those that satisfy these two conditions:
             <td style="text-align: center"> - </td>
             <td style="text-align: center"> - </td>
             <td style="text-align: center"> FOAM or GOLD </td>
-            <td style="text-align: center"> <a href="passionate_investors_and_cryptopunks__erc20_analysis.ipynb">ERC20 Analysis</a> </td>
+            <td style="text-align: center"> <a href="erc20__investors_and_cyberpunks.ipynb">ERC20 Analysis</a> </td>
         </tr>
         <tr>
             <td style="text-align: left"> Owners of the Selected ERC721 tokens </td>
             <td style="text-align: center"> - </td>
             <td style="text-align: center"> - </td>
             <td style="text-align: center"> Unicorns, DRAGON or Cryptopunks </td>
-            <td style="text-align: center"> <a href="masters_and_cryptopunks__erc721_analysis.ipynb">ERC721 Analysis</a> </td>
+            <td style="text-align: center"> <a href="erc721__masters_and_cyberpunks.ipynb">ERC721 Analysis</a> </td>
         </tr>
         <tr>
             <td style="text-align: left"> Urbit Owners </td>
             <td style="text-align: center"> - </td>
             <td style="text-align: center"> - </td>
             <td style="text-align: center"> here </td>
-            <td style="text-align: center"> <a href="cryptopunks_urbit_analysis.ipynb">Urbit Analysis</a> </td>
+            <td style="text-align: center"> <a href="urbit__cyberpunks.ipynb">Urbit Analysis</a> </td>
         </tr>
         <tr>
             <td rowspan=2 style="text-align: left"> Extraordinary Hackers </td>
@@ -184,7 +184,7 @@ namely those that satisfy these two conditions:
             <td style="text-align: center"> > 0 ETH </td>
             <td style="text-align: center"> > 4 ETH </td>
             <td style="text-align: center"> > 233 ETH </td>
-            <td rowspan=2 style="text-align: center"> <a href="extraordinary_hackers_and_masters__gas_analysis.ipynb">Gas Analysis</a> </td>
+            <td rowspan=2 style="text-align: center"> <a href="gas__hackers_and_masters.ipynb">Gas Analysis</a> </td>
         </tr>
         <tr>
             <td style="text-align: left"> Fee spending to created contracts<sup>1</sup> by factory creators<sup>3</sup> </td>
@@ -198,7 +198,7 @@ namely those that satisfy these two conditions:
             <td style="text-align: center"> - </td>
             <td style="text-align: center"> - </td>
             <td style="text-align: center"> only here </td>
-            <td style="text-align: center"> <a href="leaders__top_erc20_holders.ipynb">Top 100 ERC20 Holders</a> </td>
+            <td style="text-align: center"> <a href="erc20__leaders.ipynb">Top 100 ERC20 Holders</a> </td>
         </tr>
         <tr>
             <td style="text-align: left"> Manual Assigned Addresses </td>
@@ -214,7 +214,7 @@ namely those that satisfy these two conditions:
             <td style="text-align: center"> > 0 NFT </td>
             <td style="text-align: center"> > 7 NFT </td>
             <td style="text-align: center"> > 186 NFT </td>
-            <td rowspan=2 style="text-align: center"> <a href="masters_and_cryptopunks__erc721_analysis.ipynb">ERC721 Analysis</a> </td>
+            <td rowspan=2 style="text-align: center"> <a href="erc721__masters_and_cyberpunks.ipynb">ERC721 Analysis</a> </td>
         </tr>
         <tr>
             <td style="text-align: left"> Owners of the Selected ERC721 tokens </td>
@@ -227,7 +227,7 @@ namely those that satisfy these two conditions:
             <td style="text-align: center"> > 0 ETH </td>
             <td style="text-align: center"> > 0.005 ETH </td>
             <td style="text-align: center"> > 0.7557 ETH </td>
-            <td style="text-align: center"> <a href="extraordinary_hackers_and_masters__gas_analysis.ipynb">Gas Analysis</a> </td>
+            <td style="text-align: center"> <a href="gas__hackers_and_masters.ipynb">Gas Analysis</a> </td>
         </tr>
         <tr>
             <td style="text-align: left"> Passionate Investors </td>
@@ -235,7 +235,7 @@ namely those that satisfy these two conditions:
             <td style="text-align: center"> > 0.01 ETH </td>
             <td style="text-align: center"> > 6 ETH </td>
             <td style="text-align: center"> > 76 ETH </td>
-            <td style="text-align: center"> <a href="passionate_investors_and_cryptopunks__erc20_analysis.ipynb">ERC20 Analysis</a> </td>
+            <td style="text-align: center"> <a href="erc20__investors_and_cyberpunks.ipynb">ERC20 Analysis</a> </td>
         </tr>
         <tr>
             <td rowspan=2 style="text-align: left"> True Heroes of the Great Web </td>
@@ -243,7 +243,7 @@ namely those that satisfy these two conditions:
             <td style="text-align: center"> - </td>
             <td style="text-align: center"> - </td>
             <td style="text-align: center"> only here </td>
-            <td rowspan=2 style="text-align: center"> <a href="heroes__genesis_and_eth2_stakers.ipynb">Genesis and ETH2 Stakers</a> </td>
+            <td rowspan=2 style="text-align: center"> <a href="genesis_and_eth2__heroes.ipynb">Genesis and ETH2 Stakers</a> </td>
         </tr>
         <tr>
             <td style="text-align: left"> ETH 2.0 Stakers </td>
