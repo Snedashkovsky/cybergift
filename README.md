@@ -138,8 +138,8 @@ namely those that satisfy these two conditions:
             <td style="text-align: left"> Astronauts </td>
             <td style="text-align: left"> ATOM Balance </td>
             <td style="text-align: center"> > 0 ATOM </td>
-            <td style="text-align: center"> > 187 ATOM </td>
-            <td style="text-align: center"> > 10,137 ATOM </td>
+            <td style="text-align: center"> > 178 ATOM </td>
+            <td style="text-align: center"> > 6,191 ATOM </td>
             <td style="text-align: center"> <a href="atom__astronauts.ipynb">ATOM Analysis</a> </td>
         </tr>
         <tr>
