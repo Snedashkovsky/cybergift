@@ -13,7 +13,7 @@ CITIZENS_AUDIENCE = 'Average Citizens. ETH Analysis'
 ETH_ANALYSIS_DATASET_NAME = 'eth_analysis'
 ETH_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'eth_analysis_distribution'
 
-CRYPTOPUNKS_AUDIENCE = 'Cryptopunks. ERC20 and ERC721 Analysis'
+CYBERPUNKS_AUDIENCE = 'Cyberpunks. ERC20 and ERC721 Analysis'
 
 HACKERS_AUDIENCE = 'Extraordinary Hackers. Gas Analysis'
 GAS_ANALYSIS_DATASET_NAME = 'gas_analysis'
