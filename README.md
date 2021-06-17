@@ -235,7 +235,7 @@ namely those that satisfy these two conditions:
             <td style="text-align: left"> Number of tokens >= 2 and ERC20 balance </td>
             <td style="text-align: center"> > 0.01 ETH </td>
             <td style="text-align: center"> > 6 ETH </td>
-            <td style="text-align: center"> > 76 ETH </td>
+            <td style="text-align: center"> > 88 ETH </td>
             <td style="text-align: center"> <a href="erc20__investors_and_cyberpunks.ipynb">ERC20 Analysis</a> </td>
         </tr>
         <tr>
