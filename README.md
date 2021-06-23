@@ -227,7 +227,7 @@ namely those that satisfy these two conditions:
             <td style="text-align: left"> Fee spending to contracts<sup>4</sup>, by contract creators, ETH </td>
             <td style="text-align: center"> > 0 ETH </td>
             <td style="text-align: center"> > 0.005 ETH </td>
-            <td style="text-align: center"> > 0.7557 ETH </td>
+            <td style="text-align: center"> > 0.755 ETH </td>
             <td style="text-align: center"> <a href="gas__hackers_and_masters.ipynb">Gas Analysis</a> </td>
         </tr>
         <tr>
