@@ -30,4 +30,8 @@ def get_contract_decimals(
         decimals = -1
         if print_messages:
             print(f'SolidityError {e}')
+    except ValueError as e:
+        decimals = -1
+        if print_messages:
+            print(f'ValueError {e}')
     return decimals
