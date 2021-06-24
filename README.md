@@ -214,7 +214,7 @@ namely those that satisfy these two conditions:
             <td style="text-align: left"> Amount of ERC721 tokens </td>
             <td style="text-align: center"> > 0 NFT </td>
             <td style="text-align: center"> > 7 NFT </td>
-            <td style="text-align: center"> > 186 NFT </td>
+            <td style="text-align: center"> > 185 NFT </td>
             <td rowspan=2 style="text-align: center"> <a href="erc721__masters_and_cyberpunks.ipynb">ERC721 Analysis</a> </td>
         </tr>
         <tr>
