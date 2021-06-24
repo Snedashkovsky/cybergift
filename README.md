@@ -214,7 +214,7 @@ namely those that satisfy these two conditions:
             <td style="text-align: left"> Amount of ERC721 tokens </td>
             <td style="text-align: center"> > 0 NFT </td>
             <td style="text-align: center"> > 7 NFT </td>
-            <td style="text-align: center"> > 186 NFT </td>
+            <td style="text-align: center"> > 185 NFT </td>
             <td rowspan=2 style="text-align: center"> <a href="erc721__masters_and_cyberpunks.ipynb">ERC721 Analysis</a> </td>
         </tr>
         <tr>
@@ -227,7 +227,7 @@ namely those that satisfy these two conditions:
             <td style="text-align: left"> Fee spending to contracts<sup>4</sup>, by contract creators, ETH </td>
             <td style="text-align: center"> > 0 ETH </td>
             <td style="text-align: center"> > 0.005 ETH </td>
-            <td style="text-align: center"> > 0.7557 ETH </td>
+            <td style="text-align: center"> > 0.755 ETH </td>
             <td style="text-align: center"> <a href="gas__hackers_and_masters.ipynb">Gas Analysis</a> </td>
         </tr>
         <tr>
@@ -235,7 +235,7 @@ namely those that satisfy these two conditions:
             <td style="text-align: left"> Number of tokens >= 2 and ERC20 balance </td>
             <td style="text-align: center"> > 0.01 ETH </td>
             <td style="text-align: center"> > 6 ETH </td>
-            <td style="text-align: center"> > 76 ETH </td>
+            <td style="text-align: center"> > 88 ETH </td>
             <td style="text-align: center"> <a href="erc20__investors_and_cyberpunks.ipynb">ERC20 Analysis</a> </td>
         </tr>
         <tr>

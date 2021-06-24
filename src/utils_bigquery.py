@@ -34,7 +34,7 @@ def create_table(query, table_name, dataset_name):
     try:
         res = bq_client.query(query, job_config=job_config).result()
         if res.total_rows:
-            print(f"Table {dataset_name}:{table_name} has been created and filled {res.total_rows} rows.")
+            print(f"Table {dataset_name}:{table_name} has been created and filled {res.total_rows:>,} rows.")
             return True
     except Exception as e:
         print(f"{e}\nTable {dataset_name}:{table_name} has not been created")
