@@ -1,20 +1,24 @@
 # cyberGift
 
-Gift for Ethereum users that will maximize the initial usage of Cyber by the following audiences:
-
-- true heroes of the Great Web
-- extraordinary hackers
-- average citizens
-- masters of the Great Web
-- passionate investors
-- key opinion leaders
-- inborn entrepreneurs
-- cyberpunks  
-
 The purpose of the research is to incentivize and inspire (at least 100k) the most web3 power-users to try out Cyber.
 
-Ethereum addresses have to be labeled by the audiences and differentiated into three power grades for every audience 
-in such a way to create also non-fungible tokens.
+Gift for Ethereum and Cosmos users that will maximize the initial usage of Cyber by the following audiences:
+
+- **true heroes of the Great Web** - participants of Genesis and ETH 2.0 stackers
+- **extraordinary hackers** - contract creators
+- **average citizens** - ETH owners and senders of outgoing transactions
+- **masters of the Great Web** - ERC721 owners and creators of contracts using factories
+- **passionate investors** - owners of the selected ERC20 tokens
+- **key opinion leaders** - top holders by the selected ERC20 tokens
+- **cyberpunks** - Owners of the cyberpunk tokens
+- **astronauts** - ATOM owners
+- **manual assigned addresses** - top CEXes and Vitalik addresses
+
+These audiences were highlighted because their participants are necessary to form a full-fledged ecosystem of the project.
+
+Ethereum and Cosmos addresses have to be labeled by the audiences and differentiated into three power grades 
+for every audience in such a way as to highlight the most web3 power-users and reward the best of them. 
+Non-fungible tokens should also be created using this data.
 
 The research results have to be in the form of reproducible scripts that will be pull requested in the 
 [launch-kit](https://github.com/cybercongress/launch-kit), and an article with the rationale of the gift structure.
@@ -24,59 +28,7 @@ by [Blockchain ETL](https://github.com/blockchain-etl).
 
 Research is done on the [proposal](https://cyber.page/governance/20) basis.
 
-## Basic Assumptions
-
-### Distribution between Audiences
-
-Distribution between **audiences**:
-<table style="text-align: left">
-    <thead style="text-align: center">
-        <tr>
-            <th>Audience</th>
-            <th>Share of Total Supply</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="text-align: left"> Astronauts </td>
-            <td style="text-align: center"> 1% </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Average Citizens </td>
-            <td style="text-align: center"> 35% </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Cyberpunks </td>
-            <td style="text-align: center"> 2% </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Extraordinary Hackers </td>
-            <td style="text-align: center"> 7% </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Key Opinion Leaders </td>
-            <td style="text-align: center"> 2% </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Manual Assigned Addresses </td>
-            <td style="text-align: center"> 2% </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Masters of the Great Web </td>
-            <td style="text-align: center"> 13% </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Passionate Investors </td>
-            <td style="text-align: center"> 3% </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> True Heroes of the Great Web </td>
-            <td style="text-align: center"> 5% </td>
-        </tr>
-    </tbody>
-</table>
-
-### Distribution between Grades
+## Distribution between Grades
 
 An amount of distributed CYB tokens should be equal for each grade within an audience.  
 Also amount of addresses should be divided into grades for each audience as
@@ -104,21 +56,10 @@ Also amount of addresses should be divided into grades for each audience as
     </tbody>
 </table>
 
-### Prize to be the First 
-
-There will be incentive **20x** for those who claim first reducing to **5x** who came last.  
-This condition does not apply to the audience of the Manual Set Addresses.  
-So only **~1/10** accounts will be actually claim a gift.  
-
-![](img/incentive_chart.png)
-### Excluding Fiat Brains 
-
-Addresses based on the fiat system will not be included, 
-namely those that satisfy these two conditions:
-- Stablecoin balance more than sum of ETH and [selected ERC20 tokens](erc20__investors_and_cyberpunks.ipynb) balances
-- Stablecoin balance more than 0.1 ETH 
-
 ## Audience Rules
+
+The initial conditions for the allocation of classes were selected based on the analysis of web3 user activity and the need to cover the most web3 power-users.  
+All distribution rules between grades are calculated in the respective jupyter notebooks. 
 
 <table style="text-align: left">
     <thead style="text-align: center">
@@ -126,7 +67,7 @@ namely those that satisfy these two conditions:
             <th rowspan=2>Audience</th>
             <th rowspan=2>Rule</th>
             <th colspan=3>Grade</th>
-            <th rowspan=2>Calculations</th>
+            <th rowspan=2>Calculations<br>(Jupyter notebooks)</th>
         </tr>
         <tr>
             <th>1</th>
@@ -265,6 +206,74 @@ namely those that satisfy these two conditions:
 <sup>4</sup> including contracts created by factories only<br>
 </i>
 
+## Distribution between Audiences
+
+Based on counting the number of addresses and determining the fair reward of the participants of each audience, 
+the following balanced distribution between them is proposed:
+
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <th>Audience</th>
+            <th>Share of Total Supply</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: left"> Astronauts </td>
+            <td style="text-align: center"> 1% </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Average Citizens </td>
+            <td style="text-align: center"> 35% </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Cyberpunks </td>
+            <td style="text-align: center"> 2% </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Extraordinary Hackers </td>
+            <td style="text-align: center"> 7% </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Key Opinion Leaders </td>
+            <td style="text-align: center"> 2% </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Manual Assigned Addresses </td>
+            <td style="text-align: center"> 2% </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Masters of the Great Web </td>
+            <td style="text-align: center"> 13% </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Passionate Investors </td>
+            <td style="text-align: center"> 3% </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> True Heroes of the Great Web </td>
+            <td style="text-align: center"> 5% </td>
+        </tr>
+    </tbody>
+</table>
+
+When an address hits multiple audiences, its reward is cumulative.
+
+## Excluding Fiat Brains 
+
+Addresses based on the fiat system will not be included, 
+namely those that satisfy these two conditions:
+- Stablecoin balance more than sum of ETH and [selected ERC20 tokens](erc20__investors_and_cyberpunks.ipynb) balances
+- Stablecoin balance more than 0.1 ETH 
+
+## Prize to be the First 
+We've added the incentive to claim gift early.  
+There are about **6M** addresses in Gift, but at the same time we expect that only the first **~1/10** accounts can claim them.  
+There will be incentive **20x** for those who claim first reducing to **5x** who came last.  
+This incentive does not apply to the **Manual Set Addresses** audience.  
+
+![](img/incentive_chart.png)
 
 ## Final Distribution
 
