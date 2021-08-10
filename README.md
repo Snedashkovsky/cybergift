@@ -24,32 +24,9 @@ But in our case, that would not be enough. First, Cyber is a content-oriented pr
 ## Distribution between Grades
 
 An amount of distributed BOOT tokens should be equal for each grade within an audience.  
-Also amount of addresses should be divided into grades for each audience as
+Also amount of addresses should be divided into grades for each audience as  
 
-<table style="text-align: left">
-    <thead style="text-align: center">
-        <tr>
-            <th> Grade </th>
-            <th> Share of Address Amount </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="text-align: center"> 1 </td>
-            <td style="text-align: center"> 89% </td>
-        </tr>
-        <tr>
-            <td style="text-align: center"> 2 </td>
-            <td style="text-align: center"> 10% </td>
-        </tr>
-        <tr>
-            <td style="text-align: center"> 3 </td>
-            <td style="text-align: center"> 1% </td>
-        </tr>
-    </tbody>
-</table>
-
-
+![Distribution between Grades](img/grades_distribution.png)
 
 ## Average Citizens
 - ETH owners and senders of outgoing transactions
