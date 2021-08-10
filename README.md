@@ -11,11 +11,11 @@ by [Blockchain ETL](https://github.com/blockchain-etl).
 
 Research is done on the [proposal](https://cyber.page/governance/20) basis. We hope this research can help pioneer the new wave of thinking in decentralized marketing.
 
-## Connecting the dots
+## Connecting the Dots
 
 The biggest problem in bootstrapping a blockchain ecosystem from scratch is that it is not enough to attract just users. There exist established network effects between four key groups:
 
-![](network-effects.png)
+![Network Effects](img/network-effects.png)
 
 Hence we have to understand how to attract all these guys simultaneously if we targeting healthy organic growth. 
 
@@ -51,46 +51,34 @@ Also amount of addresses should be divided into grades for each audience as
 
 
 
-## Average citizens
-
-ETH owners and senders of outgoing transactions
-
-
+## Average Citizens
+- ETH owners and senders of outgoing transactions
 
 ## Heroes of the Great Web
-participants of Genesis and ETH 2.0 stackers
+- participants of Genesis and ETH 2.0 stackers
 
-## Extraordinary hackers
+## Extraordinary Hackers
  - contract creators
 
-## Passionate investors
+## Passionate Investors
 - owners of the selected ERC20 tokens
 
-## masters of the Great Web
-
+## Masters of the Great Web
 - ERC721 owners and creators of contracts using factories
 
-
-## Key opinion leaders**
-
-top holders by the selected ERC20 tokens
-
+## Key Opinion Leaders**
+- TOP holders by the selected ERC20 tokens
 
 ## Cyberpunks
-Owners of the cyberpunk tokens
+- owners of the cyberpunk tokens
 
 ## Astronauts
+- ATOM owners
 
-ATOM owners
-
-## Cexes
-
+## CEXes
 - manual assigned addresses** - top CEXes
 
 These audiences were highlighted because their participants are necessary to form a full-fledged ecosystem of the project.
-
-
-
 
 ## Audience Rules
 
