@@ -1,36 +1,29 @@
 # cyberGift
 
-The purpose of the research is to incentivize and inspire (at least 100k) the most web3 power-users to try out Cyber.
+@groovybear, @mastercyb
 
-Gift for Ethereum and Cosmos users that will maximize the initial usage of Cyber by the following audiences:
+The purpose of the research is to inspire at least 100k power-users of web3 to join the force of learning Superintelligence. To achieve this, we are going to gift 70% of the Bostrom genesis tokens BOOT to agents of Ethereum and Cosmos who are capable to contribute their best to the quality of the knowledge graph. First, we started by highlighting key audiences for establishing network effects and tackling basic chicken and eggs. After we balance out the participation of key actors by splitting them into grades and adjusting allocations within the groups. Then we apply a filter in order to remove toxic fiat brains from the collective thought process. And finally, we add a crucial incentive to hurry up.
 
-- **true heroes of the Great Web** - participants of Genesis and ETH 2.0 stackers
-- **extraordinary hackers** - contract creators
-- **average citizens** - ETH owners and senders of outgoing transactions
-- **masters of the Great Web** - ERC721 owners and creators of contracts using factories
-- **passionate investors** - owners of the selected ERC20 tokens
-- **key opinion leaders** - top holders by the selected ERC20 tokens
-- **cyberpunks** - Owners of the cyberpunk tokens
-- **astronauts** - ATOM owners
-- **manual assigned addresses** - top CEXes and Vitalik addresses
-
-These audiences were highlighted because their participants are necessary to form a full-fledged ecosystem of the project.
-
-Ethereum and Cosmos addresses have to be labeled by the audiences and differentiated into three power grades 
-for every audience in such a way as to highlight the most web3 power-users and reward the best of them. 
-Non-fungible tokens should also be created using this data.
-
-The research results have to be in the form of reproducible scripts that will be pull requested in the 
-[launch-kit](https://github.com/cybercongress/launch-kit), and an article with the rationale of the gift structure.
+The research results are represented by reproducible scripts which output addresses and balances which will be loaded to the claim CosmWasm contract after the launch of Bostrom.
 
 Data source is [BigQuery crypto-ethereum dataset](https://console.cloud.google.com/bigquery?d=crypto_ethereum&p=bigquery-public-data&page=dataset&project=cosmic-keep-223223) 
 by [Blockchain ETL](https://github.com/blockchain-etl).
 
-Research is done on the [proposal](https://cyber.page/governance/20) basis.
+Research is done on the [proposal](https://cyber.page/governance/20) basis. We hope this research can help pioneer the new wave of thinking in decentralized marketing.
+
+## Connecting the dots
+
+The biggest problem in bootstrapping a blockchain ecosystem from scratch is that it is not enough to attract just users. There exist established network effects between four key groups:
+
+![](network-effects.png)
+
+Hence we have to understand how to attract all these guys simultaneously if we targeting healthy organic growth. 
+
+But in our case, that would not be enough. First, Cyber is a content-oriented project. So we need to understand how to add content creators to the soup. Second, information on the project has to be propagated somehow to all these guys, so key opinion leaders have to be incentivized. Third, as the Cyber project heavily relies on the interchain idea we have to attract the community behind IBC technology. Also, we want to add some fun giving the power to the guys behind weird cyberpunk ideas. And finally, we want to check the credibility of the most trusted liquidity hubs.
 
 ## Distribution between Grades
 
-An amount of distributed CYB tokens should be equal for each grade within an audience.  
+An amount of distributed BOOT tokens should be equal for each grade within an audience.  
 Also amount of addresses should be divided into grades for each audience as
 
 <table style="text-align: left">
@@ -55,6 +48,49 @@ Also amount of addresses should be divided into grades for each audience as
         </tr>
     </tbody>
 </table>
+
+
+
+## Average citizens
+
+ETH owners and senders of outgoing transactions
+
+
+
+## Heroes of the Great Web
+participants of Genesis and ETH 2.0 stackers
+
+## Extraordinary hackers
+ - contract creators
+
+## Passionate investors
+- owners of the selected ERC20 tokens
+
+## masters of the Great Web
+
+- ERC721 owners and creators of contracts using factories
+
+
+## Key opinion leaders**
+
+top holders by the selected ERC20 tokens
+
+
+## Cyberpunks
+Owners of the cyberpunk tokens
+
+## Astronauts
+
+ATOM owners
+
+## Cexes
+
+- manual assigned addresses** - top CEXes
+
+These audiences were highlighted because their participants are necessary to form a full-fledged ecosystem of the project.
+
+
+
 
 ## Audience Rules
 
