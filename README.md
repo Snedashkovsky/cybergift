@@ -210,54 +210,8 @@ All distribution rules between grades are calculated in the respective jupyter n
 ## Distribution between Audiences
 
 Based on counting the number of addresses and determining the fair reward of the participants of each audience, 
-the following balanced distribution between them is proposed:
-
-<table style="text-align: left">
-    <thead style="text-align: center">
-        <tr>
-            <th>Audience</th>
-            <th>Share of Total Supply</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="text-align: left"> Astronauts </td>
-            <td style="text-align: center"> 1% </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Average Citizens </td>
-            <td style="text-align: center"> 35% </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Cyberpunks </td>
-            <td style="text-align: center"> 2% </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Extraordinary Hackers </td>
-            <td style="text-align: center"> 7% </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Key Opinion Leaders </td>
-            <td style="text-align: center"> 2% </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Manual Assigned Addresses </td>
-            <td style="text-align: center"> 2% </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Masters of the Great Web </td>
-            <td style="text-align: center"> 13% </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Passionate Investors </td>
-            <td style="text-align: center"> 3% </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> True Heroes of the Great Web </td>
-            <td style="text-align: center"> 5% </td>
-        </tr>
-    </tbody>
-</table>
+the following balanced distribution between them is proposed:  
+![Distribution between Audiences](img/audiences_distribution.png)
 
 When an address hits multiple audiences, its reward is cumulative.
 
@@ -274,7 +228,7 @@ There are about **6M** addresses in Gift, but at the same time we expect that on
 There will be incentive **20x** for those who claim first reducing to **5x** who came last.  
 This incentive does not apply to the **Manual Set Addresses** audience.  
 
-![](img/incentive_chart.png)
+![Incentive chart](img/incentive_chart.png)
 
 ## Final Distribution
 
