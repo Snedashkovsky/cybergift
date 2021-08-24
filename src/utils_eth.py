@@ -68,7 +68,7 @@ def get_balance(
     Get ERC20 balance from Ethereum node for given owner address, block number and ERC20 token
     :param owner_address: owner address of ERC20 token
     :param token_address: address of ERC20 token contract
-    :param block_number: block number for getting data
+    :param block_number: block number for getting data (!ARCHIVAL NODE NEEDED! or set -1)
     :param eth_url: Ethereum node URL
     :param erc20_abi_url: URL of ERC20 ABI
     :param print_messages: Print error messages or not
@@ -80,7 +80,7 @@ def get_balance(
         erc20_abi_url=erc20_abi_url)
     try:
         balance = _w3.toInt(_contract.functions.balanceOf(_w3.toChecksumAddress(owner_address)).call(
-            {'defaultBlock': block_number}))
+            block_identifier=block_number))
         print(balance)
     except BadFunctionCallOutput as e:
         balance = -1
