@@ -33,6 +33,8 @@ AZIMUTH_POINTS_TABLE_NAME = 'azimuth_points'
 
 INVESTORS_AUDIENCE = 'Passionate Investors. ERC20 Analysis'
 ERC20_ANALYSIS_DATASET_NAME = 'erc20_analysis'
+ERC20_ROW_BALANCES_TABLE_NAME = 'erc20_row_balances'
+ERC20_REVISED_BALANCES_TABLE_NAME = 'erc20_revised_balances'
 ERC20_BALANCES_TABLE_NAME = 'erc20_balances'
 STABLECOINS_LOVERS_TABLE_NAME = 'stablecoins_lovers'
 ERC20_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'erc20_analysis_distribution'

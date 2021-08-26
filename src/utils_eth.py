@@ -28,7 +28,7 @@ def get_contract_decimals(
         token_address: str,
         eth_url: str = ETH_URL,
         erc20_abi_url: str = "src/erc20_abi.json",
-        print_messages: bool = True):
+        print_messages: bool = True) -> int:
     """ Get decimals from Ethereum node for ERC20 token
     :param token_address: address of ERC20 token contract
     :param eth_url: Ethereum node URL
@@ -63,7 +63,7 @@ def get_balance(
         block_number: int = SNAPSHOT_BLOCKNUMBER,
         eth_url: str = ETH_URL,
         erc20_abi_url: str = "src/erc20_abi.json",
-        print_messages: bool = True):
+        print_messages: bool = True) -> int:
     """
     Get ERC20 balance from Ethereum node for given owner address, block number and ERC20 token
     :param owner_address: owner address of ERC20 token
@@ -81,9 +81,8 @@ def get_balance(
     try:
         balance = _w3.toInt(_contract.functions.balanceOf(_w3.toChecksumAddress(owner_address)).call(
             block_identifier=block_number))
-        print(balance)
     except BadFunctionCallOutput as e:
-        balance = -1
+        balance = 0
         if print_messages:
             print(f'BadFunctionCallOutput {e}')
     except SolidityError as e:
@@ -94,4 +93,6 @@ def get_balance(
         balance = -1
         if print_messages:
             print(f'ValueError {e}')
+    if print_messages:
+        print(f'balance {balance}')
     return balance
