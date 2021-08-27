@@ -1,10 +1,9 @@
-import json
 import logging
 import multiprocessing as mp
 from itertools import chain
 import pandas as pd
-from web3 import Web3, HTTPProvider
 
+from src.utils_eth import get_w3_and_contract_object
 from config import ETH_URL, SNAPSHOT_BLOCKNUMBER
 
 logging.basicConfig(filename='error_blocks.log', level=logging.ERROR)
@@ -21,25 +20,22 @@ POINT_DICT = {
     2: ['planet', 16]
 }
 
-with open(AZIMUTH_CONTRACT_ABI_URL) as f:
-    AZIMUTH_CONTRACT_ABI = json.load(f)
-
-w3 = Web3(HTTPProvider(ETH_URL))
-contract = w3.eth.contract(
-    address=w3.toChecksumAddress(AZIMUTH_CONTRACT_ADDRESS),
-    abi=AZIMUTH_CONTRACT_ABI)
-
 
 def _get_point_data(point: int,
                     block_number: int = SNAPSHOT_BLOCKNUMBER):
     """
     Get and calculate data for given point id
     :param point: point id
-    :param block_number: snapshot block number
+    :param block_number: snapshot block number (!ARCHIVAL NODE NEEDED! or set -1)
     :return: list of point data
     """
-    owner = str(contract.functions.getOwner(int(point)).call({'defaultBlock': block_number})).lower()
-    point_size = contract.functions.getPointSize(int(point)).call()
+    _, _contract = get_w3_and_contract_object(
+        token_address=AZIMUTH_CONTRACT_ADDRESS,
+        eth_url=ETH_URL,
+        erc20_abi_url=AZIMUTH_CONTRACT_ABI_URL)
+
+    owner = str(_contract.functions.getOwner(int(point)).call(block_identifier=block_number)).lower()
+    point_size = _contract.functions.getPointSize(int(point)).call()
     point_type = POINT_DICT[point_size][0]
     parent_point = int(point) % 2**POINT_DICT[point_size][1]
     return [point, point_size, point_type, owner, parent_point]
