@@ -20,7 +20,8 @@ GAS_ANALYSIS_DATASET_NAME = 'gas_analysis'
 GAS_SPEND_BY_CONTRACT_TABLE_NAME = 'gas_spend_by_contract'
 GAS_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'gas_analysis_distribution'
 
-LEADERS_AUDIENCE = 'Key Opinion Leaders. Top Token Holders'
+LEADERS_AUDIENCE = 'Key Opinion Leaders. ERC20 Analysis'
+LEADERS_SEGMENT = 'Top Token Holders'
 ERC20_TOP_DISTRIBUTION_TABLE_NAME = 'erc20_top_distribution'
 
 MASTERS_AUDIENCE = 'Masters of the Great Web. Gas and ERC721 Analysis'
@@ -40,15 +41,17 @@ STABLECOINS_LOVERS_TABLE_NAME = 'stablecoins_lovers'
 ERC20_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'erc20_analysis_distribution'
 ERC20_TOKEN_METADATA_TABLE_NAME = 'erc20_token_metadata'
 
-HEROES_AUDIENCE = 'True Heroes of the Great Web. Genesis and ETH2 Stakers'
+HEROES_AUDIENCE = 'Heroes of the Great Web. Genesis and ETH2 Stakers'
 GENESIS_AND_ETH2_DATASET_NAME = 'genesis_and_eth2_stakers'
 GENESIS_AND_ETH2_DISTRIBUTION_TABLE_NAME = 'genesis_and_eth2_stakers_distribution'
 
-MANUAL_ADDRESSES_AUDIENCE = 'Manual Set Addresses'
+MANUAL_ADDRESSES_AUDIENCE = 'CEXes and Vitalik'
+MANUAL_ADDRESSES_SEGMENT = 'Manual Set Addresses'
 MANUAL_ADDRESSES_DATASET_NAME = 'manual_addresses'
 MANUAL_ADDRESSES_DISTRIBUTION_TABLE_NAME = 'manual_addresses_distribution'
 
 COSMOS_AUDIENCE = 'Astronauts. ATOM Analysis'
+COSMOS_SEGMENT = 'ATOM Balances'
 COSMOS_DATASET_NAME = 'cosmos'
 COSMOS_DISTRIBUTION_TABLE_NAME = 'cosmos_distribution'
 
