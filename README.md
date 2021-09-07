@@ -219,8 +219,8 @@ When an address hits multiple audiences, its reward is cumulative.
 
 Addresses based on the fiat system will not be included, 
 namely those that satisfy these two conditions:
-- Stablecoin balance more than sum of ETH and [selected ERC20 tokens](erc20__investors_and_cyberpunks.ipynb) balances
-- Stablecoin balance more than 0.1 ETH 
+1. Stablecoin balance is more than sum of ETH and [selected ERC20 tokens](erc20__investors_and_cyberpunks.ipynb) balances
+2. Stablecoin balance is more than 0.1 ETH 
 
 ## Prize to be the First 
 We've added the incentive to claim gift early.  
