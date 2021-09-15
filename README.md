@@ -230,7 +230,11 @@ This incentive does not apply to the **Manual Set Addresses** audience.
 
 ![Incentive chart](img/incentive_chart.png)
 
-## Final Distribution
+## Data Pipeline
+
+![Data Pipeline](img/data_pipeline.png)
+
+## Final Distribution   
 
 [Final Distribution Table](https://console.cloud.google.com/bigquery?project=cosmic-keep-223223&p=cosmic-keep-223223&d=final&t=final_distribution&page=table&ws=!1m5!1m4!4m3!1scosmic-keep-223223!2sfinal!3sfinal_distribution)  
 **Check your address in the [Dashboard](https://datastudio.google.com/u/0/reporting/53e1c28b-9f10-497c-9b5b-9f2a4749450b)**
