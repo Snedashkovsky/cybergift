@@ -1,9 +1,10 @@
 from google.cloud import bigquery
+import pandas as pd
 
 from config import FINAL_DATASET_NAME, PROJECT_ID, bq_client, bqstorage_client
 
 
-def drop_table(table_name, dataset_name):
+def drop_table(table_name: str, dataset_name: str) -> bool:
     """
     Drop a table in a dataset from your project
     :param table_name: The name of the table to be dropped
@@ -20,7 +21,7 @@ def drop_table(table_name, dataset_name):
     return False
 
 
-def create_table(query, table_name, dataset_name):
+def create_table(query: str, table_name: str, dataset_name: str) -> bool:
     """
     Create a table in a dataset from your project
     :param query: SQL query to create a table
@@ -41,7 +42,7 @@ def create_table(query, table_name, dataset_name):
     return False
 
 
-def create_view(query, view_name, dataset_name=FINAL_DATASET_NAME):
+def create_view(query: str, view_name: str, dataset_name: str = FINAL_DATASET_NAME) -> bool:
     """
     Create a view in a dataset from your project
     :param query: SQL query to create a vieThe dataset name in which the created view is located
@@ -61,7 +62,8 @@ def create_view(query, view_name, dataset_name=FINAL_DATASET_NAME):
     return False
 
 
-def create_table_from_df(source_df, table_name, dataset_name, drop_existing_table=True):
+def create_table_from_df(
+        source_df: pd.DataFrame, table_name: str, dataset_name: str, drop_existing_table: bool = True) -> bool:
     """
     Create a table from a Pandas DataFrame
     :param source_df: source Pandas DataFrame
@@ -82,7 +84,7 @@ def create_table_from_df(source_df, table_name, dataset_name, drop_existing_tabl
     return False
 
 
-def get_df(query):
+def get_df(query: str) -> pd.DataFrame:
     """
     Get Pandas DataFrame by SQL query
     :param query: SQL query to get data for a DataFrame
