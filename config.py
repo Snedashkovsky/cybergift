@@ -45,7 +45,7 @@ HEROES_AUDIENCE = 'Heroes of the Great Web. Genesis and ETH2 Stakers'
 GENESIS_AND_ETH2_DATASET_NAME = 'genesis_and_eth2_stakers'
 GENESIS_AND_ETH2_DISTRIBUTION_TABLE_NAME = 'genesis_and_eth2_stakers_distribution'
 
-MANUAL_ADDRESSES_AUDIENCE = 'CEXes and Vitalik'
+MANUAL_ADDRESSES_AUDIENCE = 'CEXes'
 MANUAL_ADDRESSES_SEGMENT = 'Manual Set Addresses'
 MANUAL_ADDRESSES_DATASET_NAME = 'manual_addresses'
 MANUAL_ADDRESSES_DISTRIBUTION_TABLE_NAME = 'manual_addresses_distribution'
