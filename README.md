@@ -80,9 +80,9 @@ All distribution rules between grades are calculated in the respective jupyter n
         <tr>
             <td style="text-align: left"> Astronauts </td>
             <td style="text-align: left"> ATOM Balance </td>
-            <td style="text-align: center"> > 0 ATOM </td>
-            <td style="text-align: center"> > 178 ATOM </td>
-            <td style="text-align: center"> > 6,191 ATOM </td>
+            <td style="text-align: center"> > 0.1 ATOM </td>
+            <td style="text-align: center"> > 215 ATOM </td>
+            <td style="text-align: center"> > 8,633 ATOM </td>
             <td style="text-align: center"> <a href="atom__astronauts.ipynb">ATOM Analysis</a> </td>
         </tr>
         <tr>
@@ -149,7 +149,7 @@ All distribution rules between grades are calculated in the respective jupyter n
             <td style="text-align: center"> - </td>
             <td style="text-align: center"> - </td>
             <td style="text-align: center"> only here </td>
-            <td style="text-align: center"> <a href="manual_assigned_addresses.ipynb">Assigning Addresses</a> </td>
+            <td style="text-align: center"> <a href="manual_assigned_addresses__cexes.ipynb">Assigning Addresses</a> </td>
         </tr>
         <tr>
             <td rowspan=3 style="text-align: left"> Masters of the Great Web </td>
