@@ -15,7 +15,7 @@ Research is done on the [proposal](https://cyber.page/governance/20) basis. We h
 
 The biggest problem in bootstrapping a blockchain ecosystem from scratch is that it is not enough to attract just users. There exist established network effects between four key groups:
 
-![Network Effects](img/network_effects.png)
+<img src="img/network_effects.png" width="50%" height="50%" alt="Network Effects">
 
 Hence we have to understand how to attract all these guys simultaneously if we targeting healthy organic growth. 
 
@@ -26,7 +26,7 @@ But in our case, that would not be enough. First, Cyber is a content-oriented pr
 An amount of distributed BOOT tokens should be equal for each grade within an audience.  
 Also amount of addresses should be divided into grades for each audience as  
 
-![Distribution between Grades](img/grades_distribution.png)
+<img src="img/grades_distribution.png" width="75%" height="75%" alt="Distribution between Grades">
 
 ## Average Citizens
 - ETH owners and senders of outgoing transactions
@@ -211,7 +211,8 @@ All distribution rules between grades are calculated in the respective jupyter n
 
 Based on counting the number of addresses and determining the fair reward of the participants of each audience, 
 the following balanced distribution between them is proposed:  
-![Distribution between Audiences](img/audiences_distribution.png)
+
+<img src="img/audiences_distribution.png" width="75%" height="75%" alt="Distribution between Audiences">
 
 When an address hits multiple audiences, its reward is cumulative.
 
@@ -228,16 +229,15 @@ There are about **6M** addresses in Gift, but at the same time we expect that on
 There will be incentive **20x** for those who claim first reducing to **5x** who came last.  
 This incentive does not apply to the **Manual Set Addresses** audience.  
 
-![Incentive chart](img/incentive_chart.png)
+<img src="img/incentive_chart.png" width="50%" height="50%" alt="Incentive chart">
 
 ## Data Pipeline
 
-![Data Pipeline](img/data_pipeline.png)
-
+<img src="img/data_pipeline.png" width="75%" height="75%" alt="Data Pipeline">
 
 ## Gift Execution
 
-<img src="img/gift_execution.png" width="50%" height="50%" alt="cyberGift execution">
+<img src="img/gift_execution.png" alt="cyberGift Execution">
 
 ## Final Distribution   
 
