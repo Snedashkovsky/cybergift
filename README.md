@@ -15,7 +15,7 @@ Research is done on the [proposal](https://cyber.page/governance/20) basis. We h
 
 The biggest problem in bootstrapping a blockchain ecosystem from scratch is that it is not enough to attract just users. There exist established network effects between four key groups:
 
-![Network Effects](img/network-effects.png)
+![Network Effects](img/network_effects.png)
 
 Hence we have to understand how to attract all these guys simultaneously if we targeting healthy organic growth. 
 
@@ -233,6 +233,10 @@ This incentive does not apply to the **Manual Set Addresses** audience.
 ## Data Pipeline
 
 ![Data Pipeline](img/data_pipeline.png)
+
+## Gift Execution
+
+<img src="img/gift_execution.png" height="1028" alt="cyberGift execution">
 
 ## Final Distribution   
 
