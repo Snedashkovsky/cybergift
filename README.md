@@ -234,9 +234,10 @@ This incentive does not apply to the **Manual Set Addresses** audience.
 
 ![Data Pipeline](img/data_pipeline.png)
 
+
 ## Gift Execution
 
-<img src="img/gift_execution.png" height="1028" alt="cyberGift execution">
+<img src="img/gift_execution.png" width="50%" height="50%" alt="cyberGift execution">
 
 ## Final Distribution   
 
