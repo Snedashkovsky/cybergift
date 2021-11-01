@@ -26,6 +26,8 @@ ERC20_TOP_DISTRIBUTION_TABLE_NAME = 'erc20_top_distribution'
 
 MASTERS_AUDIENCE = 'Masters of the Great Web. Gas and ERC721 Analysis'
 ERC721_ANALYSIS_DATASET_NAME = 'erc721_analysis'
+ERC721_ROW_TRANSFERS_TABLE_NAME = 'erc721_row_transfers'
+ERC721_ROW_AMOUNT_TABLE_NAME = 'erc721_row_amounts'
 ERC721_NFT_TOKEN_TABLE_NAME = 'nft_tokens'
 ERC721_TOKEN_TABLE_NAME = 'erc721_tokens'
 ERC721_AMOUNT_TABLE_NAME = 'erc721_amounts'

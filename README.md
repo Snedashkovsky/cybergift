@@ -155,8 +155,8 @@ All distribution rules between grades are calculated in the respective jupyter n
             <td rowspan=3 style="text-align: left"> Masters of the Great Web </td>
             <td style="text-align: left"> Amount of ERC721 tokens </td>
             <td style="text-align: center"> > 0 NFT </td>
-            <td style="text-align: center"> > 7 NFT </td>
-            <td style="text-align: center"> > 185 NFT </td>
+            <td style="text-align: center"> > 6 NFT </td>
+            <td style="text-align: center"> > 159 NFT </td>
             <td rowspan=2 style="text-align: center"> <a href="erc721__masters_and_cyberpunks.ipynb">ERC721 Analysis</a> </td>
         </tr>
         <tr>
