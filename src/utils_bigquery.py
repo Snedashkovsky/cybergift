@@ -21,17 +21,20 @@ def drop_table(table_name: str, dataset_name: str) -> bool:
     return False
 
 
-def create_table(query: str, table_name: str, dataset_name: str) -> bool:
+def create_table(query: str, table_name: str, dataset_name: str, clustering_fields: list = []) -> bool:
     """
     Create a table in a dataset from your project
     :param query: SQL query to create a table
     :param table_name: The name of the table to be created
     :param dataset_name: The dataset name in which the created table is located
+    :param clustering_fields: List of fields for clustering
     :return: True if successful or False otherwise.
     """
     table_id = f"{PROJECT_ID}.{dataset_name}.{table_name}"
-
-    job_config = bigquery.QueryJobConfig(destination=table_id)
+    if clustering_fields:
+        job_config = bigquery.QueryJobConfig(destination=table_id, clustering_fields=clustering_fields)
+    else:
+        job_config = bigquery.QueryJobConfig(destination=table_id)
     try:
         res = bq_client.query(query, job_config=job_config).result()
         if res.total_rows:

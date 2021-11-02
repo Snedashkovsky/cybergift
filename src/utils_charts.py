@@ -17,7 +17,7 @@ def calculate_and_display_rules(
         value_column: str,
         value_name: str,
         address_column: str,
-        boundary_round: int):
+        boundary_round: int) -> list:
     """
     Calculate rule boundaries in according with percentage levels
     :param distribution_df: Source DataFrame
@@ -83,7 +83,7 @@ def show_distribution_chart(
         address_column: str,
         address_chart_label: str,
         address_transform_func,
-        chart_title: str):
+        chart_title: str) -> None:
     """
     Show chart with value distribution by addresses and boundaries
     :param distribution_df: Source DataFrame
@@ -143,7 +143,7 @@ def grade_boundaries_analysis(
         max_show_value: float = 200,
         level_line_shift: float = 0.5,
         initial_boundary: float = 0.0,
-        boundary_round=0):
+        boundary_round=0) -> list:
     """
     Calculate rule boundaries in according with percentage levels and display distribution
     :param distribution_df: Source DataFrame
@@ -196,10 +196,11 @@ def heatmap_from_df(distribution_df: pd.DataFrame,
                     xlabel: str = None,
                     ylabel: str = None,
                     fig_size: int = 12,
-                    addresses_transform_func=lambda x: log10(pd.Series.sum(x))):
+                    addresses_transform_func=lambda x: log10(pd.Series.sum(x))) -> None:
     """
     Display a Heatmap chart from a Pandas DataFrame
-    :param distribution_df: Pandas DataFrame with two columns, the first column is array of groups and second is number of addresses for array of groups
+    :param distribution_df: Pandas DataFrame with two columns, the first column is array of groups and second is number
+    of addresses for array of groups
     :param title: Title of Heatmap
     :param xlabel: x label of Heatmap
     :param ylabel: y label of Heatmap
