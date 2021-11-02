@@ -58,12 +58,15 @@ COSMOS_DATASET_NAME = 'cosmos'
 COSMOS_DISTRIBUTION_TABLE_NAME = 'cosmos_distribution'
 
 FINAL_DATASET_NAME = 'final'
-CONTRACT_ADDRESSES_TABLE = 'contract_addresses'
 DISTRIBUTION_TABLE_NAME = 'distribution_without_gift_size'
 GIFT_PER_ADDRESS_PIVOT_TABLE_NAME = 'gift_per_address_pivot'
 FINAL_DISTRIBUTION_TABLE_NAME = 'final_distribution'
-FINAL_DISTRIBUTION_PIVOT_TABLE_NAME = 'final_distribution_pivot'
 
+SERVICE_DATASET_NAME = 'service'
+CONTRACT_ADDRESSES_TABLE = 'contract_addresses'
+FINAL_DISTRIBUTION_PIVOT_TABLE_NAME = 'final_distribution_pivot_by_segments_and_grades'
+FINAL_DISTRIBUTION_PIVOT_BY_AUDIENCES_TABLE_NAME = 'final_distribution_pivot_by_audiences'
+FINAL_DISTRIBUTION_PIVOT_BY_GRADES_TABLE_NAME = 'final_distribution_pivot_by_grades'
 
 # Etherscan extractor
 BEAUTIFULSOUP_HEADERS = {
