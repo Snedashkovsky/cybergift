@@ -81,8 +81,8 @@ All distribution rules between grades are calculated in the respective jupyter n
             <td style="text-align: left"> Astronauts </td>
             <td style="text-align: left"> ATOM Balance </td>
             <td style="text-align: center"> > 0.1 ATOM </td>
-            <td style="text-align: center"> > 215 ATOM </td>
-            <td style="text-align: center"> > 8,633 ATOM </td>
+            <td style="text-align: center"> > 317 ATOM </td>
+            <td style="text-align: center"> > 15,030 ATOM </td>
             <td style="text-align: center"> <a href="atom__astronauts.ipynb">ATOM Analysis</a> </td>
         </tr>
         <tr>
