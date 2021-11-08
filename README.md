@@ -101,10 +101,10 @@ All distribution rules between grades are calculated in the respective jupyter n
         </tr>
         <tr>
             <td rowspan=2 style="text-align: left"> Average Citizens </td>
-            <td style="text-align: left"> ETH balance > 0.01 ETH and Amount of outgoing tx</td>
+            <td style="text-align: left"> ETH balance > 0.12 ETH and Amount of outgoing tx</td>
             <td style="text-align: center"> > 4 tx </td>
-            <td style="text-align: center"> > 73 tx </td>
-            <td style="text-align: center"> > 739 tx </td>
+            <td style="text-align: center"> > 125 tx </td>
+            <td style="text-align: center"> > 1,531 tx </td>
             <td rowspan=2 style="text-align: center"> <a href="eth_and_tx__citizens.ipynb">ETH Analysis</a> </td>
         </tr>
         <tr>
