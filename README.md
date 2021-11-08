@@ -140,7 +140,7 @@ All distribution rules between grades are calculated in the respective jupyter n
             <td> Fee spending to created contracts<sup>1</sup> by contract creators<sup>2</sup> </td>
             <td style="text-align: center"> > 0 ETH </td>
             <td style="text-align: center"> > 4 ETH </td>
-            <td style="text-align: center"> > 233 ETH </td>
+            <td style="text-align: center"> > 254 ETH </td>
             <td rowspan=2 style="text-align: center"> <a href="gas__hackers_and_masters.ipynb">Gas Analysis</a> </td>
         </tr>
         <tr>
@@ -182,8 +182,8 @@ All distribution rules between grades are calculated in the respective jupyter n
         <tr>
             <td style="text-align: left"> Fee spending to contracts<sup>4</sup>, by contract creators, ETH </td>
             <td style="text-align: center"> > 0 ETH </td>
-            <td style="text-align: center"> > 0.005 ETH </td>
-            <td style="text-align: center"> > 0.755 ETH </td>
+            <td style="text-align: center"> > 0.004 ETH </td>
+            <td style="text-align: center"> > 0.477 ETH </td>
             <td style="text-align: center"> <a href="gas__hackers_and_masters.ipynb">Gas Analysis</a> </td>
         </tr>
         <tr>
