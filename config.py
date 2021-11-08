@@ -3,14 +3,15 @@ from google.oauth2 import service_account
 from dotenv import dotenv_values
 
 INITIAL_TS = '2015-07-30 00:00:00'
-SNAPSHOT_TS = '2021-05-01 00:00:00'
-SNAPSHOT_BLOCKNUMBER = 12_344_945
+SNAPSHOT_TS = '2021-11-05 13:22:42'
+SNAPSHOT_BLOCKNUMBER = 13_556_833
 TARGET_GRADE_SHARES = (0.89, 0.99)
 
 PROJECT_ID = 'cosmic-keep-223223'
 
 CITIZENS_AUDIENCE = 'Average Citizens. ETH Analysis'
 ETH_ANALYSIS_DATASET_NAME = 'eth_analysis'
+ETH_BALANCES_TABLE_NAME = 'eth_balances'
 ETH_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'eth_analysis_distribution'
 
 CYBERPUNKS_AUDIENCE = 'Cyberpunks. ERC20 and ERC721 Analysis'
@@ -18,6 +19,7 @@ CYBERPUNKS_AUDIENCE = 'Cyberpunks. ERC20 and ERC721 Analysis'
 HACKERS_AUDIENCE = 'Extraordinary Hackers. Gas Analysis'
 GAS_ANALYSIS_DATASET_NAME = 'gas_analysis'
 GAS_SPEND_BY_CONTRACT_TABLE_NAME = 'gas_spend_by_contract'
+GAS_SPEND_BY_CREATOR_TABLE_NAME = 'gas_spend_by_creator'
 GAS_ANALYSIS_DISTRIBUTION_TABLE_NAME = 'gas_analysis_distribution'
 
 LEADERS_AUDIENCE = 'Key Opinion Leaders. ERC20 Analysis'

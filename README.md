@@ -2,24 +2,37 @@
 
 @groovybear, @mastercyb
 
-The purpose of the research is to inspire at least 100k power-users of web3 to join the force of learning Superintelligence. To achieve this, we are going to gift 70% of the Bostrom genesis tokens BOOT to agents of Ethereum and Cosmos who are capable to contribute their best to the quality of the knowledge graph. First, we started by highlighting key audiences for establishing network effects and tackling basic chicken and eggs. After we balance out the participation of key actors by splitting them into grades and adjusting allocations within the groups. Then we apply a filter in order to remove toxic fiat brains from the collective thought process. And finally, we add a crucial incentive to hurry up.
+The purpose of the research is to inspire at least 100k power-users of web3 to join the force of learning 
+Superintelligence. To achieve this, we are going to gift 70% of the Bostrom genesis tokens BOOT to agents of Ethereum 
+and Cosmos who are capable to contribute their best to the quality of the knowledge graph. First, we started 
+by highlighting key audiences for establishing network effects and tackling basic chicken and eggs. After we balance 
+out the participation of key actors by splitting them into grades and adjusting allocations within the groups. 
+Then we apply a filter in order to remove toxic fiat brains from the collective thought process. And finally, we add 
+a crucial incentive to hurry up.
 
-The research results are represented by reproducible scripts which output addresses and balances which will be loaded to the claim CosmWasm contract after the launch of Bostrom.
+The research results are represented by reproducible scripts which output addresses and balances which will be loaded 
+to the claim CosmWasm contract after the launch of Bostrom.
 
 Data source is [BigQuery crypto-ethereum dataset](https://console.cloud.google.com/bigquery?d=crypto_ethereum&p=bigquery-public-data&page=dataset&project=cosmic-keep-223223) 
 by [Blockchain ETL](https://github.com/blockchain-etl).
 
-Research is done on the [proposal](https://cyber.page/governance/20) basis. We hope this research can help pioneer the new wave of thinking in decentralized marketing.
+Research is done on the [proposal](https://cyber.page/governance/20) basis. We hope this research can help pioneer 
+the new wave of thinking in decentralized marketing.
 
 ## Connecting the Dots
 
-The biggest problem in bootstrapping a blockchain ecosystem from scratch is that it is not enough to attract just users. There exist established network effects between four key groups:
+The biggest problem in bootstrapping a blockchain ecosystem from scratch is that it is not enough to attract just users. 
+There exist established network effects between four key groups:
 
 <img src="img/network_effects.png" width="50%" height="50%" alt="Network Effects">
 
 Hence we have to understand how to attract all these guys simultaneously if we targeting healthy organic growth. 
 
-But in our case, that would not be enough. First, Cyber is a content-oriented project. So we need to understand how to add content creators to the soup. Second, information on the project has to be propagated somehow to all these guys, so key opinion leaders have to be incentivized. Third, as the Cyber project heavily relies on the interchain idea we have to attract the community behind IBC technology. Also, we want to add some fun giving the power to the guys behind weird cyberpunk ideas. And finally, we want to check the credibility of the most trusted liquidity hubs.
+But in our case, that would not be enough. First, Cyber is a content-oriented project. So we need to understand how 
+to add content creators to the soup. Second, information on the project has to be propagated somehow to all these guys, 
+so key opinion leaders have to be incentivized. Third, as the Cyber project heavily relies on the interchain idea we 
+have to attract the community behind IBC technology. Also, we want to add some fun giving the power to the guys behind 
+weird cyberpunk ideas. And finally, we want to check the credibility of the most trusted liquidity hubs.
 
 ## Distribution between Grades
 
@@ -59,7 +72,8 @@ These audiences were highlighted because their participants are necessary to for
 
 ## Audience Rules
 
-The initial conditions for the allocation of classes were selected based on the analysis of web3 user activity and the need to cover the most web3 power-users.  
+The initial conditions for the allocation of classes were selected based on the analysis of web3 user activity and the 
+need to cover the most web3 power-users.  
 All distribution rules between grades are calculated in the respective jupyter notebooks. 
 
 <table style="text-align: left">
@@ -80,24 +94,24 @@ All distribution rules between grades are calculated in the respective jupyter n
         <tr>
             <td style="text-align: left"> Astronauts </td>
             <td style="text-align: left"> ATOM Balance </td>
-            <td style="text-align: center"> > 0.1 ATOM </td>
-            <td style="text-align: center"> > 317 ATOM </td>
-            <td style="text-align: center"> > 15,030 ATOM </td>
+            <td style="text-align: center"> > 1 ATOM </td>
+            <td style="text-align: center"> > 180 ATOM </td>
+            <td style="text-align: center"> > 4,312 ATOM </td>
             <td style="text-align: center"> <a href="atom__astronauts.ipynb">ATOM Analysis</a> </td>
         </tr>
         <tr>
             <td rowspan=2 style="text-align: left"> Average Citizens </td>
             <td style="text-align: left"> ETH balance > 0.01 ETH and Amount of outgoing tx</td>
-            <td style="text-align: center"> > 3 tx </td>
-            <td style="text-align: center"> > 60 tx </td>
-            <td style="text-align: center"> > 657 tx </td>
+            <td style="text-align: center"> > 4 tx </td>
+            <td style="text-align: center"> > 73 tx </td>
+            <td style="text-align: center"> > 739 tx </td>
             <td rowspan=2 style="text-align: center"> <a href="eth_and_tx__citizens.ipynb">ETH Analysis</a> </td>
         </tr>
         <tr>
             <td style="text-align: left"> ETH balance</td>
             <td style="text-align: center"> > 1 ETH</td>
-            <td style="text-align: center"> > 32 ETH</td>
-            <td style="text-align: center"> > 551 ETH</td>
+            <td style="text-align: center"> > 29 ETH</td>
+            <td style="text-align: center"> > 485 ETH</td>
         </tr>
         <tr>
             <td rowspan=3 style="text-align: left"> Cyberpunks </td>
@@ -137,15 +151,15 @@ All distribution rules between grades are calculated in the respective jupyter n
         </tr>
         <tr>
             <td style="text-align: left"> Key Opinion Leaders </td>
-            <td style="text-align: left"> Top 100 ERC20 Holders by Tokens </td>
+            <td style="text-align: left"> Top 100 Holders by selected ERC20 Tokens </td>
             <td style="text-align: center"> - </td>
             <td style="text-align: center"> - </td>
             <td style="text-align: center"> only here </td>
-            <td style="text-align: center"> <a href="erc20__leaders.ipynb">Top 100 ERC20 Holders</a> </td>
+            <td style="text-align: center"> <a href="erc20__leaders.ipynb">Top ERC20 Holders</a> </td>
         </tr>
         <tr>
             <td style="text-align: left"> Manual Assigned Addresses </td>
-            <td style="text-align: left"> - </td>
+            <td style="text-align: left"> 10 CEXes addresses </td>
             <td style="text-align: center"> - </td>
             <td style="text-align: center"> - </td>
             <td style="text-align: center"> only here </td>
@@ -155,8 +169,8 @@ All distribution rules between grades are calculated in the respective jupyter n
             <td rowspan=3 style="text-align: left"> Masters of the Great Web </td>
             <td style="text-align: left"> Amount of ERC721 tokens </td>
             <td style="text-align: center"> > 0 NFT </td>
-            <td style="text-align: center"> > 6 NFT </td>
-            <td style="text-align: center"> > 159 NFT </td>
+            <td style="text-align: center"> > 12 NFT </td>
+            <td style="text-align: center"> > 161 NFT </td>
             <td rowspan=2 style="text-align: center"> <a href="erc721__masters_and_cyberpunks.ipynb">ERC721 Analysis</a> </td>
         </tr>
         <tr>
@@ -174,10 +188,10 @@ All distribution rules between grades are calculated in the respective jupyter n
         </tr>
         <tr>
             <td style="text-align: left"> Passionate Investors </td>
-            <td style="text-align: left"> Number of tokens >= 2 and ERC20 balance </td>
+            <td style="text-align: left"> Number of selected ERC20 tokens >= 2 and balance of it </td>
             <td style="text-align: center"> > 0.01 ETH </td>
-            <td style="text-align: center"> > 6 ETH </td>
-            <td style="text-align: center"> > 96 ETH </td>
+            <td style="text-align: center"> > 3 ETH </td>
+            <td style="text-align: center"> > 55 ETH </td>
             <td style="text-align: center"> <a href="erc20__investors_and_cyberpunks.ipynb">ERC20 Analysis</a> </td>
         </tr>
         <tr>
@@ -225,7 +239,8 @@ namely those that satisfy these two conditions:
 
 ## Prize to be the First 
 We've added the incentive to claim gift early.  
-There are about **6M** addresses in Gift, but at the same time we expect that only the first **~1/10** accounts can claim them.  
+There are about **6M** addresses in Gift, but at the same time we expect that only the first **~1/10** accounts can 
+claim them.  
 There will be incentive **20x** for those who claim first reducing to **5x** who came last.  
 This incentive does not apply to the **Manual Set Addresses** audience.  
 
