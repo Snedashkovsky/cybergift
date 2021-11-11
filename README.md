@@ -239,7 +239,7 @@ namely those that satisfy these two conditions:
 
 ## Prize to be the First 
 We've added the incentive to claim gift early.  
-There are about **6M** addresses in Gift, but at the same time we expect that only the first **~1/10** accounts can 
+There are about **4M** addresses in Gift, but at the same time we expect that only the first **~1/10** accounts can 
 claim them.  
 There will be incentive **20x** for those who claim first reducing to **5x** who came last.  
 This incentive does not apply to the **Manual Set Addresses** audience.  
