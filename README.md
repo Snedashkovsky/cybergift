@@ -170,7 +170,7 @@ All distribution rules between grades are calculated in the respective jupyter n
             <td style="text-align: left"> Amount of ERC721 tokens </td>
             <td style="text-align: center"> > 0 NFT </td>
             <td style="text-align: center"> > 12 NFT </td>
-            <td style="text-align: center"> > 161 NFT </td>
+            <td style="text-align: center"> > 160 NFT </td>
             <td rowspan=2 style="text-align: center"> <a href="erc721__masters_and_cyberpunks.ipynb">ERC721 Analysis</a> </td>
         </tr>
         <tr>
