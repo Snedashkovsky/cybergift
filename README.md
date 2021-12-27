@@ -258,3 +258,10 @@ This incentive does not apply to the **Manual Set Addresses** audience.
 
 [Final Distribution Table](https://console.cloud.google.com/bigquery?project=cosmic-keep-223223&p=cosmic-keep-223223&d=final&t=final_distribution&page=table&ws=!1m5!1m4!4m3!1scosmic-keep-223223!2sfinal!3sfinal_distribution)  
 **Check your address in the [Dashboard](https://datastudio.google.com/u/0/reporting/53e1c28b-9f10-497c-9b5b-9f2a4749450b)**
+
+# Result Validation
+My name is Maxim Razhev (@ninjascant). I'm a software engineer with 3+ years of experience in blockchain analytics development. I made a manual re-check of queries used here e.g.
+- re-calculating balances on a subset of wallets and comparing with a node output
+- comparing the list of NFTs and other entities with open sources like Etherscan and OpenSea
+- verifying that the data presented in the final tables are consistent with query logic
+So, by making this commit, I confirm that the results of the analysis presented in this repository are checked by me and correct.
