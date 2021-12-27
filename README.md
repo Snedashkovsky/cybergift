@@ -264,4 +264,5 @@ My name is Maxim Razhev (@ninjascant). I'm a software engineer with 3+ years of 
 - re-calculating balances on a subset of wallets and comparing with a node output
 - comparing the list of NFTs and other entities with open sources like Etherscan and OpenSea
 - verifying that the data presented in the final tables are consistent with query logic
+
 So, by making this commit, I confirm that the results of the analysis presented in this repository are checked by me and correct.
