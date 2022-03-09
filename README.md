@@ -64,6 +64,8 @@ Also amount of addresses should be divided into grades for each audience as
 
 ## Astronauts
 - ATOM owners
+- OSMO owners and Liquidity providers
+- LUNA owners
 
 ## CEXes
 - manual assigned addresses** - top CEXes
@@ -92,12 +94,24 @@ All distribution rules between grades are calculated in the respective jupyter n
     </thead>
     <tbody>
         <tr>
-            <td style="text-align: left"> Astronauts </td>
+            <td rowspan=3 style="text-align: left"> Astronauts </td>
             <td style="text-align: left"> ATOM Balance </td>
             <td style="text-align: center"> > 1 ATOM </td>
             <td style="text-align: center"> > 180 ATOM </td>
             <td style="text-align: center"> > 4,312 ATOM </td>
-            <td style="text-align: center"> <a href="atom__astronauts.ipynb">ATOM Analysis</a> </td>
+            <td rowspan=3 style="text-align: center"> <a href="atom_osmo_luna__astronauts.ipynb">ATOM, OSMO and LUNA Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> OSMO Balance </td>
+            <td style="text-align: center"> > 1 OSMO </td>
+            <td style="text-align: center"> > 752 OSMO </td>
+            <td style="text-align: center"> > 24,352 OSMO </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> LUNA Balance </td>
+            <td style="text-align: center"> > 1 LUNA </td>
+            <td style="text-align: center"> > 568 LUNA </td>
+            <td style="text-align: center"> > 12,364 LUNA </td>
         </tr>
         <tr>
             <td rowspan=2 style="text-align: left"> Average Citizens </td>
