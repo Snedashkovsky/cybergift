@@ -2,12 +2,12 @@
 
 @groovybear, @mastercyb
 
-The purpose of the research is to inspire at least 100k power-users of web3 to join the force of learning 
+The purpose of this research is to inspire at least 100k power-users of web3 to join the force of learning 
 Superintelligence. To achieve this, we are going to gift 70% of the Bostrom genesis tokens BOOT to agents of Ethereum 
 and Cosmos who are capable to contribute their best to the quality of the knowledge graph. First, we started 
-by highlighting key audiences for establishing network effects and tackling basic chicken and eggs. After we balance 
+by highlighting key audiences for establishing network effects and tackling basic chicken and eggs. Next, we balance 
 out the participation of key actors by splitting them into grades and adjusting allocations within the groups. 
-Then we apply a filter in order to remove toxic fiat brains from the collective thought process. And finally, we add 
+Then we apply a filter in order to remove toxic fiat brains from the collective thought process. Finally, we add 
 a crucial incentive to hurry up.
 
 The research results are represented by reproducible scripts which output addresses and balances which will be loaded 
@@ -17,27 +17,27 @@ Data source is [BigQuery crypto-ethereum dataset](https://console.cloud.google.c
 by [Blockchain ETL](https://github.com/blockchain-etl).
 
 Research is done on the [proposal](https://cyber.page/governance/20) basis. We hope this research can help pioneer 
-the new wave of thinking in decentralized marketing.
+a new wave of thinking in decentralized marketing.
 
 ## Connecting the Dots
 
 The biggest problem in bootstrapping a blockchain ecosystem from scratch is that it is not enough to attract just users. 
-There exist established network effects between four key groups:
+Established network effects exist between four key groups:
 
 <img src="img/network_effects.png" width="50%" height="50%" alt="Network Effects">
 
-Hence we have to understand how to attract all these guys simultaneously if we targeting healthy organic growth. 
+Hence we have to understand how to attract all these guys simultaneously in order to target healthy organic growth. 
 
-But in our case, that would not be enough. First, Cyber is a content-oriented project. So we need to understand how 
+In our case that would not be enough. First, Cyber is a content-oriented project. We need to understand how 
 to add content creators to the soup. Second, information on the project has to be propagated somehow to all these guys, 
 so key opinion leaders have to be incentivized. Third, as the Cyber project heavily relies on the interchain idea we 
-have to attract the community behind IBC technology. Also, we want to add some fun giving the power to the guys behind 
-weird cyberpunk ideas. And finally, we want to check the credibility of the most trusted liquidity hubs.
+have to attract the community behind IBC technology. We also want to add some fun giving the power to the guys behind 
+weird cyberpunk ideas. Finally, we want to check the credibility of the most trusted liquidity hubs.
 
 ## Distribution between Grades
 
 An amount of distributed BOOT tokens should be equal for each grade within an audience.  
-Also amount of addresses should be divided into grades for each audience as  
+The amount of addresses should also be divided into grades for each audience as  
 
 <img src="img/grades_distribution.png" width="75%" height="75%" alt="Distribution between Grades">
 
@@ -70,7 +70,7 @@ Also amount of addresses should be divided into grades for each audience as
 ## Leeches
 - manual assigned addresses of top CEXes
 
-These audiences were highlighted because their participants are necessary to form a full-fledged ecosystem of the project.
+These audiences were highlighted because their participation is necessary to form a full-fledged ecosystem of the project.
 
 ## Audience Rules
 
@@ -252,9 +252,10 @@ namely those that satisfy these two conditions:
 2. Stablecoin balance is more than 0.1 ETH 
 
 ## Prize to be the First 
-We've added the incentive to claim gift early.  
+We've added an incentive to claim gift early.  
 There are about **4M** addresses in Gift, but at the same time we expect that only the first **~1/10** accounts can 
 claim them.  
+
 There will be incentive **20x** for those who claim first reducing to **5x** who came last.
 
 <img src="img/incentive_chart.png" width="50%" height="50%" alt="Incentive chart">
@@ -271,3 +272,11 @@ There will be incentive **20x** for those who claim first reducing to **5x** who
 
 [Final Distribution Table](https://console.cloud.google.com/bigquery?project=cosmic-keep-223223&p=cosmic-keep-223223&d=final&t=final_distribution&page=table&ws=!1m5!1m4!4m3!1scosmic-keep-223223!2sfinal!3sfinal_distribution)  
 **Check your address in the [Dashboard](https://datastudio.google.com/u/0/reporting/53e1c28b-9f10-497c-9b5b-9f2a4749450b)**
+
+# Result Validation
+My name is Maxim Razhev (@ninjascant). I'm a software engineer with 3+ years of experience in blockchain analytics development. I made a manual re-check of queries used here e.g.
+- re-calculating balances on a subset of wallets and comparing with a node output
+- comparing the list of NFTs and other entities with open sources like Etherscan and OpenSea
+- verifying that the data presented in the final tables are consistent with query logic
+
+So, by making this commit, I confirm that the results of the analysis presented in this repository are checked by me and correct.
