@@ -44,31 +44,31 @@ Also amount of addresses should be divided into grades for each audience as
 ## Average Citizens
 - ETH owners and senders of outgoing transactions
 
-## Heroes of the Great Web
-- participants of Genesis and ETH 2.0 stackers
-
-## Extraordinary Hackers
- - contract creators
-
-## Passionate Investors
-- owners of the selected ERC20 tokens
+## Astronauts
+- ATOM owners
+- OSMO owners and liquidity providers
+- LUNA owners
 
 ## Masters of the Great Web
 - ERC721 owners and creators of contracts using factories
 
-## Key Opinion Leaders**
+## Extraordinary Hackers
+ - contract creators
+
+## Heroes of the Great Web
+- participants of Genesis and ETH 2.0 stackers
+
+## Passionate Investors
+- owners of the selected ERC20 tokens
+
+## Key Opinion Leaders
 - TOP holders by the selected ERC20 tokens
 
 ## Cyberpunks
 - owners of the cyberpunk tokens
 
-## Astronauts
-- ATOM owners
-- OSMO owners and Liquidity providers
-- LUNA owners
-
-## CEXes
-- manual assigned addresses** - top CEXes
+## Leeches
+- manual assigned addresses of top CEXes
 
 These audiences were highlighted because their participants are necessary to form a full-fledged ecosystem of the project.
 
@@ -94,11 +94,25 @@ All distribution rules between grades are calculated in the respective jupyter n
     </thead>
     <tbody>
         <tr>
+            <td rowspan=2 style="text-align: left"> Average Citizens </td>
+            <td style="text-align: left"> ETH balance > 0.12 ETH and Amount of outgoing tx</td>
+            <td style="text-align: center"> > 4 tx </td>
+            <td style="text-align: center"> > 125 tx </td>
+            <td style="text-align: center"> > 1,531 tx </td>
+            <td rowspan=2 style="text-align: center"> <a href="eth_and_tx__citizens.ipynb">ETH Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> ETH balance</td>
+            <td style="text-align: center"> > 1 ETH</td>
+            <td style="text-align: center"> > 29 ETH</td>
+            <td style="text-align: center"> > 485 ETH</td>
+        </tr>
+        <tr>
             <td rowspan=3 style="text-align: left"> Astronauts </td>
             <td style="text-align: left"> ATOM Balance </td>
             <td style="text-align: center"> > 1 ATOM </td>
             <td style="text-align: center"> > 180 ATOM </td>
-            <td style="text-align: center"> > 4,312 ATOM </td>
+            <td style="text-align: center"> > 4,352 ATOM </td>
             <td rowspan=3 style="text-align: center"> <a href="atom_osmo_luna__astronauts.ipynb">ATOM, OSMO and LUNA Analysis</a> </td>
         </tr>
         <tr>
@@ -114,18 +128,69 @@ All distribution rules between grades are calculated in the respective jupyter n
             <td style="text-align: center"> > 12,364 LUNA </td>
         </tr>
         <tr>
-            <td rowspan=2 style="text-align: left"> Average Citizens </td>
-            <td style="text-align: left"> ETH balance > 0.12 ETH and Amount of outgoing tx</td>
-            <td style="text-align: center"> > 4 tx </td>
-            <td style="text-align: center"> > 125 tx </td>
-            <td style="text-align: center"> > 1,531 tx </td>
-            <td rowspan=2 style="text-align: center"> <a href="eth_and_tx__citizens.ipynb">ETH Analysis</a> </td>
+            <td rowspan=3 style="text-align: left"> Masters of the Great Web </td>
+            <td style="text-align: left"> Amount of ERC721 tokens </td>
+            <td style="text-align: center"> > 0 NFT </td>
+            <td style="text-align: center"> > 12 NFT </td>
+            <td style="text-align: center"> > 160 NFT </td>
+            <td rowspan=2 style="text-align: center"> <a href="erc721__masters_and_cyberpunks.ipynb">ERC721 Analysis</a> </td>
         </tr>
         <tr>
-            <td style="text-align: left"> ETH balance</td>
-            <td style="text-align: center"> > 1 ETH</td>
-            <td style="text-align: center"> > 29 ETH</td>
-            <td style="text-align: center"> > 485 ETH</td>
+            <td style="text-align: left"> Owners of the Selected ERC721 tokens </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> ENS </td>
+            <td style="text-align: center" style="text-align: center"> Gitcoin Kudos or LAND </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Fee spending to contracts<sup>4</sup>, by contract creators, ETH </td>
+            <td style="text-align: center"> > 0 ETH </td>
+            <td style="text-align: center"> > 0.004 ETH </td>
+            <td style="text-align: center"> > 0.477 ETH </td>
+            <td style="text-align: center"> <a href="gas__hackers_and_masters.ipynb">Gas Analysis</a> </td>
+        </tr>
+        <tr>
+            <td rowspan=2 style="text-align: left"> Extraordinary Hackers </td>
+            <td> Fee spending to created contracts<sup>1</sup> by contract creators<sup>2</sup> </td>
+            <td style="text-align: center"> > 0 ETH </td>
+            <td style="text-align: center"> > 4 ETH </td>
+            <td style="text-align: center"> > 254 ETH </td>
+            <td rowspan=2 style="text-align: center"> <a href="gas__hackers_and_masters.ipynb">Gas Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Fee spending to created contracts<sup>1</sup> by factory creators<sup>3</sup> </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> > 0 ETH </td>
+            <td style="text-align: center"> > 10 ETH </td>
+        </tr>
+        <tr>
+            <td rowspan=2 style="text-align: left"> Heroes of the Great Web </td>
+            <td style="text-align: left"> Genesis </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> only here </td>
+            <td rowspan=2 style="text-align: center"> <a href="genesis_and_eth2__heroes.ipynb">Genesis and ETH2 Stakers</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> ETH 2.0 Stakers </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> only here </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Passionate Investors </td>
+            <td style="text-align: left"> Number of selected ERC20 tokens >= 2 and balance of it </td>
+            <td style="text-align: center"> > 0.01 ETH </td>
+            <td style="text-align: center"> > 3 ETH </td>
+            <td style="text-align: center"> > 55 ETH </td>
+            <td style="text-align: center"> <a href="erc20__investors_and_cyberpunks.ipynb">ERC20 Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Key Opinion Leaders </td>
+            <td style="text-align: left"> Top 100 Holders by selected ERC20 Tokens </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> only here </td>
+            <td style="text-align: center"> <a href="erc20__leaders.ipynb">Top ERC20 Holders</a> </td>
         </tr>
         <tr>
             <td rowspan=3 style="text-align: left"> Cyberpunks </td>
@@ -150,77 +215,12 @@ All distribution rules between grades are calculated in the respective jupyter n
             <td style="text-align: center"> <a href="urbit__cyberpunks.ipynb">Urbit Analysis</a> </td>
         </tr>
         <tr>
-            <td rowspan=2 style="text-align: left"> Extraordinary Hackers </td>
-            <td> Fee spending to created contracts<sup>1</sup> by contract creators<sup>2</sup> </td>
-            <td style="text-align: center"> > 0 ETH </td>
-            <td style="text-align: center"> > 4 ETH </td>
-            <td style="text-align: center"> > 254 ETH </td>
-            <td rowspan=2 style="text-align: center"> <a href="gas__hackers_and_masters.ipynb">Gas Analysis</a> </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Fee spending to created contracts<sup>1</sup> by factory creators<sup>3</sup> </td>
-            <td style="text-align: center"> - </td>
-            <td style="text-align: center"> > 0 ETH </td>
-            <td style="text-align: center"> > 10 ETH </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Key Opinion Leaders </td>
-            <td style="text-align: left"> Top 100 Holders by selected ERC20 Tokens </td>
-            <td style="text-align: center"> - </td>
-            <td style="text-align: center"> - </td>
-            <td style="text-align: center"> only here </td>
-            <td style="text-align: center"> <a href="erc20__leaders.ipynb">Top ERC20 Holders</a> </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Manual Assigned Addresses </td>
+            <td style="text-align: left"> Leeches </td>
             <td style="text-align: left"> 10 CEXes addresses </td>
             <td style="text-align: center"> - </td>
             <td style="text-align: center"> - </td>
             <td style="text-align: center"> only here </td>
             <td style="text-align: center"> <a href="manual_assigned_addresses__cexes.ipynb">Assigning Addresses</a> </td>
-        </tr>
-        <tr>
-            <td rowspan=3 style="text-align: left"> Masters of the Great Web </td>
-            <td style="text-align: left"> Amount of ERC721 tokens </td>
-            <td style="text-align: center"> > 0 NFT </td>
-            <td style="text-align: center"> > 12 NFT </td>
-            <td style="text-align: center"> > 160 NFT </td>
-            <td rowspan=2 style="text-align: center"> <a href="erc721__masters_and_cyberpunks.ipynb">ERC721 Analysis</a> </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Owners of the Selected ERC721 tokens </td>
-            <td style="text-align: center"> - </td>
-            <td style="text-align: center"> ENS </td>
-            <td style="text-align: center" style="text-align: center"> Gitcoin Kudos or LAND </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Fee spending to contracts<sup>4</sup>, by contract creators, ETH </td>
-            <td style="text-align: center"> > 0 ETH </td>
-            <td style="text-align: center"> > 0.004 ETH </td>
-            <td style="text-align: center"> > 0.477 ETH </td>
-            <td style="text-align: center"> <a href="gas__hackers_and_masters.ipynb">Gas Analysis</a> </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Passionate Investors </td>
-            <td style="text-align: left"> Number of selected ERC20 tokens >= 2 and balance of it </td>
-            <td style="text-align: center"> > 0.01 ETH </td>
-            <td style="text-align: center"> > 3 ETH </td>
-            <td style="text-align: center"> > 55 ETH </td>
-            <td style="text-align: center"> <a href="erc20__investors_and_cyberpunks.ipynb">ERC20 Analysis</a> </td>
-        </tr>
-        <tr>
-            <td rowspan=2 style="text-align: left"> True Heroes of the Great Web </td>
-            <td style="text-align: left"> Genesis </td>
-            <td style="text-align: center"> - </td>
-            <td style="text-align: center"> - </td>
-            <td style="text-align: center"> only here </td>
-            <td rowspan=2 style="text-align: center"> <a href="genesis_and_eth2__heroes.ipynb">Genesis and ETH2 Stakers</a> </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> ETH 2.0 Stakers </td>
-            <td style="text-align: center"> - </td>
-            <td style="text-align: center"> - </td>
-            <td style="text-align: center"> only here </td>
         </tr>
         <tr>
             <td colspan=5 style="text-align: left"> Final Distribution </td>
@@ -255,8 +255,7 @@ namely those that satisfy these two conditions:
 We've added the incentive to claim gift early.  
 There are about **4M** addresses in Gift, but at the same time we expect that only the first **~1/10** accounts can 
 claim them.  
-There will be incentive **20x** for those who claim first reducing to **5x** who came last.  
-This incentive does not apply to the **Manual Set Addresses** audience.  
+There will be incentive **20x** for those who claim first reducing to **5x** who came last.
 
 <img src="img/incentive_chart.png" width="50%" height="50%" alt="Incentive chart">
 
