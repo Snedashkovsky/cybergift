@@ -44,13 +44,13 @@ The amount of addresses should also be divided into grades for each audience as
 ## Average Citizens
 - ETH owners and senders of outgoing transactions
 
+## Masters of the Great Web
+- ERC721 owners and creators of contracts using factories
+
 ## Astronauts
 - ATOM owners
 - OSMO owners and liquidity providers
 - LUNA owners
-
-## Masters of the Great Web
-- ERC721 owners and creators of contracts using factories
 
 ## Extraordinary Hackers
  - contract creators
@@ -108,26 +108,6 @@ All distribution rules between grades are calculated in the respective jupyter n
             <td style="text-align: center"> > 485 ETH</td>
         </tr>
         <tr>
-            <td rowspan=3 style="text-align: left"> Astronauts </td>
-            <td style="text-align: left"> ATOM Balance </td>
-            <td style="text-align: center"> > 1 ATOM </td>
-            <td style="text-align: center"> > 180 ATOM </td>
-            <td style="text-align: center"> > 4,352 ATOM </td>
-            <td rowspan=3 style="text-align: center"> <a href="atom_osmo_luna__astronauts.ipynb">ATOM, OSMO and LUNA Analysis</a> </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> OSMO Balance </td>
-            <td style="text-align: center"> > 1 OSMO </td>
-            <td style="text-align: center"> > 752 OSMO </td>
-            <td style="text-align: center"> > 24,352 OSMO </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> LUNA Balance </td>
-            <td style="text-align: center"> > 1 LUNA </td>
-            <td style="text-align: center"> > 568 LUNA </td>
-            <td style="text-align: center"> > 12,364 LUNA </td>
-        </tr>
-        <tr>
             <td rowspan=3 style="text-align: left"> Masters of the Great Web </td>
             <td style="text-align: left"> Amount of ERC721 tokens </td>
             <td style="text-align: center"> > 0 NFT </td>
@@ -147,6 +127,26 @@ All distribution rules between grades are calculated in the respective jupyter n
             <td style="text-align: center"> > 0.004 ETH </td>
             <td style="text-align: center"> > 0.477 ETH </td>
             <td style="text-align: center"> <a href="gas__hackers_and_masters.ipynb">Gas Analysis</a> </td>
+        </tr>
+        <tr>
+            <td rowspan=3 style="text-align: left"> Astronauts </td>
+            <td style="text-align: left"> ATOM Balance </td>
+            <td style="text-align: center"> > 1 ATOM </td>
+            <td style="text-align: center"> > 180 ATOM </td>
+            <td style="text-align: center"> > 4,352 ATOM </td>
+            <td rowspan=3 style="text-align: center"> <a href="atom_osmo_luna__astronauts.ipynb">ATOM, OSMO and LUNA Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> OSMO Balance </td>
+            <td style="text-align: center"> > 1 OSMO </td>
+            <td style="text-align: center"> > 752 OSMO </td>
+            <td style="text-align: center"> > 24,352 OSMO </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> LUNA Balance </td>
+            <td style="text-align: center"> > 1 LUNA </td>
+            <td style="text-align: center"> > 568 LUNA </td>
+            <td style="text-align: center"> > 12,364 LUNA </td>
         </tr>
         <tr>
             <td rowspan=2 style="text-align: left"> Extraordinary Hackers </td>
@@ -256,7 +256,7 @@ We've added an incentive to claim gift early.
 There are about **4M** addresses in Gift, but at the same time we expect that only the first **~1/10** accounts can 
 claim them.  
 
-There will be incentive **20x** for those who claim first reducing to **5x** who came last.
+There will be incentive **15x** for those who claim first reducing to **5x** who came last.
 
 <img src="img/incentive_chart.png" width="50%" height="50%" alt="Incentive chart">
 
