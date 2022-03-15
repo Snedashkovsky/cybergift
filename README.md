@@ -256,7 +256,7 @@ We've added an incentive to claim gift early.
 There are about **4M** addresses in Gift, but at the same time we expect that only the first **~1/10** accounts can 
 claim them.  
 
-There will be incentive **15x** for those who claim first reducing to **5x** who came last.
+There will be incentive **13x** for those who claim first reducing to **7x** who came last.
 
 <img src="img/incentive_chart.png" width="50%" height="50%" alt="Incentive chart">
 
