@@ -17,11 +17,13 @@ def calculate_and_display_rules(
         value_column: str,
         value_name: str,
         address_column: str,
-        boundary_round: int) -> list:
+        boundary_round: int,
+        max_boundary=None) -> list:
     """
     Calculate rule boundaries in according with percentage levels
     :param distribution_df: Source DataFrame
     :param initial_boundary: Minimum value of analyzed parameter that should be included in analysis
+    :param max_boundary: Maximum value of analyzed parameter that should be included in analysis
     :param target_grade_shares: Cumulative sum boundaries by addresses share
     :param value_column: Column name of analyzed parameter
     :param value_name: Name of analyzed parameter for inserting in the rules
@@ -30,7 +32,11 @@ def calculate_and_display_rules(
     :return: Rule Boundaries
     """
 
-    distribution_slice_df = distribution_df[distribution_df[value_column] > initial_boundary].copy()
+    if max_boundary:
+        distribution_slice_df = distribution_df[(distribution_df[value_column] > initial_boundary)
+                                                & (distribution_df[value_column] < max_boundary)].copy()
+    else:
+        distribution_slice_df = distribution_df[distribution_df[value_column] > initial_boundary].copy()
 
     total_addresses = distribution_slice_df[address_column].sum()
 
@@ -143,7 +149,8 @@ def grade_boundaries_analysis(
         max_show_value: float = 200,
         level_line_shift: float = 0.5,
         initial_boundary: float = 0.0,
-        boundary_round=0) -> list:
+        max_boundary=None,
+        boundary_round: int = 0) -> list:
     """
     Calculate rule boundaries in according with percentage levels and display distribution
     :param distribution_df: Source DataFrame
@@ -159,6 +166,7 @@ def grade_boundaries_analysis(
     :param max_show_value:  Maximum value of analyzed parameter that should be shown
     :param level_line_shift: Shift for correct display of grade boundaries
     :param initial_boundary: Minimum value of analyzed parameter that should be included in analysis
+    :param max_boundary: Maximum value of analyzed parameter that should be included in analysis
     :param boundary_round: Number of decimals for boundary rounding
     :return: Rule boundaries
     """
@@ -169,6 +177,7 @@ def grade_boundaries_analysis(
     boundaries = calculate_and_display_rules(
         distribution_df=distribution_df,
         initial_boundary=initial_boundary,
+        max_boundary=max_boundary,
         target_grade_shares=target_grade_shares,
         value_column=value_column,
         value_name=value_name,
