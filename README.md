@@ -34,6 +34,33 @@ so key opinion leaders have to be incentivized. Third, as the Cyber project heav
 have to attract the community behind IBC technology. We also want to add some fun giving the power to the guys behind 
 weird cyberpunk ideas. Finally, we want to check the credibility of the most trusted liquidity hubs.
 
+## Audience Rules
+
+The initial conditions for the allocation of classes were selected based on the analysis of web3 user activity and the need to cover the most web3 power-users.  
+All distribution rules between grades are calculated in the respective jupyter notebooks. 
+
+These audiences were highlighted because their participation is necessary to form a full-fledged ecosystem of the project.
+
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <td colspan=5 style="text-align: left"> Final Distribution </td>
+            <td style="text-align: center"> <a href="final_distribution.ipynb">Final Distribution</a></td>
+        </tr>
+    </tbody>
+</table>
+
+Based on counting the number of addresses and determining the fair reward of the participants of each audience, the following balanced distribution between them is proposed:  
+
+<img src="img/audiences_distribution.png" width="75%" height="75%" alt="Distribution between Audiences">
+
+When an address hits multiple audiences, its reward is cumulative.
+
+An amount of distributed BOOT tokens should be equal for each grade within an audience.  
+The amount of addresses should also be divided into grades for each audience as  
+
+<img src="img/grades_distribution.png" width="75%" height="75%" alt="Distribution between Grades">
+
 ## Getting the Crowd
 The most crowded audience is ETH holders and users. We identified 2 audiences: those who hold, and those who hold and transact. Following paretto principle our target was to exclude majority of the most either inactive addresses or addresses with insignificant holdings:
 <table style="text-align: left">
@@ -219,18 +246,8 @@ Key figures who connect ethereum with different audiences are projects who are b
 </table>
 
 ## Cyberpunks
-- owners of the cyberpunk tokens
 
-## Leeches
-- manual assigned addresses of top CEXes
-
-These audiences were highlighted because their participation is necessary to form a full-fledged ecosystem of the project.
-
-## Audience Rules
-
-The initial conditions for the allocation of classes were selected based on the analysis of web3 user activity and the 
-need to cover the most web3 power-users.  
-All distribution rules between grades are calculated in the respective jupyter notebooks. 
+There are groups that create a revolution without regard to trends. These groups include Urbit, Foam and Dragonereum. Another interesting group is donors of Ethereum foundation. We decide to reward them for fun. 
 
 <table style="text-align: left">
     <thead style="text-align: center">
@@ -256,6 +273,15 @@ All distribution rules between grades are calculated in the respective jupyter n
             <td style="text-align: center"> here </td>
             <td style="text-align: center"> <a href="urbit__cyberpunks.ipynb">Urbit Analysis</a> </td>
         </tr>
+    </tbody>
+</table>
+
+## Understanding Devils
+
+We inlcude top 10 cetnralized exchanges to the gift because we want to understand their behavour better.
+
+<table style="text-align: left">
+    <thead style="text-align: center">
         <tr>
             <td style="text-align: left"> Leeches </td>
             <td style="text-align: left"> 10 CEXes addresses </td>
@@ -264,28 +290,8 @@ All distribution rules between grades are calculated in the respective jupyter n
             <td style="text-align: center"> only here </td>
             <td style="text-align: center"> <a href="manual_assigned_addresses__cexes.ipynb">Assigning Addresses</a> </td>
         </tr>
-        <tr>
-            <td colspan=5 style="text-align: left"> Final Distribution </td>
-            <td style="text-align: center"> <a href="final_distribution.ipynb">Final Distribution</a></td>
-        </tr>
     </tbody>
 </table>
-
-## Distribution between Audiences
-
-Based on counting the number of addresses and determining the fair reward of the participants of each audience, 
-the following balanced distribution between them is proposed:  
-
-<img src="img/audiences_distribution.png" width="75%" height="75%" alt="Distribution between Audiences">
-
-When an address hits multiple audiences, its reward is cumulative.
-
-## Distribution between Grades
-
-An amount of distributed BOOT tokens should be equal for each grade within an audience.  
-The amount of addresses should also be divided into grades for each audience as  
-
-<img src="img/grades_distribution.png" width="75%" height="75%" alt="Distribution between Grades">
 
 ## Excluding Fiat Brains 
 
