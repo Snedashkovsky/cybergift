@@ -35,7 +35,7 @@ have to attract the community behind IBC technology. We also want to add some fu
 weird cyberpunk ideas. Finally, we want to check the credibility of the most trusted liquidity hubs.
 
 ## Getting the Crowd
-The most crowded audience is ETH holders and users. We identified 2 audiences: those who hold, and those who hold and transact. Our target was to exclude ~90% of the most either inactive or insignificant addresses:
+The most crowded audience is ETH holders and users. We identified 2 audiences: those who hold, and those who hold and transact. Following paretto principle our target was to exclude majority of the most either inactive addresses or addresses with insignificant holdings:
 <table style="text-align: left">
     <thead style="text-align: center">
         <tr>
@@ -68,8 +68,7 @@ The most crowded audience is ETH holders and users. We identified 2 audiences: t
     </tbody>
 </table>
 
-## Hunting for Content creators
-
+## Hunting for Content Creators
 
 Key assumption is that nft releated actions will rise the chance of using cyberlinks because picture owners would love to make them searchable. We decide that all nft owners deserve attention becasue they are on the edge of web3 technology.
 
@@ -104,10 +103,34 @@ Another important subadience is ENS and decentraLAND holders. This group is spec
 </i>
 
 
-## Astronauts
-- ATOM owners
-- OSMO owners and liquidity providers
-- LUNA owners
+## Attracting Astronauts
+
+Bostrom is built using cosmos-sdk so attracting cosmonauts is essential for the project health and interchain expansion. The most crowded and useful chains are Cosmos Hub, Osmosis and Terra. We followed the same paretto principle while filtering agents with insignificant holdings.
+
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <td rowspan=3 style="text-align: left"> Astronauts </td>
+            <td style="text-align: left"> ATOM Balance </td>
+            <td style="text-align: center"> > 1 ATOM </td>
+            <td style="text-align: center"> > 180 ATOM </td>
+            <td style="text-align: center"> > 4,352 ATOM </td>
+            <td rowspan=3 style="text-align: center"> <a href="atom_osmo_luna__astronauts.ipynb">ATOM, OSMO and LUNA Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> OSMO Balance </td>
+            <td style="text-align: center"> > 1 OSMO </td>
+            <td style="text-align: center"> > 752 OSMO </td>
+            <td style="text-align: center"> > 24,352 OSMO </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> LUNA Balance </td>
+            <td style="text-align: center"> > 1 LUNA </td>
+            <td style="text-align: center"> > 568 LUNA </td>
+            <td style="text-align: center"> > 12,364 LUNA </td>
+        </tr>
+    </tbody>
+</table>
 
 ## Extraordinary Hackers
  - contract creators
@@ -137,26 +160,7 @@ All distribution rules between grades are calculated in the respective jupyter n
 
 <table style="text-align: left">
     <thead style="text-align: center">
-        <tr>
-            <td rowspan=3 style="text-align: left"> Astronauts </td>
-            <td style="text-align: left"> ATOM Balance </td>
-            <td style="text-align: center"> > 1 ATOM </td>
-            <td style="text-align: center"> > 180 ATOM </td>
-            <td style="text-align: center"> > 4,352 ATOM </td>
-            <td rowspan=3 style="text-align: center"> <a href="atom_osmo_luna__astronauts.ipynb">ATOM, OSMO and LUNA Analysis</a> </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> OSMO Balance </td>
-            <td style="text-align: center"> > 1 OSMO </td>
-            <td style="text-align: center"> > 752 OSMO </td>
-            <td style="text-align: center"> > 24,352 OSMO </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> LUNA Balance </td>
-            <td style="text-align: center"> > 1 LUNA </td>
-            <td style="text-align: center"> > 568 LUNA </td>
-            <td style="text-align: center"> > 12,364 LUNA </td>
-        </tr>
+        
         <tr>
             <td rowspan=2 style="text-align: left"> Extraordinary Hackers </td>
             <td> Fee spending to created contracts<sup>1</sup> by contract creators<sup>2</sup> </td>
