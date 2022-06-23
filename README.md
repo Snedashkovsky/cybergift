@@ -201,8 +201,22 @@ We need to bring a capital to the table. We decide to narrow the scope to those 
 </table>
         
 
-##  Key Opinion Leaders
-- TOP holders by the selected ERC20 tokens
+##  Inspiring Key Opinion Leaders
+
+Key figures who connect ethereum with different audiences are projects who are building on top of ethereum. Hence giving tokens to those who are able to lead these groups is likely a good idea. So we include into the scope top token holders of selected projects. To our surprise, we found that there is very little overlap between these people, which adds to our hypothesis.
+
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <td style="text-align: left"> Key Opinion Leaders </td>
+            <td style="text-align: left"> Top 100 Holders by selected ERC20 Tokens </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> only here </td>
+            <td style="text-align: center"> <a href="erc20__leaders.ipynb">Top ERC20 Holders</a> </td>
+        </tr>
+    </tbody>
+</table>
 
 ## Cyberpunks
 - owners of the cyberpunk tokens
@@ -220,22 +234,6 @@ All distribution rules between grades are calculated in the respective jupyter n
 
 <table style="text-align: left">
     <thead style="text-align: center">
-        <tr>
-            <td style="text-align: left"> Passionate Investors </td>
-            <td style="text-align: left"> Number of selected ERC20 tokens >= 2 and balance of it </td>
-            <td style="text-align: center"> > 0.01 ETH </td>
-            <td style="text-align: center"> > 3 ETH </td>
-            <td style="text-align: center"> > 55 ETH </td>
-            <td style="text-align: center"> <a href="erc20__investors_and_cyberpunks.ipynb">ERC20 Analysis</a> </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Key Opinion Leaders </td>
-            <td style="text-align: left"> Top 100 Holders by selected ERC20 Tokens </td>
-            <td style="text-align: center"> - </td>
-            <td style="text-align: center"> - </td>
-            <td style="text-align: center"> only here </td>
-            <td style="text-align: center"> <a href="erc20__leaders.ipynb">Top ERC20 Holders</a> </td>
-        </tr>
         <tr>
             <td rowspan=3 style="text-align: left"> Cyberpunks </td>
             <td style="text-align: left"> Owners of the Selected ERC20 tokens </td>
