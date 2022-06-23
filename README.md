@@ -132,8 +132,33 @@ Bostrom is built using cosmos-sdk so attracting cosmonauts is essential for the 
     </tbody>
 </table>
 
-## Extraordinary Hackers
- - contract creators
+## Praying for Hackers
+
+Developers, developers, developers... Success of any protocol is defined by it's ability to attract developers. Luckily Ethereum laid amazing foundation for identification of succesfull developers. Gas fee drop method is unambiguous and provable way to give tokens in the right hands.
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <td rowspan=2 style="text-align: left"> Extraordinary Hackers </td>
+            <td> Fee spending to created contracts<sup>1</sup> by contract creators<sup>2</sup> </td>
+            <td style="text-align: center"> > 0 ETH </td>
+            <td style="text-align: center"> > 4 ETH </td>
+            <td style="text-align: center"> > 254 ETH </td>
+            <td rowspan=2 style="text-align: center"> <a href="gas__hackers_and_masters.ipynb">Gas Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Fee spending to created contracts<sup>1</sup> by factory creators<sup>3</sup> </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> > 0 ETH </td>
+            <td style="text-align: center"> > 10 ETH </td>
+        </tr>
+    </tbody>
+</table>
+<i>
+<sup>1</sup>  excluding fee from a contract creator address<br>
+<sup>2</sup>  excluding contracts created by factories<br>
+<sup>3</sup>  excluding factories that only created contracts when called from the creator of that factory<br>
+
+</i>
 
 ## Heroes of the Great Web
 - participants of Genesis and ETH 2.0 stackers
@@ -161,20 +186,7 @@ All distribution rules between grades are calculated in the respective jupyter n
 <table style="text-align: left">
     <thead style="text-align: center">
         
-        <tr>
-            <td rowspan=2 style="text-align: left"> Extraordinary Hackers </td>
-            <td> Fee spending to created contracts<sup>1</sup> by contract creators<sup>2</sup> </td>
-            <td style="text-align: center"> > 0 ETH </td>
-            <td style="text-align: center"> > 4 ETH </td>
-            <td style="text-align: center"> > 254 ETH </td>
-            <td rowspan=2 style="text-align: center"> <a href="gas__hackers_and_masters.ipynb">Gas Analysis</a> </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Fee spending to created contracts<sup>1</sup> by factory creators<sup>3</sup> </td>
-            <td style="text-align: center"> - </td>
-            <td style="text-align: center"> > 0 ETH </td>
-            <td style="text-align: center"> > 10 ETH </td>
-        </tr>
+        
         <tr>
             <td rowspan=2 style="text-align: left"> Heroes of the Great Web </td>
             <td style="text-align: left"> Genesis </td>
@@ -241,12 +253,6 @@ All distribution rules between grades are calculated in the respective jupyter n
         </tr>
     </tbody>
 </table>
-<i>
-<sup>1</sup>  excluding fee from a contract creator address<br>
-<sup>2</sup>  excluding contracts created by factories<br>
-<sup>3</sup>  excluding factories that only created contracts when called from the creator of that factory<br>
-<sup>4</sup> including contracts created by factories only<br>
-</i>
 
 ## Distribution between Audiences
 
