@@ -68,8 +68,41 @@ The most crowded audience is ETH holders and users. We identified 2 audiences: t
     </tbody>
 </table>
 
-## Masters of the Great Web
-- ERC721 owners and creators of contracts using factories
+## Hunting for Content creators
+
+
+Key assumption is that nft releated actions will rise the chance of using cyberlinks because picture owners would love to make them searchable. We decide that all nft owners deserve attention becasue they are on the edge of web3 technology.
+
+Another important subadience is ENS and decentraLAND holders. This group is special because of the reason why they value ENS and LAND. The only utility of ENS and LAND is to bind content hash. Hence they are the most wanted as they prove the intention to create a non trivial content.
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <td rowspan=3 style="text-align: left"> Masters of the Great Web </td>
+            <td style="text-align: left"> Amount of ERC721 tokens </td>
+            <td style="text-align: center"> > 0 NFT </td>
+            <td style="text-align: center"> > 12 NFT </td>
+            <td style="text-align: center"> > 160 NFT </td>
+            <td rowspan=2 style="text-align: center"> <a href="erc721__masters_and_cyberpunks.ipynb">ERC721 Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Owners of the Selected ERC721 tokens </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> ENS </td>
+            <td style="text-align: center" style="text-align: center"> Gitcoin Kudos or LAND </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Fee spending to contracts<sup>4</sup>, by contract creators, ETH </td>
+            <td style="text-align: center"> > 0 ETH </td>
+            <td style="text-align: center"> > 0.004 ETH </td>
+            <td style="text-align: center"> > 0.477 ETH </td>
+            <td style="text-align: center"> <a href="gas__hackers_and_masters.ipynb">Gas Analysis</a>       </td>
+        </tr>
+  </tbody>
+</table>
+<i>
+<sup>4</sup> including contracts created by factories only<br>
+</i>
+
 
 ## Astronauts
 - ATOM owners
@@ -104,27 +137,6 @@ All distribution rules between grades are calculated in the respective jupyter n
 
 <table style="text-align: left">
     <thead style="text-align: center">
-        <tr>
-            <td rowspan=3 style="text-align: left"> Masters of the Great Web </td>
-            <td style="text-align: left"> Amount of ERC721 tokens </td>
-            <td style="text-align: center"> > 0 NFT </td>
-            <td style="text-align: center"> > 12 NFT </td>
-            <td style="text-align: center"> > 160 NFT </td>
-            <td rowspan=2 style="text-align: center"> <a href="erc721__masters_and_cyberpunks.ipynb">ERC721 Analysis</a> </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Owners of the Selected ERC721 tokens </td>
-            <td style="text-align: center"> - </td>
-            <td style="text-align: center"> ENS </td>
-            <td style="text-align: center" style="text-align: center"> Gitcoin Kudos or LAND </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> Fee spending to contracts<sup>4</sup>, by contract creators, ETH </td>
-            <td style="text-align: center"> > 0 ETH </td>
-            <td style="text-align: center"> > 0.004 ETH </td>
-            <td style="text-align: center"> > 0.477 ETH </td>
-            <td style="text-align: center"> <a href="gas__hackers_and_masters.ipynb">Gas Analysis</a> </td>
-        </tr>
         <tr>
             <td rowspan=3 style="text-align: left"> Astronauts </td>
             <td style="text-align: left"> ATOM Balance </td>
