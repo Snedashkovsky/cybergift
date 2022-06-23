@@ -4,11 +4,11 @@
 
 The purpose of this research is to inspire at least 100k power-users of web3 to join the force of learning 
 Superintelligence. To achieve this, we are going to gift 70% of the Bostrom genesis tokens BOOT to agents of Ethereum 
-and Cosmos who are capable to contribute their best to the quality of the knowledge graph. First, we started 
-by highlighting key audiences for establishing network effects and tackling basic chicken and eggs. Next, we balance 
+and Cosmos who are capable of contributing their best to the quality of the knowledge graph. First, we started 
+by highlighting key audiences for establishing network effects and tackling basic chicken and eggs. Next, we balanced 
 out the participation of key actors by splitting them into grades and adjusting allocations within the groups. 
-Then we apply a filter in order to remove toxic fiat brains from the collective thought process. Finally, we add 
-a crucial incentive to hurry up.
+Then we applied a filter in order to remove toxic fiat brains from the collective thought process. Finally, we added 
+a crucial incentive to act quickly.
 
 The research results are represented by reproducible scripts which output addresses and balances which will be loaded 
 to the claim CosmWasm contract after the launch of Bostrom.
@@ -16,7 +16,7 @@ to the claim CosmWasm contract after the launch of Bostrom.
 Data source is [BigQuery crypto-ethereum dataset](https://console.cloud.google.com/bigquery?d=crypto_ethereum&p=bigquery-public-data&page=dataset&project=cosmic-keep-223223) 
 by [Blockchain ETL](https://github.com/blockchain-etl).
 
-Research is done on the [proposal](https://cyber.page/governance/20) basis. We hope this research can help pioneer 
+Research is done on a [proposal](https://cyber.page/governance/20) basis. We hope this research can help pioneer 
 a new wave of thinking in decentralized marketing.
 
 ## Connecting the Dots
@@ -26,12 +26,12 @@ Established network effects exist between four key groups:
 
 <img src="img/network_effects.png" width="50%" height="50%" alt="Network Effects">
 
-Hence we have to understand how to attract all these guys simultaneously in order to target healthy organic growth. 
+Hence we have to understand how to attract all these citizens simultaneously in order to target healthy organic growth. 
 
 In our case that would not be enough. First, Cyber is a content-oriented project. We need to understand how 
 to add content creators to the soup. Second, information on the project has to be propagated somehow to all these guys, 
 so key opinion leaders have to be incentivized. Third, as the Cyber project heavily relies on the interchain idea we 
-have to attract the community behind IBC technology. We also want to add some fun giving the power to the guys behind 
+have to attract the community behind IBC technology. We also want to add some fun by giving the power to the guys behind 
 weird cyberpunk ideas. Finally, we want to check the credibility of the most trusted liquidity hubs.
 
 ## Audience Rules
@@ -62,7 +62,7 @@ The amount of addresses should also be divided into grades for each audience as
 <img src="img/grades_distribution.png" width="75%" height="75%" alt="Distribution between Grades">
 
 ## Getting the Crowd
-The most crowded audience is ETH holders and users. We identified 2 audiences: those who hold, and those who hold and transact. Following paretto principle our target was to exclude majority of the most either inactive addresses or addresses with insignificant holdings:
+The most crowded audience is ETH holders and users. We identified 2 audiences: those who hold, and those who hold and transact. Following the Pareto Principle, our target was to exclude the majority of the most either inactive addresses or addresses with insignificant holdings:
 <table style="text-align: left">
     <thead style="text-align: center">
         <tr>
@@ -97,9 +97,9 @@ The most crowded audience is ETH holders and users. We identified 2 audiences: t
 
 ## Hunting for Content Creators
 
-Key assumption is that nft releated actions will rise the chance of using cyberlinks because picture owners would love to make them searchable. We decide that all nft owners deserve attention becasue they are on the edge of web3 technology.
+The key assumption is that NFT related actions will increase the chance of using cyberlinks because picture owners would love to make them searchable. We decided that all NFT owners deserve attention becasue they are on the edge of web3 technology.
 
-Another important subadience is ENS and decentraLAND holders. This group is special because of the reason why they value ENS and LAND. The only utility of ENS and LAND is to bind content hash. Hence they are the most wanted as they prove the intention to create a non trivial content.
+Another important subadience is ENS and decentraLAND holders. This group is special because they value ENS and LAND. The only utility of ENS and LAND is to bind content hash. Hence they are the most desired as they prove the intention to create non trivial content.
 <table style="text-align: left">
     <thead style="text-align: center">
         <tr>
@@ -132,7 +132,7 @@ Another important subadience is ENS and decentraLAND holders. This group is spec
 
 ## Attracting Astronauts
 
-Bostrom is built using cosmos-sdk so attracting cosmonauts is essential for the project health and interchain expansion. The most crowded and useful chains are Cosmos Hub, Osmosis and Terra. We followed the same paretto principle while filtering agents with insignificant holdings.
+Bostrom is built using Cosmos-sdk, so attracting Cosmonauts is essential for the project health and interchain expansion. The most crowded and useful chains are Cosmos Hub, Osmosis and Terra. We followed the same Pareto Principle while filtering agents with insignificant holdings.
 
 <table style="text-align: left">
     <thead style="text-align: center">
@@ -161,7 +161,7 @@ Bostrom is built using cosmos-sdk so attracting cosmonauts is essential for the 
 
 ## Praying for Hackers
 
-Developers, developers, developers... Success of any protocol is defined by it's ability to attract developers. Luckily Ethereum laid amazing foundation for identification of succesfull developers. Gas fee drop method is unambiguous and provable way to give tokens in the mighty hands.
+Developers, developers, developers... Success of any protocol is defined by it's ability to attract developers. Luckily Ethereum laid an amazing foundation for the identification of succesfull developers. The gas fee drop method is an unambiguous and provable way to give tokens to the mighty hands.
 <table style="text-align: left">
     <thead style="text-align: center">
         <tr>
@@ -189,7 +189,7 @@ Developers, developers, developers... Success of any protocol is defined by it's
 
 ## Formation of Heroes Corpus
 
-Any PoS network is run by validators. We need to attrack best validators who become heroes for us. So we decide to focus on two groups. First group is genesis ethereum investors as they there practically successful in building the biggest GPU mining infrustructure on the planet. Second group is eth2 stakers as they are exactly match the profile we need: patience, technical skills and risk appetite.
+Any PoS network is run by validators. We need to attract the best validators to become heroes for us. We decided to focus on two groups. The first group is genesis Ethereum investors as they were practically successful in building the biggest GPU mining infrustructure on the planet. The second group is Eth2 stakers as they exactly match the profile we need: patience, technical skills and risk appetite.
 
 <table style="text-align: left">
     <thead style="text-align: center">
@@ -212,7 +212,7 @@ Any PoS network is run by validators. We need to attrack best validators who bec
 
 ## Focusing Investors
 
-We need to bring a capital to the table. We decide to narrow the scope to those who invested in at least 2 meaningful ERC-20 tokens we are aware of. Surprisingly there are not so many folks out there with this trait. We assume that this is a profile of investor we need for success.
+We need to bring capital to the table. We decided to narrow the scope to those who invested in at least 2 meaningful ERC-20 tokens we are aware of. Surprisingly there are not so many folks out there with this trait. We assume that this is a profile of the investors we need for success.
 
 <table style="text-align: left">
     <thead style="text-align: center">
@@ -230,7 +230,7 @@ We need to bring a capital to the table. We decide to narrow the scope to those 
 
 ##  Inspiring Key Opinion Leaders
 
-Key figures who connect ethereum with different audiences are projects who are building on top of ethereum. Hence giving tokens to those who are able to lead these groups is likely a good idea. So we include into the scope top token holders of selected projects. To our surprise, we found that there is very little overlap between these people, which adds to our hypothesis.
+Key figures who connect Ethereum to different audiences are projects that are building on top of Ethereum. Hence giving tokens to those who are able to lead these groups is likely a good idea. So we included into the scope top token holders of selected projects. To our surprise, we found that there is very little overlap between these people, which adds to our hypothesis.
 
 <table style="text-align: left">
     <thead style="text-align: center">
@@ -247,7 +247,7 @@ Key figures who connect ethereum with different audiences are projects who are b
 
 ## Cyberpunks
 
-There are groups that create a revolution without regard to trends. These groups include Urbit, Foam and Dragonereum. Another interesting group is donors of Ethereum foundation. We decide to reward them for fun. 
+There are groups that create a revolution without regard to trends. These groups include Urbit, Foam and Dragonereum. Another interesting group is Donors of Ethereum foundation. We decided to reward them for fun. 
 
 <table style="text-align: left">
     <thead style="text-align: center">
@@ -278,7 +278,7 @@ There are groups that create a revolution without regard to trends. These groups
 
 ## Understanding Devils
 
-We inlcude top 10 cetnralized exchanges to the gift because we want to understand their behavour better.
+We included the top 10 centralized exchanges to the gift because we want to better understand their behavior.
 
 <table style="text-align: left">
     <thead style="text-align: center">
@@ -301,11 +301,11 @@ namely those that satisfy these two conditions:
 2. Stablecoin balance is more than 0.1 ETH 
 
 ## Prize to be the First 
-We've added an incentive to claim gift early.  
-There are about **4M** addresses in Gift, but at the same time we expect that only the first **~1/10** accounts can 
+We've added an incentive to claim the gift early.  
+There are about **4M** addresses in Gift, but we expect that only the first **~1/10** accounts can 
 claim them.  
 
-There will be incentive **13x** for those who claim first reducing to **7x** who came last.
+There will be an incentive of **13x** for those who claim first, reducing to **7x** for those who come last.
 
 <img src="img/incentive_chart.png" width="50%" height="50%" alt="Incentive chart">
 
@@ -328,4 +328,4 @@ My name is Maxim Razhev (@ninjascant). I'm a software engineer with 3+ years of 
 - comparing the list of NFTs and other entities with open sources like Etherscan and OpenSea
 - verifying that the data presented in the final tables are consistent with query logic
 
-So, by making this commit, I confirm that the results of the analysis presented in this repository are checked by me and correct.
+By making this commit, I confirm that the results of the analysis presented in this repository are checked by me and correct.
