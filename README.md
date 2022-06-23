@@ -34,15 +34,39 @@ so key opinion leaders have to be incentivized. Third, as the Cyber project heav
 have to attract the community behind IBC technology. We also want to add some fun giving the power to the guys behind 
 weird cyberpunk ideas. Finally, we want to check the credibility of the most trusted liquidity hubs.
 
-## Distribution between Grades
-
-An amount of distributed BOOT tokens should be equal for each grade within an audience.  
-The amount of addresses should also be divided into grades for each audience as  
-
-<img src="img/grades_distribution.png" width="75%" height="75%" alt="Distribution between Grades">
-
-## Average Citizens
-- ETH owners and senders of outgoing transactions
+## Getting the Crowd
+The most crowded audience is ETH holders and users. We identified 2 audiences: those who hold, and those who hold and transact. Our target was to exclude ~90% of the most either inactive or insignificant addresses:
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <th rowspan=2>Audience</th>
+            <th rowspan=2>Rule</th>
+            <th colspan=3>Grade</th>
+            <th rowspan=2>Calculations</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2 style="text-align: left"> Average Citizens </td>
+            <td style="text-align: left"> ETH balance > 0.12 ETH and Amount of outgoing tx</td>
+            <td style="text-align: center"> > 4 tx </td>
+            <td style="text-align: center"> > 125 tx </td>
+            <td style="text-align: center"> > 1,531 tx </td>
+            <td rowspan=2 style="text-align: center"> <a href="eth_and_tx__citizens.ipynb">ETH Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> ETH balance</td>
+            <td style="text-align: center"> > 1 ETH</td>
+            <td style="text-align: center"> > 29 ETH</td>
+            <td style="text-align: center"> > 485 ETH</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Masters of the Great Web
 - ERC721 owners and creators of contracts using factories
@@ -80,33 +104,6 @@ All distribution rules between grades are calculated in the respective jupyter n
 
 <table style="text-align: left">
     <thead style="text-align: center">
-        <tr>
-            <th rowspan=2>Audience</th>
-            <th rowspan=2>Rule</th>
-            <th colspan=3>Grade</th>
-            <th rowspan=2>Calculations<br>(Jupyter notebooks)</th>
-        </tr>
-        <tr>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td rowspan=2 style="text-align: left"> Average Citizens </td>
-            <td style="text-align: left"> ETH balance > 0.12 ETH and Amount of outgoing tx</td>
-            <td style="text-align: center"> > 4 tx </td>
-            <td style="text-align: center"> > 125 tx </td>
-            <td style="text-align: center"> > 1,531 tx </td>
-            <td rowspan=2 style="text-align: center"> <a href="eth_and_tx__citizens.ipynb">ETH Analysis</a> </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> ETH balance</td>
-            <td style="text-align: center"> > 1 ETH</td>
-            <td style="text-align: center"> > 29 ETH</td>
-            <td style="text-align: center"> > 485 ETH</td>
-        </tr>
         <tr>
             <td rowspan=3 style="text-align: left"> Masters of the Great Web </td>
             <td style="text-align: left"> Amount of ERC721 tokens </td>
@@ -243,6 +240,13 @@ the following balanced distribution between them is proposed:
 <img src="img/audiences_distribution.png" width="75%" height="75%" alt="Distribution between Audiences">
 
 When an address hits multiple audiences, its reward is cumulative.
+
+## Distribution between Grades
+
+An amount of distributed BOOT tokens should be equal for each grade within an audience.  
+The amount of addresses should also be divided into grades for each audience as  
+
+<img src="img/grades_distribution.png" width="75%" height="75%" alt="Distribution between Grades">
 
 ## Excluding Fiat Brains 
 
