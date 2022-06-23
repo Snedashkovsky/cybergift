@@ -134,7 +134,7 @@ Bostrom is built using cosmos-sdk so attracting cosmonauts is essential for the 
 
 ## Praying for Hackers
 
-Developers, developers, developers... Success of any protocol is defined by it's ability to attract developers. Luckily Ethereum laid amazing foundation for identification of succesfull developers. Gas fee drop method is unambiguous and provable way to give tokens in the right hands.
+Developers, developers, developers... Success of any protocol is defined by it's ability to attract developers. Luckily Ethereum laid amazing foundation for identification of succesfull developers. Gas fee drop method is unambiguous and provable way to give tokens in the mighty hands.
 <table style="text-align: left">
     <thead style="text-align: center">
         <tr>
@@ -160,13 +160,48 @@ Developers, developers, developers... Success of any protocol is defined by it's
 
 </i>
 
-## Heroes of the Great Web
-- participants of Genesis and ETH 2.0 stackers
+## Formation of Heroes Corpus
 
-## Passionate Investors
-- owners of the selected ERC20 tokens
+Any PoS network is run by validators. We need to attrack best validators who become heroes for us. So we decide to focus on two groups. First group is genesis ethereum investors as they there practically successful in building the biggest GPU mining infrustructure on the planet. Second group is eth2 stakers as they are exactly match the profile we need: patience, technical skills and risk appetite.
 
-## Key Opinion Leaders
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <td rowspan=2 style="text-align: left"> Heroes of the Great Web </td>
+            <td style="text-align: left"> Genesis </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> only here </td>
+            <td rowspan=2 style="text-align: center"> <a href="genesis_and_eth2__heroes.ipynb">Genesis and ETH2 Stakers</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> ETH 2.0 Stakers </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> - </td>
+            <td style="text-align: center"> only here </td>
+        </tr>
+    </tbody>
+</table>
+
+## Focusing Investors
+
+We need to bring a capital to the table. We decide to narrow the scope to those who invested in at least 2 meaningful ERC-20 tokens we are aware of. Surprisingly there are not so many folks out there with this trait. We assume that this is a profile of investor we need for success.
+
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <td style="text-align: left"> Passionate Investors </td>
+            <td style="text-align: left"> Number of selected ERC20 tokens >= 2 and balance of it </td>
+            <td style="text-align: center"> > 0.01 ETH </td>
+            <td style="text-align: center"> > 3 ETH </td>
+            <td style="text-align: center"> > 55 ETH </td>
+            <td style="text-align: center"> <a href="erc20__investors_and_cyberpunks.ipynb">ERC20 Analysis</a> </td>
+        </tr>
+    </tbody>
+</table>
+        
+
+##  Key Opinion Leaders
 - TOP holders by the selected ERC20 tokens
 
 ## Cyberpunks
@@ -185,22 +220,6 @@ All distribution rules between grades are calculated in the respective jupyter n
 
 <table style="text-align: left">
     <thead style="text-align: center">
-        
-        
-        <tr>
-            <td rowspan=2 style="text-align: left"> Heroes of the Great Web </td>
-            <td style="text-align: left"> Genesis </td>
-            <td style="text-align: center"> - </td>
-            <td style="text-align: center"> - </td>
-            <td style="text-align: center"> only here </td>
-            <td rowspan=2 style="text-align: center"> <a href="genesis_and_eth2__heroes.ipynb">Genesis and ETH2 Stakers</a> </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"> ETH 2.0 Stakers </td>
-            <td style="text-align: center"> - </td>
-            <td style="text-align: center"> - </td>
-            <td style="text-align: center"> only here </td>
-        </tr>
         <tr>
             <td style="text-align: left"> Passionate Investors </td>
             <td style="text-align: left"> Number of selected ERC20 tokens >= 2 and balance of it </td>
