@@ -1,4 +1,5 @@
 import requests
+
 from config import GRAPHQL_API, HEADERS
 
 
