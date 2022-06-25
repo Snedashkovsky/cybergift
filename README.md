@@ -321,9 +321,9 @@ There will be an incentive of **13x** for those who claim first, reducing to **7
 
 [Final Distribution Table](https://console.cloud.google.com/bigquery?project=cosmic-keep-223223&p=cosmic-keep-223223&d=final&t=final_distribution&page=table&ws=!1m5!1m4!4m3!1scosmic-keep-223223!2sfinal!3sfinal_distribution)  
 
-**Check your address:**
-- **in the [Dashboard](https://datastudio.google.com/u/0/reporting/53e1c28b-9f10-497c-9b5b-9f2a4749450b)**  
-- **by IPFS link**
+**Check your address in:**
+- **web2** by the [Dashboard](https://datastudio.google.com/u/0/reporting/53e1c28b-9f10-497c-9b5b-9f2a4749450b)  
+- **web3** by IPFS link
 ```gateway.ipfs.cybernode.ai/ipfs/QmWvynJ9yrfU5ju8dRSDBY7SmfEugoTyhtA5YmvSqE6Q1c/<your address>.json```  
 for example [gateway.ipfs.cybernode.ai/ipfs/QmWvynJ9yrfU5ju8dRSDBY7SmfEugoTyhtA5YmvSqE6Q1c/0x91170c80ce048e00202e7ad72f8cfab86ec9004d.json](https://gateway.ipfs.cybernode.ai/ipfs/QmWvynJ9yrfU5ju8dRSDBY7SmfEugoTyhtA5YmvSqE6Q1c/0x91170c80ce048e00202e7ad72f8cfab86ec9004d.json)
 # Result Validation
