@@ -16,7 +16,7 @@ to the claim CosmWasm contract after the launch of Bostrom.
 Data source is [BigQuery crypto-ethereum dataset](https://console.cloud.google.com/bigquery?d=crypto_ethereum&p=bigquery-public-data&page=dataset&project=cosmic-keep-223223) 
 by [Blockchain ETL](https://github.com/blockchain-etl).
 
-Research is done on a [proposal](https://cyber.page/governance/20) basis. We hope this research can help pioneer 
+Research is done on the proposal basis. We hope this research can help pioneer 
 a new wave of thinking in decentralized marketing.
 
 ## Connecting the Dots
@@ -59,7 +59,7 @@ When an address hits multiple audiences, its reward is cumulative.
 An amount of distributed BOOT tokens should be equal for each grade within an audience.  
 The amount of addresses should also be divided into grades for each audience as  
 
-<img src="img/grades_distribution.png" width="75%" height="75%" alt="Distribution between Grades">
+<img src="img/grades_distribution.png" width="50%" height="50%" alt="Distribution between Grades">
 
 ## Getting the Crowd
 The most crowded audience is ETH holders and users. We identified 2 audiences: those who hold, and those who hold and transact. Following the Pareto Principle, our target was to exclude the majority of the most either inactive addresses or addresses with insignificant holdings:
@@ -320,8 +320,12 @@ There will be an incentive of **13x** for those who claim first, reducing to **7
 ## Final Distribution   
 
 [Final Distribution Table](https://console.cloud.google.com/bigquery?project=cosmic-keep-223223&p=cosmic-keep-223223&d=final&t=final_distribution&page=table&ws=!1m5!1m4!4m3!1scosmic-keep-223223!2sfinal!3sfinal_distribution)  
-**Check your address in the [Dashboard](https://datastudio.google.com/u/0/reporting/53e1c28b-9f10-497c-9b5b-9f2a4749450b)**
 
+**Check your address in:**
+- **web2** by the [Dashboard](https://datastudio.google.com/u/0/reporting/53e1c28b-9f10-497c-9b5b-9f2a4749450b)  
+- **web3** by IPFS link
+```gateway.ipfs.cybernode.ai/ipfs/QmWvynJ9yrfU5ju8dRSDBY7SmfEugoTyhtA5YmvSqE6Q1c/<your address>.json```  
+for example [gateway.ipfs.cybernode.ai/ipfs/QmWvynJ9yrfU5ju8dRSDBY7SmfEugoTyhtA5YmvSqE6Q1c/0x91170c80ce048e00202e7ad72f8cfab86ec9004d.json](https://gateway.ipfs.cybernode.ai/ipfs/QmWvynJ9yrfU5ju8dRSDBY7SmfEugoTyhtA5YmvSqE6Q1c/0x91170c80ce048e00202e7ad72f8cfab86ec9004d.json)
 # Result Validation
 My name is Maxim Razhev (@ninjascant). I'm a software engineer with 3+ years of experience in blockchain analytics development. I made a manual re-check of queries used here e.g.
 - re-calculating balances on a subset of wallets and comparing with a node output

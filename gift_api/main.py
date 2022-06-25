@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, render_template
+
 from config import API_HOST, API_PORT
 from graphql import format_for_aggregate, format_for_full_data
 
@@ -30,12 +31,11 @@ def cyber_gift_aggregate(address: str):
         return render_template('403.html'), 403
 
 
-
 @app.route('/cyber_gift_full_data/<address>', methods=['GET'])
 def cyber_gift_full_data(address: str):
     address = address.lower()
     result = format_for_full_data(address)
-    if result == []:
+    if not result:
         return render_template('403.html'), 403
     try:
         return jsonify(
