@@ -59,7 +59,7 @@ When an address hits multiple audiences, its reward is cumulative.
 An amount of distributed BOOT tokens should be equal for each grade within an audience.  
 The amount of addresses should also be divided into grades for each audience as  
 
-<img src="img/grades_distribution.png" width="75%" height="75%" alt="Distribution between Grades">
+<img src="img/grades_distribution.png" width="50%" height="50%" alt="Distribution between Grades">
 
 ## Getting the Crowd
 The most crowded audience is ETH holders and users. We identified 2 audiences: those who hold, and those who hold and transact. Following the Pareto Principle, our target was to exclude the majority of the most either inactive addresses or addresses with insignificant holdings:
