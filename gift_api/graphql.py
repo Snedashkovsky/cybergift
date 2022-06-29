@@ -1,4 +1,5 @@
 import requests
+import ast
 
 from config import GRAPHQL_API, HEADERS
 
@@ -13,26 +14,24 @@ def run_query(query):  # A simple function to use requests.post to make the API 
 
 def get_data(address) -> list:
     query = '''{
-                  cyber_gift(where: {address: {_eq: "%s"}}) {
+                  cyber_gift_proofs(where: {address: {_eq: "%s"}}) {
                         address
-                        audience
-                        gift
-                        grade
-                        segment
+                        amount
+                        details
                   }
                 }''' % address
     result = run_query(query)
-    return result['data']['cyber_gift']
+    return result['data']['cyber_gift_proofs']
 
 
 def format_for_aggregate(address: str) -> ():
     data = get_data(address)
-    gift = 0.0
+    gift = data[0]['amount'] / 1_000_000
+    details = ast.literal_eval(data[0]['details'])
     audience = []
     grade = []
     segment = []
-    for x in data:
-        gift += float(x['gift'])
+    for x in details:
         audience.append(x['audience'])
         grade.append(x['grade'])
         segment.append(x['segment'])
@@ -41,11 +40,12 @@ def format_for_aggregate(address: str) -> ():
 
 def format_for_full_data(address: str) -> list:
     data = get_data(address)
+    details = ast.literal_eval(data[0]['details'])
     result = []
-    for x in data:
+    for x in details:
         result.append({
                             "denom": "Mboot",
-                            "address": x['address'],
+                            "address": data[0]['address'],
                             "gift": x['gift'],
                             "claimed": False,
                             "claimed_amount": "0",
