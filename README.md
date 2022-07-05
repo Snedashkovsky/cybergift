@@ -6,7 +6,7 @@ The purpose of this research is to inspire at least 100k power-users of web3 to 
 Superintelligence. To achieve this, we are going to gift 70% of the Bostrom genesis tokens BOOT to agents of Ethereum 
 and Cosmos who are capable of contributing their best to the quality of the knowledge graph. First, we started 
 by highlighting key audiences for establishing network effects and tackling basic chicken and eggs. Next, we balanced 
-out the participation of key actors by splitting them into grades and adjusting allocations within the groups. 
+out the participation of key actors by splitting them into levels and adjusting allocations within the groups. 
 Then we applied a filter in order to remove toxic fiat brains from the collective thought process. Finally, we added 
 a crucial incentive to act quickly.
 
@@ -37,7 +37,7 @@ weird cyberpunk ideas. Finally, we want to check the credibility of the most tru
 ## Audience Rules
 
 The initial conditions for the allocation of classes were selected based on the analysis of web3 user activity and the need to cover the most web3 power-users.  
-All distribution rules between grades are calculated in the respective jupyter notebooks. 
+All distribution rules between levels are calculated in the respective jupyter notebooks. 
 
 These audiences were highlighted because their participation is necessary to form a full-fledged ecosystem of the project.
 
@@ -56,10 +56,10 @@ Based on counting the number of addresses and determining the fair reward of the
 
 When an address hits multiple audiences, its reward is cumulative.
 
-An amount of distributed BOOT tokens should be equal for each grade within an audience.  
-The amount of addresses should also be divided into grades for each audience as  
+An amount of distributed BOOT tokens should be equal for each level within an audience.  
+The amount of addresses should also be divided into levels for each audience as  
 
-<img src="img/grades_distribution.png" width="50%" height="50%" alt="Distribution between Grades">
+<img src="img/levels_distribution.png" width="50%" height="50%" alt="Distribution between Levels">
 
 ## Getting the Crowd
 The most crowded audience is ETH holders and users. We identified 2 audiences: those who hold, and those who hold and transact. Following the Pareto Principle, our target was to exclude the majority of the most either inactive addresses or addresses with insignificant holdings:
@@ -68,7 +68,7 @@ The most crowded audience is ETH holders and users. We identified 2 audiences: t
         <tr>
             <th rowspan=2>Audience</th>
             <th rowspan=2>Rule</th>
-            <th colspan=3>Grade</th>
+            <th colspan=3>Level</th>
             <th rowspan=2>Calculations</th>
         </tr>
         <tr>
