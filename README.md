@@ -2,6 +2,8 @@
 
 @groovybear, @mastercyb
 
+https://user-images.githubusercontent.com/410789/177918794-2912bd4b-8652-4c68-bf79-7f6f94e431da.mp4
+
 The purpose of this research is to inspire at least 100k power-users of web3 to join the force of learning 
 Superintelligence. To achieve this, we are going to gift 70% of the Bostrom genesis tokens BOOT to agents of Ethereum 
 and Cosmos who are capable of contributing their best to the quality of the knowledge graph. First, we started 
