@@ -101,7 +101,7 @@ The most crowded audience is ETH holders and users. We identified 2 audiences: t
 
 The key assumption is that NFT related actions will increase the chance of using cyberlinks because picture owners would love to make them searchable. We decided that all NFT owners deserve attention becasue they are on the edge of web3 technology.
 
-Another important subadience is ENS and decentraLAND holders. This group is special because they value ENS and LAND. The only utility of ENS and LAND is to bind content hash. Hence they are the most desired as they prove the intention to create non trivial content.
+Another important sub-audience is ENS and decentraLAND holders. This group is special because they value ENS and LAND. The only utility of ENS and LAND is to bind content hash. Hence they are the most desired as they prove the intention to create non trivial content.
 <table style="text-align: left">
     <thead style="text-align: center">
         <tr>
