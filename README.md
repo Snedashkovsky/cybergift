@@ -2,6 +2,8 @@
 
 @groovybear, @mastercyb
 
+https://user-images.githubusercontent.com/410789/177918794-2912bd4b-8652-4c68-bf79-7f6f94e431da.mp4
+
 The purpose of this research is to inspire at least 100k power-users of web3 to join the force of learning 
 Superintelligence. To achieve this, we are going to gift 70% of the Bostrom genesis tokens BOOT to agents of Ethereum 
 and Cosmos who are capable of contributing their best to the quality of the knowledge graph. First, we started 
@@ -99,7 +101,7 @@ The most crowded audience is ETH holders and users. We identified 2 audiences: t
 
 The key assumption is that NFT related actions will increase the chance of using cyberlinks because picture owners would love to make them searchable. We decided that all NFT owners deserve attention becasue they are on the edge of web3 technology.
 
-Another important subadience is ENS and decentraLAND holders. This group is special because they value ENS and LAND. The only utility of ENS and LAND is to bind content hash. Hence they are the most desired as they prove the intention to create non trivial content.
+Another important sub-audience is ENS and decentraLAND holders. This group is special because they value ENS and LAND. The only utility of ENS and LAND is to bind content hash. Hence they are the most desired as they prove the intention to create non trivial content.
 <table style="text-align: left">
     <thead style="text-align: center">
         <tr>
