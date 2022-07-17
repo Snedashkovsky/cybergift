@@ -26,15 +26,18 @@ def get_data(address) -> list:
 
 def format_for_aggregate(address: str) -> ():
     data = get_data(address)
-    gift = data[0]['amount'] / 1_000_000
-    details = ast.literal_eval(data[0]['details'])
     audience = []
     grade = []
     segment = []
-    for x in details:
-        audience.append(x['audience'])
-        grade.append(x['grade'])
-        segment.append(x['segment'])
+    try:
+        gift = int(data[0]['amount'] / 1_000_000)
+        details = ast.literal_eval(data[0]['details'])
+        for x in details:
+            audience.append(x['audience'])
+            grade.append(x['grade'])
+            segment.append(x['segment'])
+    except IndexError:
+        gift = 0
     return gift, audience, grade, segment
 
 
@@ -55,3 +58,8 @@ def format_for_full_data(address: str) -> list:
                             "segment": x['segment']
         })
     return result
+
+
+def get_incentive_coef() -> float:
+    # TODO add query from Gift contract
+    return 12
