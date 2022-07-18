@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, render_template
-from cyberpy import address_to_address
+from cyberpy._wallet import address_to_address
 
 from config import API_HOST, API_PORT
 from graphql import format_for_aggregate, format_for_full_data, get_incentive_coef
