@@ -74,7 +74,7 @@ def calculate_and_display_rules(
         HTML(
             pd.DataFrame(df_data,
                          columns=['Grade', 'Rule', 'Addresses', 'Percentage of Addresses'])
-                .to_html(index=False, notebook=True, show_dimensions=False)))
+            .to_html(index=False, notebook=True, show_dimensions=False)))
     return boundaries
 
 
@@ -121,7 +121,7 @@ def show_distribution_chart(
     # Distribution bar chart
     ax.plot(distribution_df[distribution_df[value_column] < max_show_value][value_transform_column],
             distribution_df[distribution_df[value_column] < max_show_value][address_transform_column],
-            color='blue', marker='o', linestyle='dashed', linewidth=1, markersize=4)
+            color='blue', marker='o', linestyle='dashed', linewidth=0, markersize=4)
 
     ax.set_title(chart_title, fontsize=18)
     ax.set_ylabel(address_chart_label, fontsize=16)
