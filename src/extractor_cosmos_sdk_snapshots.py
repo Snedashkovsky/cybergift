@@ -1,6 +1,6 @@
 import pandas as pd
 import json
-from math import floor
+from math import floor, log10
 from typing import Optional
 
 
@@ -123,7 +123,8 @@ def get_balances(snapshot_url: str, coin: str, decimals: int = 6, balances_items
     if balances_items is None:
         balances_items = ['available', 'delegated', 'unbonding', 'liquidity']
     if rounded_function is None:
-        rounded_function = lambda x: floor(x) + 0.5 if x > 1 else 0.5
+        rounded_function = lambda x: floor(10 ** (
+            round(log10(x), 2)) * 10) / 10 if x > 0.1 else 0.05  # floor(10 ** (round(log10(x), 2))) if x > 1 else 0.5
 
     with open(snapshot_url) as _f:
         _genesis_snapshot = json.load(_f)
