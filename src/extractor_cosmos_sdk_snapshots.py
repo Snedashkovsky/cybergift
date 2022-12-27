@@ -150,12 +150,6 @@ def get_balances(snapshot_url: str, coin: str, decimals: int = 6, balances_items
             _unbonding_delegations_df[['address', 'unbonding_coin']],
             how='outer',
             on='address').fillna(0)
-
-    # Get module and pool addresses
-    _module_addresses_list = \
-        [item['base_account']['address'] for item in _genesis_snapshot['app_state']['auth']['accounts']
-         if item['@type'] in ('/cosmos.auth.v1beta1.ModuleAccount', '/osmosis.gamm.v1beta1.Pool')]
-
     # Add Osmosis liquidity
     if coin == 'uosmo' and 'liquidity' in balances_items:
         _liquidity_df = get_liquidity(genesis_snapshot=_genesis_snapshot, decimals=decimals)
@@ -165,6 +159,11 @@ def get_balances(snapshot_url: str, coin: str, decimals: int = 6, balances_items
                 how='outer',
                 on='address'
             ).fillna(0)
+
+    # Get module and pool addresses
+    _module_addresses_list = \
+        [item['base_account']['address'] for item in _genesis_snapshot['app_state']['auth']['accounts']
+         if item['@type'] in ('/cosmos.auth.v1beta1.ModuleAccount', '/osmosis.gamm.v1beta1.Pool')]
 
     _balances_df.loc[:, 'balance_coin'] = \
         _balances_df.drop(columns=['address']).sum(axis=1)
