@@ -359,9 +359,9 @@ development. I made a manual re-check of queries used here e.g.
 By making this commit, I confirm that the results of the analysis presented in this repository are checked by me and
 correct.
 
-# Small Gift for Bostrom Birthday
+# Small Gift for Bostrom's Birthday
 
-Since the main Gift cannot be unlocked until we reach the goal, the cyber~congress decided to make a small gift.  
-Soon each citizen who claim the gift will receive 1A and 1V by each claimed address.  
-This will enable your contribution to the development of a bootloader for superintelligence right now.  
+Since the main Gift cannot be unlocked until we reach the goal (of 100k citizens), the cyber~congress decided to give a small gift.
+Soon each citizen who claims the gift will receive 1A and 1V for each claimed address.
+This will enable your contribution to the development of a bootloader for superintelligence immediately.
 [Small Birthday Gift](small_birthday_gift_A&V.ipynb)
