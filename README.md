@@ -365,3 +365,96 @@ Since the main Gift cannot be unlocked until we reach the goal, the cyber~congre
 Soon each citizen who claim the gift will receive 1A and 1V by each claimed address.  
 This will enable your contribution to the development of a bootloader for superintelligence right now.  
 [Small Birthday Gift](small_birthday_gift_A&V.ipynb)
+
+# pussyGift
+
+## Gift per Segment
+
+- Bostrom Stakers:  10e16 PUSSY
+- Desmos Stakers:  10e16 PUSSY
+- ChiHuaHua, CosmosHub, Evmos, Gravity, Juno, Osmosis, Stargaze, Terra and Umee Stakers:  75e16 PUSSY
+
+## Rules
+
+<table style="text-align: left">
+    <thead style="text-align: center">
+        <tr>
+            <th rowspan=2>Rule</th>
+            <th colspan=3>Level</th>
+            <th rowspan=2>Calculations</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+    </thead>
+    <tbody style="text-align: center">
+        <tr>
+            <td style="text-align: left"> Bostrom Staking Balance </td>
+            <td style="text-align: center"> > 10,000 BOOT </td>
+            <td style="text-align: center"> > 1,383,480,819 BOOT </td>
+            <td style="text-align: center"> > 144,305,883,038 BOOT </td>
+            <td rowspan=11 style="text-align: center"> <a href="pussygift.ipynb">Pussy Gift. BOOT, ATOM, OSMO, LUNA, HUAHUA, JUNO, DSM, STARS, UMEE, GRAV and EVMOS Analysis</a> </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> ChiHuaHua Staking Balance </td>
+            <td style="text-align: center"> > 10,000 HUAHUA </td>
+            <td style="text-align: center"> > 1,805,215 HUAHUA </td>
+            <td style="text-align: center"> > 25,590,943 HUAHUA </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> CosmosHub Staking Balance </td>
+            <td style="text-align: center"> > 0.1 ATOM </td>
+            <td style="text-align: center"> > 164 ATOM </td>
+            <td style="text-align: center"> > 2,711 ATOM </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Desmos Staking Balance </td>
+            <td style="text-align: center"> > 30 DSM </td>
+            <td style="text-align: center"> > 2,125 DSM </td>
+            <td style="text-align: center"> > 142,856 DSM </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Evmos Staking Balance </td>
+            <td style="text-align: center"> > 2 EVMOS </td>
+            <td style="text-align: center"> > 760 EVMOS </td>
+            <td style="text-align: center"> > 8,865 EVMOS </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Gravity Staking Balance </td>
+            <td style="text-align: center"> > 100 GRAV </td>
+            <td style="text-align: center"> > 14,240 GRAV </td>
+            <td style="text-align: center"> > 930,754 GRAV </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Juno Staking Balance </td>
+            <td style="text-align: center"> > 0.5 JUNO </td>
+            <td style="text-align: center"> > 201 JUNO </td>
+            <td style="text-align: center"> > 4,136 JUNO </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Osmosis Staking and Liquidity Balance</td>
+            <td style="text-align: center"> > 1 OSMO </td>
+            <td style="text-align: center"> > 1,498 OSMO </td>
+            <td style="text-align: center"> > 38,098 OSMO </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Stargaze Staking Balance </td>
+            <td style="text-align: center"> > 20 STAR </td>
+            <td style="text-align: center"> > 6,147 STAR </td>
+            <td style="text-align: center"> > 125,126 STAR </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Terra Balance </td>
+            <td style="text-align: center"> > 1 LUNA </td>
+            <td style="text-align: center"> > 387 LUNA </td>
+            <td style="text-align: center"> > 6,397 LUNA </td>
+        </tr>
+        <tr>
+            <td style="text-align: left"> Umee Staking Balance </td>
+            <td style="text-align: center"> > 100 UMEE </td>
+            <td style="text-align: center"> > 10,571 UMEE </td>
+            <td style="text-align: center"> > 65,552 UMEE </td>
+        </tr>
+</table>
