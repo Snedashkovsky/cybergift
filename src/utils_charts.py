@@ -20,7 +20,7 @@ def calculate_and_display_rules(
         boundary_round: int,
         max_boundary=None) -> list:
     """
-    Calculate rule boundaries in according with percentage levels
+    Calculate rule boundaries in according to percentage levels
     :param distribution_df: Source DataFrame
     :param initial_boundary: Minimum value of analyzed parameter that should be included in analysis
     :param max_boundary: Maximum value of analyzed parameter that should be included in analysis
@@ -49,7 +49,7 @@ def calculate_and_display_rules(
         boundary = distribution_slice_df.iloc[
             distribution_slice_df[address_cumsum_perc_column].map(
                 lambda x: abs(x - percentage_level)).argmin()][value_column]
-        boundaries.append(float(round(boundary, boundary_round)))
+        boundaries.append(round(boundary, boundary_round))
     # Calculate of address number by suggested grades
     addresses_by_grade = [distribution_slice_df[
                               (distribution_slice_df[value_column] > boundaries[0]) & (
@@ -60,12 +60,12 @@ def calculate_and_display_rules(
                           distribution_slice_df[
                               distribution_slice_df[value_column] > boundaries[2]][address_column].sum()]
     # Rules for displaying
-    rules = [f'{boundaries[0]} < {value_name} <= {boundaries[1]}',
-             f'{boundaries[1]} < {value_name} <= {boundaries[2]}',
-             f'{boundaries[2]} < {value_name}']
+    rules = [f'{boundaries[0]:>,} < {value_name} <= {boundaries[1]:>,.0f}',
+             f'{boundaries[1]:>,.0f} < {value_name} <= {boundaries[2]:>,.0f}',
+             f'{boundaries[2]:>,.0f} < {value_name}']
     df_data = [[i + 1,
                 rule,
-                addresses_by_grade[i],
+                f'{addresses_by_grade[i]:>,}',
                 round(addresses_by_grade[i] / total_addresses * 100, 1)]
                for i, rule in enumerate(rules)]
 
@@ -74,7 +74,7 @@ def calculate_and_display_rules(
         HTML(
             pd.DataFrame(df_data,
                          columns=['Grade', 'Rule', 'Addresses', 'Percentage of Addresses'])
-                .to_html(index=False, notebook=True, show_dimensions=False)))
+            .to_html(index=False, notebook=True, show_dimensions=False)))
     return boundaries
 
 
@@ -121,7 +121,7 @@ def show_distribution_chart(
     # Distribution bar chart
     ax.plot(distribution_df[distribution_df[value_column] < max_show_value][value_transform_column],
             distribution_df[distribution_df[value_column] < max_show_value][address_transform_column],
-            color='blue', marker='o', linestyle='dashed', linewidth=1, markersize=4)
+            color='blue', marker='o', linestyle='dashed', linewidth=0, markersize=4)
 
     ax.set_title(chart_title, fontsize=18)
     ax.set_ylabel(address_chart_label, fontsize=16)
@@ -139,6 +139,7 @@ def grade_boundaries_analysis(
         distribution_df: pd.DataFrame,
         chart_title: str,
         value_column: str,
+        chart_value_column: str,
         value_name: str,
         value_chart_label: str,
         value_transform_func=lambda x: log10(x) if x > 1 else 0.1,
@@ -156,6 +157,7 @@ def grade_boundaries_analysis(
     :param distribution_df: Source DataFrame
     :param chart_title: Chart title
     :param value_column: Column name of analyzed parameter
+    :param chart_value_column: Column name of analyzed parameter for chart
     :param value_name: Name of analyzed parameter for inserting in the rules
     :param value_chart_label: Name of analyzed parameter for the chart
     :param value_transform_func: Transformation function for analyzed parameter column
@@ -184,12 +186,15 @@ def grade_boundaries_analysis(
         address_column=address_column,
         boundary_round=boundary_round)
 
+    distribution_chart_df = distribution_df.groupby(chart_value_column).agg(
+        {'number_of_addresses': np.sum}).sort_values([chart_value_column]).reset_index()
+
     show_distribution_chart(
-        distribution_df=distribution_df,
+        distribution_df=distribution_chart_df,
         boundaries=boundaries,
         level_line_shift=level_line_shift,
         max_show_value=max_show_value,
-        value_column=value_column,
+        value_column=chart_value_column,
         value_chart_label=value_chart_label,
         value_transform_func=value_transform_func,
         address_column=address_column,

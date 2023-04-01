@@ -1,9 +1,10 @@
 import pandas as pd
 import json
-from math import floor
+from math import floor, log10
+from typing import Optional
 
 
-def get_coin_balance(balance: list, coin: str = 'uatom', decimals: int = 6) -> float:
+def get_coin_balance(balance: list, coin: str, decimals: int) -> float:
     for _balance_item in balance:
         if _balance_item['denom'] == coin:
             return float(_balance_item['amount']) / 10 ** decimals
@@ -13,22 +14,22 @@ def get_coin_balance(balance: list, coin: str = 'uatom', decimals: int = 6) -> f
 def get_osmo_prices(genesis_snapshot: json) -> [dict, pd.DataFrame]:
     # Get pools data and all denoms from snapshot
     _pools = genesis_snapshot["app_state"]['gamm']['pools']
-    _pool_denoms = [pool['totalShares']['denom'] for pool in _pools]
-    _token_denoms = [token['token']['denom'] for pool in _pools for token in pool['poolAssets']]
+    _pool_denoms = [pool['total_shares']['denom'] for pool in _pools]
+    _token_denoms = [token['token']['denom'] for pool in _pools for token in pool['pool_assets']]
     _denoms = set(_token_denoms + _pool_denoms)
 
     _price_df = pd.DataFrame(columns=_denoms, index=_denoms)
     _osmo_price_dict = {}
 
     for _pool in _pools:
-        _pool_denom = _pool['totalShares']['denom']
-        _pool_supply = int(_pool['totalShares']['amount'])
-        _pool_assets = _pool['poolAssets']
+        _pool_denom = _pool['total_shares']['denom']
+        _pool_supply = int(_pool['total_shares']['amount'])
+        _pool_assets = _pool['pool_assets']
         _item_denoms = [token['token']['denom'] for token in _pool_assets]
         _item_amounts = [int(token['token']['amount']) for token in _pool_assets]
 
         for _denom1, _amount1 in zip(_item_denoms, _item_amounts):
-            _price_df.loc[_pool_denom, _denom1] = _amount1 / _pool_supply * 2
+            _price_df.loc[_pool_denom, _denom1] = _amount1 / _pool_supply * 2 if _pool_supply > 0 else 0
             _price_df.loc[_denom1, _pool_denom] = _pool_supply / _amount1 / 2
             for _denom2, _amount2 in zip(_item_denoms, _item_amounts):
                 _price_df.loc[_denom2, _denom1] = _amount1 / _amount2
@@ -57,7 +58,7 @@ def get_osmo_prices(genesis_snapshot: json) -> [dict, pd.DataFrame]:
     return _osmo_price_dict, _price_df
 
 
-def get_liquidity_from_balance(balances: list, price_dict: dict, decimals: int = 6) -> float:
+def get_liquidity_from_balance(balances: list, price_dict: dict, decimals: int) -> float:
     _amount = 0.0
     for _balance in balances:
         if _balance['denom'][:10] == 'gamm/pool/':
@@ -65,19 +66,19 @@ def get_liquidity_from_balance(balances: list, price_dict: dict, decimals: int =
     return _amount / 10 ** decimals
 
 
-def get_liquidity(genesis_snapshot: json) -> pd.DataFrame:
+def get_liquidity(genesis_snapshot: json, decimals: int) -> pd.DataFrame:
     _osmo_price_dict, _ = get_osmo_prices(genesis_snapshot=genesis_snapshot)
 
     # Get balance of unstaked pools coins
     _available_balances_df = pd.DataFrame(genesis_snapshot["app_state"]['bank']['balances'])
     _available_balances_df['unstaked_liquidity'] = _available_balances_df['coins'].map(
-        lambda x: get_liquidity_from_balance(balances=x, price_dict=_osmo_price_dict))
+        lambda x: get_liquidity_from_balance(balances=x, price_dict=_osmo_price_dict, decimals=decimals))
     _available_balances_df = _available_balances_df.groupby('address')['unstaked_liquidity'].agg(sum).reset_index()
 
     # Get balance of staked pools coins
     _lockup_df = pd.DataFrame(genesis_snapshot["app_state"]['lockup']['locks'])
     _lockup_df['staked_liquidity'] = _lockup_df['coins'].map(
-        lambda x: get_liquidity_from_balance(balances=x, price_dict=_osmo_price_dict))
+        lambda x: get_liquidity_from_balance(balances=x, price_dict=_osmo_price_dict, decimals=decimals))
     _lockup_df.rename(columns={'owner': 'address'}, inplace=True)
     _lockup_df = _lockup_df.groupby('address')['staked_liquidity'].agg(sum).reset_index()
 
@@ -90,16 +91,16 @@ def get_liquidity(genesis_snapshot: json) -> pd.DataFrame:
     return _liquidity_df[_liquidity_df.liquidity > 0]
 
 
-def get_available_balances(genesis_snapshot: json, coin: str) -> pd.DataFrame:
+def get_available_balances(genesis_snapshot: json, coin: str, decimals: int) -> pd.DataFrame:
     _available_balances_df = pd.DataFrame(genesis_snapshot["app_state"]['bank']['balances'])
     _available_balances_df.loc[:, 'available_coin'] = _available_balances_df.coins.map(
-        lambda x: get_coin_balance(balance=x, coin=coin))
+        lambda x: get_coin_balance(balance=x, coin=coin, decimals=decimals))
     _available_balances_df = _available_balances_df[_available_balances_df.available_coin != 0]
     _available_balances_df['address'] = _available_balances_df['address'].map(lambda x: x.lower())
     return _available_balances_df.groupby('address')['available_coin'].agg(sum).reset_index()
 
 
-def get_delegated_balances(genesis_snapshot: json, decimals: int = 6) -> pd.DataFrame:
+def get_delegated_balances(genesis_snapshot: json, decimals: int) -> pd.DataFrame:
     _delegated_balances_df = \
         pd.DataFrame(genesis_snapshot["app_state"]['staking']['delegations'])[['delegator_address', 'shares']] \
             .rename(columns={'delegator_address': 'address'})
@@ -109,7 +110,7 @@ def get_delegated_balances(genesis_snapshot: json, decimals: int = 6) -> pd.Data
     return _delegated_balances_df.groupby('address')['delegated_coin'].agg(sum).reset_index()
 
 
-def get_unbonding_delegations(genesis_snapshot: json, decimals: int = 6) -> pd.DataFrame:
+def get_unbonding_delegations(genesis_snapshot: json, decimals: int) -> pd.DataFrame:
     return pd.DataFrame(
         [[unbonding_delegation['delegator_address'].lower(),
           sum([float(entry['balance']) for entry in unbonding_delegation['entries']]) / 10 ** decimals]
@@ -117,48 +118,57 @@ def get_unbonding_delegations(genesis_snapshot: json, decimals: int = 6) -> pd.D
         columns=['address', 'unbonding_coin']).groupby('address')['unbonding_coin'].agg(sum).reset_index()
 
 
-def get_balances(snapshot_url: str, coin: str) -> pd.DataFrame:
+def get_balances(snapshot_url: str, coin: str, decimals: int = 6, balances_items: Optional[list] = None,
+                 rounded_function=None) -> pd.DataFrame:
+    if balances_items is None:
+        balances_items = ['available', 'delegated', 'unbonding', 'liquidity']
+    if rounded_function is None:
+        rounded_function = lambda x: floor(10 ** (
+            round(log10(x), 2)) * 10) / 10 if x > 0.1 else 0.05  # floor(10 ** (round(log10(x), 2))) if x > 1 else 0.5
+
     with open(snapshot_url) as _f:
         _genesis_snapshot = json.load(_f)
 
     # Get Available, Delegated balances and Unbonding delegations
-    _available_balances_df = get_available_balances(genesis_snapshot=_genesis_snapshot, coin=coin)
-    _delegated_balances_df = get_delegated_balances(genesis_snapshot=_genesis_snapshot)
-    _unbonding_delegations_df = get_unbonding_delegations(genesis_snapshot=_genesis_snapshot)
-
-    # Get module and pool addresses
-    _module_addresses_list = \
-        [item['base_account']['address'] for item in _genesis_snapshot['app_state']['auth']['accounts']
-         if item['@type'] in ('/cosmos.auth.v1beta1.ModuleAccount', '/osmosis.gamm.v1beta1.Pool')]
-
-    # Merge Available and Delegated balances
-    _balances_df = \
-        _available_balances_df[['address', 'available_coin']].merge(
+    _balances_df = pd.DataFrame(columns=['address'])
+    if 'available' in balances_items:
+        _available_balances_df = get_available_balances(genesis_snapshot=_genesis_snapshot, coin=coin,
+                                                        decimals=decimals)
+        _balances_df = _balances_df.merge(
+            _available_balances_df[['address', 'available_coin']],
+            how='outer',
+            on='address').fillna(0)
+    if 'delegated' in balances_items:
+        _delegated_balances_df = get_delegated_balances(genesis_snapshot=_genesis_snapshot, decimals=decimals)
+        _balances_df = _balances_df.merge(
             _delegated_balances_df[['address', 'delegated_coin']],
             how='outer',
-            on='address'
-        ).merge(
+            on='address').fillna(0)
+    if 'unbonding' in balances_items:
+        _unbonding_delegations_df = get_unbonding_delegations(genesis_snapshot=_genesis_snapshot, decimals=decimals)
+        _balances_df = _balances_df.merge(
             _unbonding_delegations_df[['address', 'unbonding_coin']],
             how='outer',
-            on='address'
-        ).fillna(0)
-
+            on='address').fillna(0)
     # Add Osmosis liquidity
-    if coin == 'uosmo':
-        _liquidity_df = get_liquidity(genesis_snapshot=_genesis_snapshot)
+    if coin == 'uosmo' and 'liquidity' in balances_items:
+        _liquidity_df = get_liquidity(genesis_snapshot=_genesis_snapshot, decimals=decimals)
         _balances_df = \
             _balances_df.merge(
                 _liquidity_df,
                 how='outer',
                 on='address'
             ).fillna(0)
-        _balances_df.loc[:, 'balance_coin'] = _balances_df[
-            ['available_coin', 'delegated_coin', 'unbonding_coin', 'liquidity']].sum(axis=1)
-    else:
-        _balances_df.loc[:, 'balance_coin'] = _balances_df[['available_coin', 'delegated_coin', 'unbonding_coin']].sum(
-            axis=1)
+
+    # Get module and pool addresses
+    _module_addresses_list = \
+        [item['base_account']['address'] for item in _genesis_snapshot['app_state']['auth']['accounts']
+         if item['@type'] in ('/cosmos.auth.v1beta1.ModuleAccount', '/osmosis.gamm.v1beta1.Pool')]
+
+    _balances_df.loc[:, 'balance_coin'] = \
+        _balances_df.drop(columns=['address']).sum(axis=1)
 
     # Round balance and remove module, pool addresses
-    _balances_df.loc[:, 'balance_coin_rounded'] = \
-        _balances_df.balance_coin.map(lambda x: floor(x) + 0.5 if x > 1 else 0.5)
+    _balances_df.loc[:, 'balance_coin_rounded'] = _balances_df.balance_coin.map(rounded_function)
+
     return _balances_df[~_balances_df['address'].isin(_module_addresses_list)]
